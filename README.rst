@@ -5,7 +5,7 @@ Python Source: https://github.com/python/cpython
 Installing the program or downloading this source code may cause errors with python and may or may not expose vulnerabilities on your computer. Once again, this is not a well-maintained version of the official python. 
 
 Changes: 
-Majority of the keywords have been changed, this is installed on windows via PCbuild\amd64\python-3.14.0rc1-amd64.exe 
+Majority of the keywords have been changed, this is installed on windows via PCbuild/amd64/python-3.14.0rc1-amd64.exe 
 Due to a failure of proper programming, this will appear as an authentic version of python (via the version number), but it is in fact not. 
 
 
