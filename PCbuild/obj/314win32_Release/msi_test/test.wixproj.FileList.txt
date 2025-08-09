@@ -1,0 +1,12 @@
+C:\Users\osten\Downloads\Python-3.14.0rc1\PCbuild\win32\en-us\test.msi
+C:\Users\osten\Downloads\Python-3.14.0rc1\PCbuild\win32\en-us\test.wixpdb
+C:\Users\osten\Downloads\Python-3.14.0rc1\PCbuild\obj\\314win32_Release\msi_test\test.g.csv
+C:\Users\osten\Downloads\Python-3.14.0rc1\PCbuild\obj\\314win32_Release\msi_test\test.g.wxs
+C:\Users\osten\Downloads\Python-3.14.0rc1\PCbuild\obj\\314win32_Release\msi_test\common_en-US.wxl
+C:\Users\osten\Downloads\Python-3.14.0rc1\PCbuild\obj\\314win32_Release\msi_test\pth8A29B79887F502AF9E753D233032C752\common.wixobj
+C:\Users\osten\Downloads\Python-3.14.0rc1\PCbuild\obj\\314win32_Release\msi_test\test.wixobj
+C:\Users\osten\Downloads\Python-3.14.0rc1\PCbuild\obj\\314win32_Release\msi_test\test_files.wixobj
+C:\Users\osten\Downloads\Python-3.14.0rc1\PCbuild\obj\\314win32_Release\msi_test\pthA9A57748FE8DC217B5BD68375DA0185D\test.g.wixobj
+C:\Users\osten\Downloads\Python-3.14.0rc1\PCbuild\obj\\314win32_Release\msi_test\test.wixproj.BindContentsFileListen-us.txt
+C:\Users\osten\Downloads\Python-3.14.0rc1\PCbuild\obj\\314win32_Release\msi_test\test.wixproj.BindOutputsFileListen-us.txt
+C:\Users\osten\Downloads\Python-3.14.0rc1\PCbuild\obj\\314win32_Release\msi_test\test.wixproj.BindBuiltOutputsFileListen-us.txt

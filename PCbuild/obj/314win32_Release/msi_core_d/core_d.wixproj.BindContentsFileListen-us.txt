@@ -1,0 +1,3 @@
+C:\Users\osten\Downloads\Python-3.14.0rc1\PCbuild\win32\python314_d.dll
+C:\Users\osten\Downloads\Python-3.14.0rc1\PCbuild\win32\python314_d.pdb
+C:\Users\osten\Downloads\Python-3.14.0rc1\PCbuild\win32\python3_d.dll

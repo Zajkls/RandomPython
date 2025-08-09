@@ -1,0 +1,4 @@
+C:\Users\osten\Downloads\Python-3.14.0rc1\PCbuild\win32\python_d.exe
+C:\Users\osten\Downloads\Python-3.14.0rc1\PCbuild\win32\python_d.pdb
+C:\Users\osten\Downloads\Python-3.14.0rc1\PCbuild\win32\pythonw_d.exe
+C:\Users\osten\Downloads\Python-3.14.0rc1\PCbuild\win32\pythonw_d.pdb

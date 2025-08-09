@@ -1,0 +1,10 @@
+C:\Users\osten\Downloads\Python-3.14.0rc1\PCbuild\amd64\en-us\tcltk_d.msi
+C:\Users\osten\Downloads\Python-3.14.0rc1\PCbuild\amd64\en-us\tcltk_d.wixpdb
+C:\Users\osten\Downloads\Python-3.14.0rc1\PCbuild\obj\\314amd64_Release\msi_tcltk_d\common_en-US.wxl
+C:\Users\osten\Downloads\Python-3.14.0rc1\PCbuild\obj\\314amd64_Release\msi_tcltk_d\tcltk_en-US.wxl
+C:\Users\osten\Downloads\Python-3.14.0rc1\PCbuild\obj\\314amd64_Release\msi_tcltk_d\pth8A29B79887F502AF9E753D233032C752\common.wixobj
+C:\Users\osten\Downloads\Python-3.14.0rc1\PCbuild\obj\\314amd64_Release\msi_tcltk_d\tcltk_d.wixobj
+C:\Users\osten\Downloads\Python-3.14.0rc1\PCbuild\obj\\314amd64_Release\msi_tcltk_d\tcltk_files.wixobj
+C:\Users\osten\Downloads\Python-3.14.0rc1\PCbuild\obj\\314amd64_Release\msi_tcltk_d\tcltk_d.wixproj.BindContentsFileListen-us.txt
+C:\Users\osten\Downloads\Python-3.14.0rc1\PCbuild\obj\\314amd64_Release\msi_tcltk_d\tcltk_d.wixproj.BindOutputsFileListen-us.txt
+C:\Users\osten\Downloads\Python-3.14.0rc1\PCbuild\obj\\314amd64_Release\msi_tcltk_d\tcltk_d.wixproj.BindBuiltOutputsFileListen-us.txt

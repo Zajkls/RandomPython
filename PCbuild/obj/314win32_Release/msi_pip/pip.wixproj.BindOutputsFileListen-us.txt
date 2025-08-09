@@ -1,0 +1,2 @@
+C:\Users\osten\Downloads\Python-3.14.0rc1\PCbuild\win32\en-us\pip.msi
+C:\Users\osten\Downloads\Python-3.14.0rc1\PCbuild\win32\en-us\pip.wixpdb

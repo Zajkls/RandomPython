@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WixLocalization Culture="en-us" xmlns="http://schemas.microsoft.com/wix/2006/localization">
+    <String Id="LCID">1033</String>
+    <String Id="Culture">en-us</String>
+    <String Id="ProductName">Python 3.14</String>
+    <String Id="FullProductName">Python 3.14.0dev8977 (32-bit)</String>
+    <String Id="Title">Python 3.14.0dev8977 !(loc.Descriptor) (32-bit)</String>
+    <String Id="Description">Python 3.14.0dev8977 !(loc.Descriptor) (32-bit)</String>
+    <String Id="TitlePdb">Python 3.14.0dev8977 !(loc.Descriptor) (32-bit symbols)</String>
+    <String Id="DescriptionPdb">Python 3.14.0dev8977 !(loc.Descriptor) (32-bit symbols)</String>
+    <String Id="Title_d">Python 3.14.0dev8977 !(loc.Descriptor) (32-bit debug)</String>
+    <String Id="Description_d">Python 3.14.0dev8977 !(loc.Descriptor) (32-bit debug)</String>
+    <String Id="Manufacturer">Python Software Foundation</String>
+    <String Id="NoDowngrade">A newer version of !(loc.ProductName) is already installed.</String>
+    <String Id="IncorrectCore">An incorrect version of a prerequisite package is installed. Please uninstall any other versions of !(loc.ProductName) and try installing this again.</String>
+    <String Id="NoTargetDir">The TARGETDIR variable must be provided when invoking this installer.</String>
+    <String Id="ManufacturerSupportUrl">https://www.python.org/</String>
+</WixLocalization>

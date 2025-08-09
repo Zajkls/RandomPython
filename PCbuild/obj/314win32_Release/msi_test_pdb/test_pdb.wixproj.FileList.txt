@@ -1,0 +1,9 @@
+C:\Users\osten\Downloads\Python-3.14.0rc1\PCbuild\win32\en-us\test_pdb.msi
+C:\Users\osten\Downloads\Python-3.14.0rc1\PCbuild\win32\en-us\test_pdb.wixpdb
+C:\Users\osten\Downloads\Python-3.14.0rc1\PCbuild\obj\\314win32_Release\msi_test_pdb\common_en-US.wxl
+C:\Users\osten\Downloads\Python-3.14.0rc1\PCbuild\obj\\314win32_Release\msi_test_pdb\pth8A29B79887F502AF9E753D233032C752\common.wixobj
+C:\Users\osten\Downloads\Python-3.14.0rc1\PCbuild\obj\\314win32_Release\msi_test_pdb\test_pdb.wixobj
+C:\Users\osten\Downloads\Python-3.14.0rc1\PCbuild\obj\\314win32_Release\msi_test_pdb\test_files.wixobj
+C:\Users\osten\Downloads\Python-3.14.0rc1\PCbuild\obj\\314win32_Release\msi_test_pdb\test_pdb.wixproj.BindContentsFileListen-us.txt
+C:\Users\osten\Downloads\Python-3.14.0rc1\PCbuild\obj\\314win32_Release\msi_test_pdb\test_pdb.wixproj.BindOutputsFileListen-us.txt
+C:\Users\osten\Downloads\Python-3.14.0rc1\PCbuild\obj\\314win32_Release\msi_test_pdb\test_pdb.wixproj.BindBuiltOutputsFileListen-us.txt

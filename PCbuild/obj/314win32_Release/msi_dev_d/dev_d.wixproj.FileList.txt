@@ -1,0 +1,9 @@
+C:\Users\osten\Downloads\Python-3.14.0rc1\PCbuild\win32\en-us\dev_d.msi
+C:\Users\osten\Downloads\Python-3.14.0rc1\PCbuild\win32\en-us\dev_d.wixpdb
+C:\Users\osten\Downloads\Python-3.14.0rc1\PCbuild\obj\\314win32_Release\msi_dev_d\common_en-US.wxl
+C:\Users\osten\Downloads\Python-3.14.0rc1\PCbuild\obj\\314win32_Release\msi_dev_d\pth8A29B79887F502AF9E753D233032C752\common.wixobj
+C:\Users\osten\Downloads\Python-3.14.0rc1\PCbuild\obj\\314win32_Release\msi_dev_d\dev_d.wixobj
+C:\Users\osten\Downloads\Python-3.14.0rc1\PCbuild\obj\\314win32_Release\msi_dev_d\dev_files.wixobj
+C:\Users\osten\Downloads\Python-3.14.0rc1\PCbuild\obj\\314win32_Release\msi_dev_d\dev_d.wixproj.BindContentsFileListen-us.txt
+C:\Users\osten\Downloads\Python-3.14.0rc1\PCbuild\obj\\314win32_Release\msi_dev_d\dev_d.wixproj.BindOutputsFileListen-us.txt
+C:\Users\osten\Downloads\Python-3.14.0rc1\PCbuild\obj\\314win32_Release\msi_dev_d\dev_d.wixproj.BindBuiltOutputsFileListen-us.txt

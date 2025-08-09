@@ -1,0 +1,11 @@
+C:\Users\osten\Downloads\Python-3.14.0rc1\PCbuild\win32\en-us\exe_pdb.msi
+C:\Users\osten\Downloads\Python-3.14.0rc1\PCbuild\win32\en-us\exe_pdb.wixpdb
+C:\Users\osten\Downloads\Python-3.14.0rc1\PCbuild\obj\\314win32_Release\msi_exe_pdb\common_en-US.wxl
+C:\Users\osten\Downloads\Python-3.14.0rc1\PCbuild\obj\\314win32_Release\msi_exe_pdb\exe_en-US.wxl
+C:\Users\osten\Downloads\Python-3.14.0rc1\PCbuild\obj\\314win32_Release\msi_exe_pdb\pth8A29B79887F502AF9E753D233032C752\common.wixobj
+C:\Users\osten\Downloads\Python-3.14.0rc1\PCbuild\obj\\314win32_Release\msi_exe_pdb\exe_pdb.wixobj
+C:\Users\osten\Downloads\Python-3.14.0rc1\PCbuild\obj\\314win32_Release\msi_exe_pdb\exe_files.wixobj
+C:\Users\osten\Downloads\Python-3.14.0rc1\PCbuild\obj\\314win32_Release\msi_exe_pdb\exe_reg.wixobj
+C:\Users\osten\Downloads\Python-3.14.0rc1\PCbuild\obj\\314win32_Release\msi_exe_pdb\exe_pdb.wixproj.BindContentsFileListen-us.txt
+C:\Users\osten\Downloads\Python-3.14.0rc1\PCbuild\obj\\314win32_Release\msi_exe_pdb\exe_pdb.wixproj.BindOutputsFileListen-us.txt
+C:\Users\osten\Downloads\Python-3.14.0rc1\PCbuild\obj\\314win32_Release\msi_exe_pdb\exe_pdb.wixproj.BindBuiltOutputsFileListen-us.txt

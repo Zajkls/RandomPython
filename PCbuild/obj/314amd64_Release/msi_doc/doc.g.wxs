@@ -1,0 +1,1851 @@
+<Wix xmlns="http://schemas.microsoft.com/wix/2006/wi">
+    <Fragment>
+        <DirectoryRef Id="Doc_html">
+            <Directory Id="Doc_html__downloads" Name="_downloads" />
+            <Directory Id="Doc_html__images" Name="_images" />
+            <Directory Id="Doc_html__static" Name="_static" />
+            <Directory Id="Doc_html_c_api" Name="c-api" />
+            <Directory Id="Doc_html_deprecations" Name="deprecations" />
+            <Directory Id="Doc_html_distributing" Name="distributing" />
+            <Directory Id="Doc_html_extending" Name="extending" />
+            <Directory Id="Doc_html_faq" Name="faq" />
+            <Directory Id="Doc_html_howto" Name="howto" />
+            <Directory Id="Doc_html_installing" Name="installing" />
+            <Directory Id="Doc_html_library" Name="library" />
+            <Directory Id="Doc_html_reference" Name="reference" />
+            <Directory Id="Doc_html_tutorial" Name="tutorial" />
+            <Directory Id="Doc_html_using" Name="using" />
+            <Directory Id="Doc_html_whatsnew" Name="whatsnew" />
+        </DirectoryRef>
+        <DirectoryRef Id="Doc_html__downloads">
+            <Directory Id="Doc_html__downloads_6dc1f3f4f0e6ca13cb42ddf4d6cbc8af" Name="6dc1f3f4f0e6ca13cb42ddf4d6cbc8af" />
+        </DirectoryRef>
+        <DirectoryRef Id="Doc_html__downloads_6dc1f3f4f0e6ca13cb42ddf4d6cbc8af">
+            <Directory Id="Doc_html__downloads_6dc1f3f4f0e6ca13cb42ddf4d6cbc8af___pycache__" Name="__pycache__" />
+        </DirectoryRef>
+    </Fragment>
+    <Fragment>
+        <ComponentGroup Id="doc_html">
+            <Component Id="Doc_html_.buildinfo" Directory="Doc_html" Guid="*">
+                <File Id="Doc_html_.buildinfo" Name=".buildinfo" Source="!(bindpath.doc_html).buildinfo" />
+            </Component>
+            <Component Id="Doc_html_404.html" Directory="Doc_html" Guid="*">
+                <File Id="Doc_html_404.html" Name="404.html" Source="!(bindpath.doc_html)404.html" />
+            </Component>
+            <Component Id="Doc_html_about.html" Directory="Doc_html" Guid="*">
+                <File Id="Doc_html_about.html" Name="about.html" Source="!(bindpath.doc_html)about.html" />
+            </Component>
+            <Component Id="Doc_html_bugs.html" Directory="Doc_html" Guid="*">
+                <File Id="Doc_html_bugs.html" Name="bugs.html" Source="!(bindpath.doc_html)bugs.html" />
+            </Component>
+            <Component Id="Doc_html_c_api_abstract.html" Directory="Doc_html_c_api" Guid="*">
+                <File Id="Doc_html_c_api_abstract.html" Name="abstract.html" Source="!(bindpath.doc_html)c-api\abstract.html" />
+            </Component>
+            <Component Id="Doc_html_c_api_allocation.html" Directory="Doc_html_c_api" Guid="*">
+                <File Id="Doc_html_c_api_allocation.html" Name="allocation.html" Source="!(bindpath.doc_html)c-api\allocation.html" />
+            </Component>
+            <Component Id="Doc_html_c_api_apiabiversion.html" Directory="Doc_html_c_api" Guid="*">
+                <File Id="Doc_html_c_api_apiabiversion.html" Name="apiabiversion.html" Source="!(bindpath.doc_html)c-api\apiabiversion.html" />
+            </Component>
+            <Component Id="Doc_html_c_api_arg.html" Directory="Doc_html_c_api" Guid="*">
+                <File Id="Doc_html_c_api_arg.html" Name="arg.html" Source="!(bindpath.doc_html)c-api\arg.html" />
+            </Component>
+            <Component Id="Doc_html_c_api_bool.html" Directory="Doc_html_c_api" Guid="*">
+                <File Id="Doc_html_c_api_bool.html" Name="bool.html" Source="!(bindpath.doc_html)c-api\bool.html" />
+            </Component>
+            <Component Id="Doc_html_c_api_buffer.html" Directory="Doc_html_c_api" Guid="*">
+                <File Id="Doc_html_c_api_buffer.html" Name="buffer.html" Source="!(bindpath.doc_html)c-api\buffer.html" />
+            </Component>
+            <Component Id="Doc_html_c_api_bytearray.html" Directory="Doc_html_c_api" Guid="*">
+                <File Id="Doc_html_c_api_bytearray.html" Name="bytearray.html" Source="!(bindpath.doc_html)c-api\bytearray.html" />
+            </Component>
+            <Component Id="Doc_html_c_api_bytes.html" Directory="Doc_html_c_api" Guid="*">
+                <File Id="Doc_html_c_api_bytes.html" Name="bytes.html" Source="!(bindpath.doc_html)c-api\bytes.html" />
+            </Component>
+            <Component Id="Doc_html_c_api_call.html" Directory="Doc_html_c_api" Guid="*">
+                <File Id="Doc_html_c_api_call.html" Name="call.html" Source="!(bindpath.doc_html)c-api\call.html" />
+            </Component>
+            <Component Id="Doc_html_c_api_capsule.html" Directory="Doc_html_c_api" Guid="*">
+                <File Id="Doc_html_c_api_capsule.html" Name="capsule.html" Source="!(bindpath.doc_html)c-api\capsule.html" />
+            </Component>
+            <Component Id="Doc_html_c_api_cell.html" Directory="Doc_html_c_api" Guid="*">
+                <File Id="Doc_html_c_api_cell.html" Name="cell.html" Source="!(bindpath.doc_html)c-api\cell.html" />
+            </Component>
+            <Component Id="Doc_html_c_api_code.html" Directory="Doc_html_c_api" Guid="*">
+                <File Id="Doc_html_c_api_code.html" Name="code.html" Source="!(bindpath.doc_html)c-api\code.html" />
+            </Component>
+            <Component Id="Doc_html_c_api_codec.html" Directory="Doc_html_c_api" Guid="*">
+                <File Id="Doc_html_c_api_codec.html" Name="codec.html" Source="!(bindpath.doc_html)c-api\codec.html" />
+            </Component>
+            <Component Id="Doc_html_c_api_complex.html" Directory="Doc_html_c_api" Guid="*">
+                <File Id="Doc_html_c_api_complex.html" Name="complex.html" Source="!(bindpath.doc_html)c-api\complex.html" />
+            </Component>
+            <Component Id="Doc_html_c_api_concrete.html" Directory="Doc_html_c_api" Guid="*">
+                <File Id="Doc_html_c_api_concrete.html" Name="concrete.html" Source="!(bindpath.doc_html)c-api\concrete.html" />
+            </Component>
+            <Component Id="Doc_html_c_api_contextvars.html" Directory="Doc_html_c_api" Guid="*">
+                <File Id="Doc_html_c_api_contextvars.html" Name="contextvars.html" Source="!(bindpath.doc_html)c-api\contextvars.html" />
+            </Component>
+            <Component Id="Doc_html_c_api_conversion.html" Directory="Doc_html_c_api" Guid="*">
+                <File Id="Doc_html_c_api_conversion.html" Name="conversion.html" Source="!(bindpath.doc_html)c-api\conversion.html" />
+            </Component>
+            <Component Id="Doc_html_c_api_coro.html" Directory="Doc_html_c_api" Guid="*">
+                <File Id="Doc_html_c_api_coro.html" Name="coro.html" Source="!(bindpath.doc_html)c-api\coro.html" />
+            </Component>
+            <Component Id="Doc_html_c_api_datetime.html" Directory="Doc_html_c_api" Guid="*">
+                <File Id="Doc_html_c_api_datetime.html" Name="datetime.html" Source="!(bindpath.doc_html)c-api\datetime.html" />
+            </Component>
+            <Component Id="Doc_html_c_api_descriptor.html" Directory="Doc_html_c_api" Guid="*">
+                <File Id="Doc_html_c_api_descriptor.html" Name="descriptor.html" Source="!(bindpath.doc_html)c-api\descriptor.html" />
+            </Component>
+            <Component Id="Doc_html_c_api_dict.html" Directory="Doc_html_c_api" Guid="*">
+                <File Id="Doc_html_c_api_dict.html" Name="dict.html" Source="!(bindpath.doc_html)c-api\dict.html" />
+            </Component>
+            <Component Id="Doc_html_c_api_exceptions.html" Directory="Doc_html_c_api" Guid="*">
+                <File Id="Doc_html_c_api_exceptions.html" Name="exceptions.html" Source="!(bindpath.doc_html)c-api\exceptions.html" />
+            </Component>
+            <Component Id="Doc_html_c_api_extension_modules.html" Directory="Doc_html_c_api" Guid="*">
+                <File Id="Doc_html_c_api_extension_modules.html" Name="extension-modules.html" Source="!(bindpath.doc_html)c-api\extension-modules.html" />
+            </Component>
+            <Component Id="Doc_html_c_api_file.html" Directory="Doc_html_c_api" Guid="*">
+                <File Id="Doc_html_c_api_file.html" Name="file.html" Source="!(bindpath.doc_html)c-api\file.html" />
+            </Component>
+            <Component Id="Doc_html_c_api_float.html" Directory="Doc_html_c_api" Guid="*">
+                <File Id="Doc_html_c_api_float.html" Name="float.html" Source="!(bindpath.doc_html)c-api\float.html" />
+            </Component>
+            <Component Id="Doc_html_c_api_frame.html" Directory="Doc_html_c_api" Guid="*">
+                <File Id="Doc_html_c_api_frame.html" Name="frame.html" Source="!(bindpath.doc_html)c-api\frame.html" />
+            </Component>
+            <Component Id="Doc_html_c_api_function.html" Directory="Doc_html_c_api" Guid="*">
+                <File Id="Doc_html_c_api_function.html" Name="function.html" Source="!(bindpath.doc_html)c-api\function.html" />
+            </Component>
+            <Component Id="Doc_html_c_api_gcsupport.html" Directory="Doc_html_c_api" Guid="*">
+                <File Id="Doc_html_c_api_gcsupport.html" Name="gcsupport.html" Source="!(bindpath.doc_html)c-api\gcsupport.html" />
+            </Component>
+            <Component Id="Doc_html_c_api_gen.html" Directory="Doc_html_c_api" Guid="*">
+                <File Id="Doc_html_c_api_gen.html" Name="gen.html" Source="!(bindpath.doc_html)c-api\gen.html" />
+            </Component>
+            <Component Id="Doc_html_c_api_hash.html" Directory="Doc_html_c_api" Guid="*">
+                <File Id="Doc_html_c_api_hash.html" Name="hash.html" Source="!(bindpath.doc_html)c-api\hash.html" />
+            </Component>
+            <Component Id="Doc_html_c_api_import.html" Directory="Doc_html_c_api" Guid="*">
+                <File Id="Doc_html_c_api_import.html" Name="import.html" Source="!(bindpath.doc_html)c-api\import.html" />
+            </Component>
+            <Component Id="Doc_html_c_api_index.html" Directory="Doc_html_c_api" Guid="*">
+                <File Id="Doc_html_c_api_index.html" Name="index.html" Source="!(bindpath.doc_html)c-api\index.html" />
+            </Component>
+            <Component Id="Doc_html_c_api_init.html" Directory="Doc_html_c_api" Guid="*">
+                <File Id="Doc_html_c_api_init.html" Name="init.html" Source="!(bindpath.doc_html)c-api\init.html" />
+            </Component>
+            <Component Id="Doc_html_c_api_init_config.html" Directory="Doc_html_c_api" Guid="*">
+                <File Id="Doc_html_c_api_init_config.html" Name="init_config.html" Source="!(bindpath.doc_html)c-api\init_config.html" />
+            </Component>
+            <Component Id="Doc_html_c_api_intro.html" Directory="Doc_html_c_api" Guid="*">
+                <File Id="Doc_html_c_api_intro.html" Name="intro.html" Source="!(bindpath.doc_html)c-api\intro.html" />
+            </Component>
+            <Component Id="Doc_html_c_api_iter.html" Directory="Doc_html_c_api" Guid="*">
+                <File Id="Doc_html_c_api_iter.html" Name="iter.html" Source="!(bindpath.doc_html)c-api\iter.html" />
+            </Component>
+            <Component Id="Doc_html_c_api_iterator.html" Directory="Doc_html_c_api" Guid="*">
+                <File Id="Doc_html_c_api_iterator.html" Name="iterator.html" Source="!(bindpath.doc_html)c-api\iterator.html" />
+            </Component>
+            <Component Id="Doc_html_c_api_lifecycle.html" Directory="Doc_html_c_api" Guid="*">
+                <File Id="Doc_html_c_api_lifecycle.html" Name="lifecycle.html" Source="!(bindpath.doc_html)c-api\lifecycle.html" />
+            </Component>
+            <Component Id="Doc_html_c_api_list.html" Directory="Doc_html_c_api" Guid="*">
+                <File Id="Doc_html_c_api_list.html" Name="list.html" Source="!(bindpath.doc_html)c-api\list.html" />
+            </Component>
+            <Component Id="Doc_html_c_api_long.html" Directory="Doc_html_c_api" Guid="*">
+                <File Id="Doc_html_c_api_long.html" Name="long.html" Source="!(bindpath.doc_html)c-api\long.html" />
+            </Component>
+            <Component Id="Doc_html_c_api_mapping.html" Directory="Doc_html_c_api" Guid="*">
+                <File Id="Doc_html_c_api_mapping.html" Name="mapping.html" Source="!(bindpath.doc_html)c-api\mapping.html" />
+            </Component>
+            <Component Id="Doc_html_c_api_marshal.html" Directory="Doc_html_c_api" Guid="*">
+                <File Id="Doc_html_c_api_marshal.html" Name="marshal.html" Source="!(bindpath.doc_html)c-api\marshal.html" />
+            </Component>
+            <Component Id="Doc_html_c_api_memory.html" Directory="Doc_html_c_api" Guid="*">
+                <File Id="Doc_html_c_api_memory.html" Name="memory.html" Source="!(bindpath.doc_html)c-api\memory.html" />
+            </Component>
+            <Component Id="Doc_html_c_api_memoryview.html" Directory="Doc_html_c_api" Guid="*">
+                <File Id="Doc_html_c_api_memoryview.html" Name="memoryview.html" Source="!(bindpath.doc_html)c-api\memoryview.html" />
+            </Component>
+            <Component Id="Doc_html_c_api_method.html" Directory="Doc_html_c_api" Guid="*">
+                <File Id="Doc_html_c_api_method.html" Name="method.html" Source="!(bindpath.doc_html)c-api\method.html" />
+            </Component>
+            <Component Id="Doc_html_c_api_module.html" Directory="Doc_html_c_api" Guid="*">
+                <File Id="Doc_html_c_api_module.html" Name="module.html" Source="!(bindpath.doc_html)c-api\module.html" />
+            </Component>
+            <Component Id="Doc_html_c_api_monitoring.html" Directory="Doc_html_c_api" Guid="*">
+                <File Id="Doc_html_c_api_monitoring.html" Name="monitoring.html" Source="!(bindpath.doc_html)c-api\monitoring.html" />
+            </Component>
+            <Component Id="Doc_html_c_api_none.html" Directory="Doc_html_c_api" Guid="*">
+                <File Id="Doc_html_c_api_none.html" Name="none.html" Source="!(bindpath.doc_html)c-api\none.html" />
+            </Component>
+            <Component Id="Doc_html_c_api_number.html" Directory="Doc_html_c_api" Guid="*">
+                <File Id="Doc_html_c_api_number.html" Name="number.html" Source="!(bindpath.doc_html)c-api\number.html" />
+            </Component>
+            <Component Id="Doc_html_c_api_object.html" Directory="Doc_html_c_api" Guid="*">
+                <File Id="Doc_html_c_api_object.html" Name="object.html" Source="!(bindpath.doc_html)c-api\object.html" />
+            </Component>
+            <Component Id="Doc_html_c_api_objimpl.html" Directory="Doc_html_c_api" Guid="*">
+                <File Id="Doc_html_c_api_objimpl.html" Name="objimpl.html" Source="!(bindpath.doc_html)c-api\objimpl.html" />
+            </Component>
+            <Component Id="Doc_html_c_api_perfmaps.html" Directory="Doc_html_c_api" Guid="*">
+                <File Id="Doc_html_c_api_perfmaps.html" Name="perfmaps.html" Source="!(bindpath.doc_html)c-api\perfmaps.html" />
+            </Component>
+            <Component Id="Doc_html_c_api_refcounting.html" Directory="Doc_html_c_api" Guid="*">
+                <File Id="Doc_html_c_api_refcounting.html" Name="refcounting.html" Source="!(bindpath.doc_html)c-api\refcounting.html" />
+            </Component>
+            <Component Id="Doc_html_c_api_reflection.html" Directory="Doc_html_c_api" Guid="*">
+                <File Id="Doc_html_c_api_reflection.html" Name="reflection.html" Source="!(bindpath.doc_html)c-api\reflection.html" />
+            </Component>
+            <Component Id="Doc_html_c_api_sequence.html" Directory="Doc_html_c_api" Guid="*">
+                <File Id="Doc_html_c_api_sequence.html" Name="sequence.html" Source="!(bindpath.doc_html)c-api\sequence.html" />
+            </Component>
+            <Component Id="Doc_html_c_api_set.html" Directory="Doc_html_c_api" Guid="*">
+                <File Id="Doc_html_c_api_set.html" Name="set.html" Source="!(bindpath.doc_html)c-api\set.html" />
+            </Component>
+            <Component Id="Doc_html_c_api_slice.html" Directory="Doc_html_c_api" Guid="*">
+                <File Id="Doc_html_c_api_slice.html" Name="slice.html" Source="!(bindpath.doc_html)c-api\slice.html" />
+            </Component>
+            <Component Id="Doc_html_c_api_stable.html" Directory="Doc_html_c_api" Guid="*">
+                <File Id="Doc_html_c_api_stable.html" Name="stable.html" Source="!(bindpath.doc_html)c-api\stable.html" />
+            </Component>
+            <Component Id="Doc_html_c_api_structures.html" Directory="Doc_html_c_api" Guid="*">
+                <File Id="Doc_html_c_api_structures.html" Name="structures.html" Source="!(bindpath.doc_html)c-api\structures.html" />
+            </Component>
+            <Component Id="Doc_html_c_api_sys.html" Directory="Doc_html_c_api" Guid="*">
+                <File Id="Doc_html_c_api_sys.html" Name="sys.html" Source="!(bindpath.doc_html)c-api\sys.html" />
+            </Component>
+            <Component Id="Doc_html_c_api_time.html" Directory="Doc_html_c_api" Guid="*">
+                <File Id="Doc_html_c_api_time.html" Name="time.html" Source="!(bindpath.doc_html)c-api\time.html" />
+            </Component>
+            <Component Id="Doc_html_c_api_tuple.html" Directory="Doc_html_c_api" Guid="*">
+                <File Id="Doc_html_c_api_tuple.html" Name="tuple.html" Source="!(bindpath.doc_html)c-api\tuple.html" />
+            </Component>
+            <Component Id="Doc_html_c_api_type.html" Directory="Doc_html_c_api" Guid="*">
+                <File Id="Doc_html_c_api_type.html" Name="type.html" Source="!(bindpath.doc_html)c-api\type.html" />
+            </Component>
+            <Component Id="Doc_html_c_api_typehints.html" Directory="Doc_html_c_api" Guid="*">
+                <File Id="Doc_html_c_api_typehints.html" Name="typehints.html" Source="!(bindpath.doc_html)c-api\typehints.html" />
+            </Component>
+            <Component Id="Doc_html_c_api_typeobj.html" Directory="Doc_html_c_api" Guid="*">
+                <File Id="Doc_html_c_api_typeobj.html" Name="typeobj.html" Source="!(bindpath.doc_html)c-api\typeobj.html" />
+            </Component>
+            <Component Id="Doc_html_c_api_unicode.html" Directory="Doc_html_c_api" Guid="*">
+                <File Id="Doc_html_c_api_unicode.html" Name="unicode.html" Source="!(bindpath.doc_html)c-api\unicode.html" />
+            </Component>
+            <Component Id="Doc_html_c_api_utilities.html" Directory="Doc_html_c_api" Guid="*">
+                <File Id="Doc_html_c_api_utilities.html" Name="utilities.html" Source="!(bindpath.doc_html)c-api\utilities.html" />
+            </Component>
+            <Component Id="Doc_html_c_api_veryhigh.html" Directory="Doc_html_c_api" Guid="*">
+                <File Id="Doc_html_c_api_veryhigh.html" Name="veryhigh.html" Source="!(bindpath.doc_html)c-api\veryhigh.html" />
+            </Component>
+            <Component Id="Doc_html_c_api_weakref.html" Directory="Doc_html_c_api" Guid="*">
+                <File Id="Doc_html_c_api_weakref.html" Name="weakref.html" Source="!(bindpath.doc_html)c-api\weakref.html" />
+            </Component>
+            <Component Id="Doc_html_contents.html" Directory="Doc_html" Guid="*">
+                <File Id="Doc_html_contents.html" Name="contents.html" Source="!(bindpath.doc_html)contents.html" />
+            </Component>
+            <Component Id="Doc_html_copyright.html" Directory="Doc_html" Guid="*">
+                <File Id="Doc_html_copyright.html" Name="copyright.html" Source="!(bindpath.doc_html)copyright.html" />
+            </Component>
+            <Component Id="Doc_html_deprecations_c_api_pending_removal_in_3.14.html" Directory="Doc_html_deprecations" Guid="*">
+                <File Id="Doc_html_deprecations_c_api_pending_removal_in_3.14.html" Name="c-api-pending-removal-in-3.14.html" Source="!(bindpath.doc_html)deprecations\c-api-pending-removal-in-3.14.html" />
+            </Component>
+            <Component Id="Doc_html_deprecations_c_api_pending_removal_in_3.15.html" Directory="Doc_html_deprecations" Guid="*">
+                <File Id="Doc_html_deprecations_c_api_pending_removal_in_3.15.html" Name="c-api-pending-removal-in-3.15.html" Source="!(bindpath.doc_html)deprecations\c-api-pending-removal-in-3.15.html" />
+            </Component>
+            <Component Id="Doc_html_deprecations_c_api_pending_removal_in_3.16.html" Directory="Doc_html_deprecations" Guid="*">
+                <File Id="Doc_html_deprecations_c_api_pending_removal_in_3.16.html" Name="c-api-pending-removal-in-3.16.html" Source="!(bindpath.doc_html)deprecations\c-api-pending-removal-in-3.16.html" />
+            </Component>
+            <Component Id="Doc_html_deprecations_c_api_pending_removal_in_3.18.html" Directory="Doc_html_deprecations" Guid="*">
+                <File Id="Doc_html_deprecations_c_api_pending_removal_in_3.18.html" Name="c-api-pending-removal-in-3.18.html" Source="!(bindpath.doc_html)deprecations\c-api-pending-removal-in-3.18.html" />
+            </Component>
+            <Component Id="Doc_html_deprecations_c_api_pending_removal_in_future.html" Directory="Doc_html_deprecations" Guid="*">
+                <File Id="Doc_html_deprecations_c_api_pending_removal_in_future.html" Name="c-api-pending-removal-in-future.html" Source="!(bindpath.doc_html)deprecations\c-api-pending-removal-in-future.html" />
+            </Component>
+            <Component Id="Doc_html_deprecations_index.html" Directory="Doc_html_deprecations" Guid="*">
+                <File Id="Doc_html_deprecations_index.html" Name="index.html" Source="!(bindpath.doc_html)deprecations\index.html" />
+            </Component>
+            <Component Id="Doc_html_deprecations_pending_removal_in_3.13.html" Directory="Doc_html_deprecations" Guid="*">
+                <File Id="Doc_html_deprecations_pending_removal_in_3.13.html" Name="pending-removal-in-3.13.html" Source="!(bindpath.doc_html)deprecations\pending-removal-in-3.13.html" />
+            </Component>
+            <Component Id="Doc_html_deprecations_pending_removal_in_3.14.html" Directory="Doc_html_deprecations" Guid="*">
+                <File Id="Doc_html_deprecations_pending_removal_in_3.14.html" Name="pending-removal-in-3.14.html" Source="!(bindpath.doc_html)deprecations\pending-removal-in-3.14.html" />
+            </Component>
+            <Component Id="Doc_html_deprecations_pending_removal_in_3.15.html" Directory="Doc_html_deprecations" Guid="*">
+                <File Id="Doc_html_deprecations_pending_removal_in_3.15.html" Name="pending-removal-in-3.15.html" Source="!(bindpath.doc_html)deprecations\pending-removal-in-3.15.html" />
+            </Component>
+            <Component Id="Doc_html_deprecations_pending_removal_in_3.16.html" Directory="Doc_html_deprecations" Guid="*">
+                <File Id="Doc_html_deprecations_pending_removal_in_3.16.html" Name="pending-removal-in-3.16.html" Source="!(bindpath.doc_html)deprecations\pending-removal-in-3.16.html" />
+            </Component>
+            <Component Id="Doc_html_deprecations_pending_removal_in_3.17.html" Directory="Doc_html_deprecations" Guid="*">
+                <File Id="Doc_html_deprecations_pending_removal_in_3.17.html" Name="pending-removal-in-3.17.html" Source="!(bindpath.doc_html)deprecations\pending-removal-in-3.17.html" />
+            </Component>
+            <Component Id="Doc_html_deprecations_pending_removal_in_3.19.html" Directory="Doc_html_deprecations" Guid="*">
+                <File Id="Doc_html_deprecations_pending_removal_in_3.19.html" Name="pending-removal-in-3.19.html" Source="!(bindpath.doc_html)deprecations\pending-removal-in-3.19.html" />
+            </Component>
+            <Component Id="Doc_html_deprecations_pending_removal_in_future.html" Directory="Doc_html_deprecations" Guid="*">
+                <File Id="Doc_html_deprecations_pending_removal_in_future.html" Name="pending-removal-in-future.html" Source="!(bindpath.doc_html)deprecations\pending-removal-in-future.html" />
+            </Component>
+            <Component Id="Doc_html_distributing_index.html" Directory="Doc_html_distributing" Guid="*">
+                <File Id="Doc_html_distributing_index.html" Name="index.html" Source="!(bindpath.doc_html)distributing\index.html" />
+            </Component>
+            <Component Id="Doc_html_download.html" Directory="Doc_html" Guid="*">
+                <File Id="Doc_html_download.html" Name="download.html" Source="!(bindpath.doc_html)download.html" />
+            </Component>
+            <Component Id="Doc_html_extending_building.html" Directory="Doc_html_extending" Guid="*">
+                <File Id="Doc_html_extending_building.html" Name="building.html" Source="!(bindpath.doc_html)extending\building.html" />
+            </Component>
+            <Component Id="Doc_html_extending_embedding.html" Directory="Doc_html_extending" Guid="*">
+                <File Id="Doc_html_extending_embedding.html" Name="embedding.html" Source="!(bindpath.doc_html)extending\embedding.html" />
+            </Component>
+            <Component Id="Doc_html_extending_extending.html" Directory="Doc_html_extending" Guid="*">
+                <File Id="Doc_html_extending_extending.html" Name="extending.html" Source="!(bindpath.doc_html)extending\extending.html" />
+            </Component>
+            <Component Id="Doc_html_extending_index.html" Directory="Doc_html_extending" Guid="*">
+                <File Id="Doc_html_extending_index.html" Name="index.html" Source="!(bindpath.doc_html)extending\index.html" />
+            </Component>
+            <Component Id="Doc_html_extending_newtypes.html" Directory="Doc_html_extending" Guid="*">
+                <File Id="Doc_html_extending_newtypes.html" Name="newtypes.html" Source="!(bindpath.doc_html)extending\newtypes.html" />
+            </Component>
+            <Component Id="Doc_html_extending_newtypes_tutorial.html" Directory="Doc_html_extending" Guid="*">
+                <File Id="Doc_html_extending_newtypes_tutorial.html" Name="newtypes_tutorial.html" Source="!(bindpath.doc_html)extending\newtypes_tutorial.html" />
+            </Component>
+            <Component Id="Doc_html_extending_windows.html" Directory="Doc_html_extending" Guid="*">
+                <File Id="Doc_html_extending_windows.html" Name="windows.html" Source="!(bindpath.doc_html)extending\windows.html" />
+            </Component>
+            <Component Id="Doc_html_faq_design.html" Directory="Doc_html_faq" Guid="*">
+                <File Id="Doc_html_faq_design.html" Name="design.html" Source="!(bindpath.doc_html)faq\design.html" />
+            </Component>
+            <Component Id="Doc_html_faq_extending.html" Directory="Doc_html_faq" Guid="*">
+                <File Id="Doc_html_faq_extending.html" Name="extending.html" Source="!(bindpath.doc_html)faq\extending.html" />
+            </Component>
+            <Component Id="Doc_html_faq_general.html" Directory="Doc_html_faq" Guid="*">
+                <File Id="Doc_html_faq_general.html" Name="general.html" Source="!(bindpath.doc_html)faq\general.html" />
+            </Component>
+            <Component Id="Doc_html_faq_gui.html" Directory="Doc_html_faq" Guid="*">
+                <File Id="Doc_html_faq_gui.html" Name="gui.html" Source="!(bindpath.doc_html)faq\gui.html" />
+            </Component>
+            <Component Id="Doc_html_faq_index.html" Directory="Doc_html_faq" Guid="*">
+                <File Id="Doc_html_faq_index.html" Name="index.html" Source="!(bindpath.doc_html)faq\index.html" />
+            </Component>
+            <Component Id="Doc_html_faq_installed.html" Directory="Doc_html_faq" Guid="*">
+                <File Id="Doc_html_faq_installed.html" Name="installed.html" Source="!(bindpath.doc_html)faq\installed.html" />
+            </Component>
+            <Component Id="Doc_html_faq_library.html" Directory="Doc_html_faq" Guid="*">
+                <File Id="Doc_html_faq_library.html" Name="library.html" Source="!(bindpath.doc_html)faq\library.html" />
+            </Component>
+            <Component Id="Doc_html_faq_programming.html" Directory="Doc_html_faq" Guid="*">
+                <File Id="Doc_html_faq_programming.html" Name="programming.html" Source="!(bindpath.doc_html)faq\programming.html" />
+            </Component>
+            <Component Id="Doc_html_faq_windows.html" Directory="Doc_html_faq" Guid="*">
+                <File Id="Doc_html_faq_windows.html" Name="windows.html" Source="!(bindpath.doc_html)faq\windows.html" />
+            </Component>
+            <Component Id="Doc_html_genindex_A.html" Directory="Doc_html" Guid="*">
+                <File Id="Doc_html_genindex_A.html" Name="genindex-A.html" Source="!(bindpath.doc_html)genindex-A.html" />
+            </Component>
+            <Component Id="Doc_html_genindex_all.html" Directory="Doc_html" Guid="*">
+                <File Id="Doc_html_genindex_all.html" Name="genindex-all.html" Source="!(bindpath.doc_html)genindex-all.html" />
+            </Component>
+            <Component Id="Doc_html_genindex_B.html" Directory="Doc_html" Guid="*">
+                <File Id="Doc_html_genindex_B.html" Name="genindex-B.html" Source="!(bindpath.doc_html)genindex-B.html" />
+            </Component>
+            <Component Id="Doc_html_genindex_C.html" Directory="Doc_html" Guid="*">
+                <File Id="Doc_html_genindex_C.html" Name="genindex-C.html" Source="!(bindpath.doc_html)genindex-C.html" />
+            </Component>
+            <Component Id="Doc_html_genindex_D.html" Directory="Doc_html" Guid="*">
+                <File Id="Doc_html_genindex_D.html" Name="genindex-D.html" Source="!(bindpath.doc_html)genindex-D.html" />
+            </Component>
+            <Component Id="Doc_html_genindex_E.html" Directory="Doc_html" Guid="*">
+                <File Id="Doc_html_genindex_E.html" Name="genindex-E.html" Source="!(bindpath.doc_html)genindex-E.html" />
+            </Component>
+            <Component Id="Doc_html_genindex_F.html" Directory="Doc_html" Guid="*">
+                <File Id="Doc_html_genindex_F.html" Name="genindex-F.html" Source="!(bindpath.doc_html)genindex-F.html" />
+            </Component>
+            <Component Id="Doc_html_genindex_G.html" Directory="Doc_html" Guid="*">
+                <File Id="Doc_html_genindex_G.html" Name="genindex-G.html" Source="!(bindpath.doc_html)genindex-G.html" />
+            </Component>
+            <Component Id="Doc_html_genindex_H.html" Directory="Doc_html" Guid="*">
+                <File Id="Doc_html_genindex_H.html" Name="genindex-H.html" Source="!(bindpath.doc_html)genindex-H.html" />
+            </Component>
+            <Component Id="Doc_html_genindex_I.html" Directory="Doc_html" Guid="*">
+                <File Id="Doc_html_genindex_I.html" Name="genindex-I.html" Source="!(bindpath.doc_html)genindex-I.html" />
+            </Component>
+            <Component Id="Doc_html_genindex_J.html" Directory="Doc_html" Guid="*">
+                <File Id="Doc_html_genindex_J.html" Name="genindex-J.html" Source="!(bindpath.doc_html)genindex-J.html" />
+            </Component>
+            <Component Id="Doc_html_genindex_K.html" Directory="Doc_html" Guid="*">
+                <File Id="Doc_html_genindex_K.html" Name="genindex-K.html" Source="!(bindpath.doc_html)genindex-K.html" />
+            </Component>
+            <Component Id="Doc_html_genindex_L.html" Directory="Doc_html" Guid="*">
+                <File Id="Doc_html_genindex_L.html" Name="genindex-L.html" Source="!(bindpath.doc_html)genindex-L.html" />
+            </Component>
+            <Component Id="Doc_html_genindex_M.html" Directory="Doc_html" Guid="*">
+                <File Id="Doc_html_genindex_M.html" Name="genindex-M.html" Source="!(bindpath.doc_html)genindex-M.html" />
+            </Component>
+            <Component Id="Doc_html_genindex_N.html" Directory="Doc_html" Guid="*">
+                <File Id="Doc_html_genindex_N.html" Name="genindex-N.html" Source="!(bindpath.doc_html)genindex-N.html" />
+            </Component>
+            <Component Id="Doc_html_genindex_O.html" Directory="Doc_html" Guid="*">
+                <File Id="Doc_html_genindex_O.html" Name="genindex-O.html" Source="!(bindpath.doc_html)genindex-O.html" />
+            </Component>
+            <Component Id="Doc_html_genindex_P.html" Directory="Doc_html" Guid="*">
+                <File Id="Doc_html_genindex_P.html" Name="genindex-P.html" Source="!(bindpath.doc_html)genindex-P.html" />
+            </Component>
+            <Component Id="Doc_html_genindex_Q.html" Directory="Doc_html" Guid="*">
+                <File Id="Doc_html_genindex_Q.html" Name="genindex-Q.html" Source="!(bindpath.doc_html)genindex-Q.html" />
+            </Component>
+            <Component Id="Doc_html_genindex_R.html" Directory="Doc_html" Guid="*">
+                <File Id="Doc_html_genindex_R.html" Name="genindex-R.html" Source="!(bindpath.doc_html)genindex-R.html" />
+            </Component>
+            <Component Id="Doc_html_genindex_S.html" Directory="Doc_html" Guid="*">
+                <File Id="Doc_html_genindex_S.html" Name="genindex-S.html" Source="!(bindpath.doc_html)genindex-S.html" />
+            </Component>
+            <Component Id="Doc_html_genindex_Symbols.html" Directory="Doc_html" Guid="*">
+                <File Id="Doc_html_genindex_Symbols.html" Name="genindex-Symbols.html" Source="!(bindpath.doc_html)genindex-Symbols.html" />
+            </Component>
+            <Component Id="Doc_html_genindex_T.html" Directory="Doc_html" Guid="*">
+                <File Id="Doc_html_genindex_T.html" Name="genindex-T.html" Source="!(bindpath.doc_html)genindex-T.html" />
+            </Component>
+            <Component Id="Doc_html_genindex_U.html" Directory="Doc_html" Guid="*">
+                <File Id="Doc_html_genindex_U.html" Name="genindex-U.html" Source="!(bindpath.doc_html)genindex-U.html" />
+            </Component>
+            <Component Id="Doc_html_genindex_V.html" Directory="Doc_html" Guid="*">
+                <File Id="Doc_html_genindex_V.html" Name="genindex-V.html" Source="!(bindpath.doc_html)genindex-V.html" />
+            </Component>
+            <Component Id="Doc_html_genindex_W.html" Directory="Doc_html" Guid="*">
+                <File Id="Doc_html_genindex_W.html" Name="genindex-W.html" Source="!(bindpath.doc_html)genindex-W.html" />
+            </Component>
+            <Component Id="Doc_html_genindex_X.html" Directory="Doc_html" Guid="*">
+                <File Id="Doc_html_genindex_X.html" Name="genindex-X.html" Source="!(bindpath.doc_html)genindex-X.html" />
+            </Component>
+            <Component Id="Doc_html_genindex_Y.html" Directory="Doc_html" Guid="*">
+                <File Id="Doc_html_genindex_Y.html" Name="genindex-Y.html" Source="!(bindpath.doc_html)genindex-Y.html" />
+            </Component>
+            <Component Id="Doc_html_genindex_Z.html" Directory="Doc_html" Guid="*">
+                <File Id="Doc_html_genindex_Z.html" Name="genindex-Z.html" Source="!(bindpath.doc_html)genindex-Z.html" />
+            </Component>
+            <Component Id="Doc_html_genindex__.html" Directory="Doc_html" Guid="*">
+                <File Id="Doc_html_genindex__.html" Name="genindex-_.html" Source="!(bindpath.doc_html)genindex-_.html" />
+            </Component>
+            <Component Id="Doc_html_genindex.html" Directory="Doc_html" Guid="*">
+                <File Id="Doc_html_genindex.html" Name="genindex.html" Source="!(bindpath.doc_html)genindex.html" />
+            </Component>
+            <Component Id="Doc_html_glossary.html" Directory="Doc_html" Guid="*">
+                <File Id="Doc_html_glossary.html" Name="glossary.html" Source="!(bindpath.doc_html)glossary.html" />
+            </Component>
+            <Component Id="Doc_html_howto_annotations.html" Directory="Doc_html_howto" Guid="*">
+                <File Id="Doc_html_howto_annotations.html" Name="annotations.html" Source="!(bindpath.doc_html)howto\annotations.html" />
+            </Component>
+            <Component Id="Doc_html_howto_argparse_optparse.html" Directory="Doc_html_howto" Guid="*">
+                <File Id="Doc_html_howto_argparse_optparse.html" Name="argparse-optparse.html" Source="!(bindpath.doc_html)howto\argparse-optparse.html" />
+            </Component>
+            <Component Id="Doc_html_howto_argparse.html" Directory="Doc_html_howto" Guid="*">
+                <File Id="Doc_html_howto_argparse.html" Name="argparse.html" Source="!(bindpath.doc_html)howto\argparse.html" />
+            </Component>
+            <Component Id="Doc_html_howto_clinic.html" Directory="Doc_html_howto" Guid="*">
+                <File Id="Doc_html_howto_clinic.html" Name="clinic.html" Source="!(bindpath.doc_html)howto\clinic.html" />
+            </Component>
+            <Component Id="Doc_html_howto_cporting.html" Directory="Doc_html_howto" Guid="*">
+                <File Id="Doc_html_howto_cporting.html" Name="cporting.html" Source="!(bindpath.doc_html)howto\cporting.html" />
+            </Component>
+            <Component Id="Doc_html_howto_curses.html" Directory="Doc_html_howto" Guid="*">
+                <File Id="Doc_html_howto_curses.html" Name="curses.html" Source="!(bindpath.doc_html)howto\curses.html" />
+            </Component>
+            <Component Id="Doc_html_howto_descriptor.html" Directory="Doc_html_howto" Guid="*">
+                <File Id="Doc_html_howto_descriptor.html" Name="descriptor.html" Source="!(bindpath.doc_html)howto\descriptor.html" />
+            </Component>
+            <Component Id="Doc_html_howto_enum.html" Directory="Doc_html_howto" Guid="*">
+                <File Id="Doc_html_howto_enum.html" Name="enum.html" Source="!(bindpath.doc_html)howto\enum.html" />
+            </Component>
+            <Component Id="Doc_html_howto_free_threading_extensions.html" Directory="Doc_html_howto" Guid="*">
+                <File Id="Doc_html_howto_free_threading_extensions.html" Name="free-threading-extensions.html" Source="!(bindpath.doc_html)howto\free-threading-extensions.html" />
+            </Component>
+            <Component Id="Doc_html_howto_free_threading_python.html" Directory="Doc_html_howto" Guid="*">
+                <File Id="Doc_html_howto_free_threading_python.html" Name="free-threading-python.html" Source="!(bindpath.doc_html)howto\free-threading-python.html" />
+            </Component>
+            <Component Id="Doc_html_howto_functional.html" Directory="Doc_html_howto" Guid="*">
+                <File Id="Doc_html_howto_functional.html" Name="functional.html" Source="!(bindpath.doc_html)howto\functional.html" />
+            </Component>
+            <Component Id="Doc_html_howto_gdb_helpers.html" Directory="Doc_html_howto" Guid="*">
+                <File Id="Doc_html_howto_gdb_helpers.html" Name="gdb_helpers.html" Source="!(bindpath.doc_html)howto\gdb_helpers.html" />
+            </Component>
+            <Component Id="Doc_html_howto_index.html" Directory="Doc_html_howto" Guid="*">
+                <File Id="Doc_html_howto_index.html" Name="index.html" Source="!(bindpath.doc_html)howto\index.html" />
+            </Component>
+            <Component Id="Doc_html_howto_instrumentation.html" Directory="Doc_html_howto" Guid="*">
+                <File Id="Doc_html_howto_instrumentation.html" Name="instrumentation.html" Source="!(bindpath.doc_html)howto\instrumentation.html" />
+            </Component>
+            <Component Id="Doc_html_howto_ipaddress.html" Directory="Doc_html_howto" Guid="*">
+                <File Id="Doc_html_howto_ipaddress.html" Name="ipaddress.html" Source="!(bindpath.doc_html)howto\ipaddress.html" />
+            </Component>
+            <Component Id="Doc_html_howto_isolating_extensions.html" Directory="Doc_html_howto" Guid="*">
+                <File Id="Doc_html_howto_isolating_extensions.html" Name="isolating-extensions.html" Source="!(bindpath.doc_html)howto\isolating-extensions.html" />
+            </Component>
+            <Component Id="Doc_html_howto_logging_cookbook.html" Directory="Doc_html_howto" Guid="*">
+                <File Id="Doc_html_howto_logging_cookbook.html" Name="logging-cookbook.html" Source="!(bindpath.doc_html)howto\logging-cookbook.html" />
+            </Component>
+            <Component Id="Doc_html_howto_logging.html" Directory="Doc_html_howto" Guid="*">
+                <File Id="Doc_html_howto_logging.html" Name="logging.html" Source="!(bindpath.doc_html)howto\logging.html" />
+            </Component>
+            <Component Id="Doc_html_howto_mro.html" Directory="Doc_html_howto" Guid="*">
+                <File Id="Doc_html_howto_mro.html" Name="mro.html" Source="!(bindpath.doc_html)howto\mro.html" />
+            </Component>
+            <Component Id="Doc_html_howto_perf_profiling.html" Directory="Doc_html_howto" Guid="*">
+                <File Id="Doc_html_howto_perf_profiling.html" Name="perf_profiling.html" Source="!(bindpath.doc_html)howto\perf_profiling.html" />
+            </Component>
+            <Component Id="Doc_html_howto_pyporting.html" Directory="Doc_html_howto" Guid="*">
+                <File Id="Doc_html_howto_pyporting.html" Name="pyporting.html" Source="!(bindpath.doc_html)howto\pyporting.html" />
+            </Component>
+            <Component Id="Doc_html_howto_regex.html" Directory="Doc_html_howto" Guid="*">
+                <File Id="Doc_html_howto_regex.html" Name="regex.html" Source="!(bindpath.doc_html)howto\regex.html" />
+            </Component>
+            <Component Id="Doc_html_howto_remote_debugging.html" Directory="Doc_html_howto" Guid="*">
+                <File Id="Doc_html_howto_remote_debugging.html" Name="remote_debugging.html" Source="!(bindpath.doc_html)howto\remote_debugging.html" />
+            </Component>
+            <Component Id="Doc_html_howto_sockets.html" Directory="Doc_html_howto" Guid="*">
+                <File Id="Doc_html_howto_sockets.html" Name="sockets.html" Source="!(bindpath.doc_html)howto\sockets.html" />
+            </Component>
+            <Component Id="Doc_html_howto_sorting.html" Directory="Doc_html_howto" Guid="*">
+                <File Id="Doc_html_howto_sorting.html" Name="sorting.html" Source="!(bindpath.doc_html)howto\sorting.html" />
+            </Component>
+            <Component Id="Doc_html_howto_timerfd.html" Directory="Doc_html_howto" Guid="*">
+                <File Id="Doc_html_howto_timerfd.html" Name="timerfd.html" Source="!(bindpath.doc_html)howto\timerfd.html" />
+            </Component>
+            <Component Id="Doc_html_howto_unicode.html" Directory="Doc_html_howto" Guid="*">
+                <File Id="Doc_html_howto_unicode.html" Name="unicode.html" Source="!(bindpath.doc_html)howto\unicode.html" />
+            </Component>
+            <Component Id="Doc_html_howto_urllib2.html" Directory="Doc_html_howto" Guid="*">
+                <File Id="Doc_html_howto_urllib2.html" Name="urllib2.html" Source="!(bindpath.doc_html)howto\urllib2.html" />
+            </Component>
+            <Component Id="Doc_html_index.html" Directory="Doc_html" Guid="*">
+                <File Id="Doc_html_index.html" Name="index.html" Source="!(bindpath.doc_html)index.html" />
+            </Component>
+            <Component Id="Doc_html_installing_index.html" Directory="Doc_html_installing" Guid="*">
+                <File Id="Doc_html_installing_index.html" Name="index.html" Source="!(bindpath.doc_html)installing\index.html" />
+            </Component>
+            <Component Id="Doc_html_library_abc.html" Directory="Doc_html_library" Guid="*">
+                <File Id="Doc_html_library_abc.html" Name="abc.html" Source="!(bindpath.doc_html)library\abc.html" />
+            </Component>
+            <Component Id="Doc_html_library_aifc.html" Directory="Doc_html_library" Guid="*">
+                <File Id="Doc_html_library_aifc.html" Name="aifc.html" Source="!(bindpath.doc_html)library\aifc.html" />
+            </Component>
+            <Component Id="Doc_html_library_allos.html" Directory="Doc_html_library" Guid="*">
+                <File Id="Doc_html_library_allos.html" Name="allos.html" Source="!(bindpath.doc_html)library\allos.html" />
+            </Component>
+            <Component Id="Doc_html_library_annotationlib.html" Directory="Doc_html_library" Guid="*">
+                <File Id="Doc_html_library_annotationlib.html" Name="annotationlib.html" Source="!(bindpath.doc_html)library\annotationlib.html" />
+            </Component>
+            <Component Id="Doc_html_library_archiving.html" Directory="Doc_html_library" Guid="*">
+                <File Id="Doc_html_library_archiving.html" Name="archiving.html" Source="!(bindpath.doc_html)library\archiving.html" />
+            </Component>
+            <Component Id="Doc_html_library_argparse.html" Directory="Doc_html_library" Guid="*">
+                <File Id="Doc_html_library_argparse.html" Name="argparse.html" Source="!(bindpath.doc_html)library\argparse.html" />
+            </Component>
+            <Component Id="Doc_html_library_array.html" Directory="Doc_html_library" Guid="*">
+                <File Id="Doc_html_library_array.html" Name="array.html" Source="!(bindpath.doc_html)library\array.html" />
+            </Component>
+            <Component Id="Doc_html_library_ast.html" Directory="Doc_html_library" Guid="*">
+                <File Id="Doc_html_library_ast.html" Name="ast.html" Source="!(bindpath.doc_html)library\ast.html" />
+            </Component>
+            <Component Id="Doc_html_library_asynchat.html" Directory="Doc_html_library" Guid="*">
+                <File Id="Doc_html_library_asynchat.html" Name="asynchat.html" Source="!(bindpath.doc_html)library\asynchat.html" />
+            </Component>
+            <Component Id="Doc_html_library_asyncio_api_index.html" Directory="Doc_html_library" Guid="*">
+                <File Id="Doc_html_library_asyncio_api_index.html" Name="asyncio-api-index.html" Source="!(bindpath.doc_html)library\asyncio-api-index.html" />
+            </Component>
+            <Component Id="Doc_html_library_asyncio_dev.html" Directory="Doc_html_library" Guid="*">
+                <File Id="Doc_html_library_asyncio_dev.html" Name="asyncio-dev.html" Source="!(bindpath.doc_html)library\asyncio-dev.html" />
+            </Component>
+            <Component Id="Doc_html_library_asyncio_eventloop.html" Directory="Doc_html_library" Guid="*">
+                <File Id="Doc_html_library_asyncio_eventloop.html" Name="asyncio-eventloop.html" Source="!(bindpath.doc_html)library\asyncio-eventloop.html" />
+            </Component>
+            <Component Id="Doc_html_library_asyncio_exceptions.html" Directory="Doc_html_library" Guid="*">
+                <File Id="Doc_html_library_asyncio_exceptions.html" Name="asyncio-exceptions.html" Source="!(bindpath.doc_html)library\asyncio-exceptions.html" />
+            </Component>
+            <Component Id="Doc_html_library_asyncio_extending.html" Directory="Doc_html_library" Guid="*">
+                <File Id="Doc_html_library_asyncio_extending.html" Name="asyncio-extending.html" Source="!(bindpath.doc_html)library\asyncio-extending.html" />
+            </Component>
+            <Component Id="Doc_html_library_asyncio_future.html" Directory="Doc_html_library" Guid="*">
+                <File Id="Doc_html_library_asyncio_future.html" Name="asyncio-future.html" Source="!(bindpath.doc_html)library\asyncio-future.html" />
+            </Component>
+            <Component Id="Doc_html_library_asyncio_graph.html" Directory="Doc_html_library" Guid="*">
+                <File Id="Doc_html_library_asyncio_graph.html" Name="asyncio-graph.html" Source="!(bindpath.doc_html)library\asyncio-graph.html" />
+            </Component>
+            <Component Id="Doc_html_library_asyncio_llapi_index.html" Directory="Doc_html_library" Guid="*">
+                <File Id="Doc_html_library_asyncio_llapi_index.html" Name="asyncio-llapi-index.html" Source="!(bindpath.doc_html)library\asyncio-llapi-index.html" />
+            </Component>
+            <Component Id="Doc_html_library_asyncio_platforms.html" Directory="Doc_html_library" Guid="*">
+                <File Id="Doc_html_library_asyncio_platforms.html" Name="asyncio-platforms.html" Source="!(bindpath.doc_html)library\asyncio-platforms.html" />
+            </Component>
+            <Component Id="Doc_html_library_asyncio_policy.html" Directory="Doc_html_library" Guid="*">
+                <File Id="Doc_html_library_asyncio_policy.html" Name="asyncio-policy.html" Source="!(bindpath.doc_html)library\asyncio-policy.html" />
+            </Component>
+            <Component Id="Doc_html_library_asyncio_protocol.html" Directory="Doc_html_library" Guid="*">
+                <File Id="Doc_html_library_asyncio_protocol.html" Name="asyncio-protocol.html" Source="!(bindpath.doc_html)library\asyncio-protocol.html" />
+            </Component>
+            <Component Id="Doc_html_library_asyncio_queue.html" Directory="Doc_html_library" Guid="*">
+                <File Id="Doc_html_library_asyncio_queue.html" Name="asyncio-queue.html" Source="!(bindpath.doc_html)library\asyncio-queue.html" />
+            </Component>
+            <Component Id="Doc_html_library_asyncio_runner.html" Directory="Doc_html_library" Guid="*">
+                <File Id="Doc_html_library_asyncio_runner.html" Name="asyncio-runner.html" Source="!(bindpath.doc_html)library\asyncio-runner.html" />
+            </Component>
+            <Component Id="Doc_html_library_asyncio_stream.html" Directory="Doc_html_library" Guid="*">
+                <File Id="Doc_html_library_asyncio_stream.html" Name="asyncio-stream.html" Source="!(bindpath.doc_html)library\asyncio-stream.html" />
+            </Component>
+            <Component Id="Doc_html_library_asyncio_subprocess.html" Directory="Doc_html_library" Guid="*">
+                <File Id="Doc_html_library_asyncio_subprocess.html" Name="asyncio-subprocess.html" Source="!(bindpath.doc_html)library\asyncio-subprocess.html" />
+            </Component>
+            <Component Id="Doc_html_library_asyncio_sync.html" Directory="Doc_html_library" Guid="*">
+                <File Id="Doc_html_library_asyncio_sync.html" Name="asyncio-sync.html" Source="!(bindpath.doc_html)library\asyncio-sync.html" />
+            </Component>
+            <Component Id="Doc_html_library_asyncio_task.html" Directory="Doc_html_library" Guid="*">
+                <File Id="Doc_html_library_asyncio_task.html" Name="asyncio-task.html" Source="!(bindpath.doc_html)library\asyncio-task.html" />
+            </Component>
+            <Component Id="Doc_html_library_asyncio.html" Directory="Doc_html_library" Guid="*">
+                <File Id="Doc_html_library_asyncio.html" Name="asyncio.html" Source="!(bindpath.doc_html)library\asyncio.html" />
+            </Component>
+            <Component Id="Doc_html_library_asyncore.html" Directory="Doc_html_library" Guid="*">
+                <File Id="Doc_html_library_asyncore.html" Name="asyncore.html" Source="!(bindpath.doc_html)library\asyncore.html" />
+            </Component>
+            <Component Id="Doc_html_library_atexit.html" Directory="Doc_html_library" Guid="*">
+                <File Id="Doc_html_library_atexit.html" Name="atexit.html" Source="!(bindpath.doc_html)library\atexit.html" />
+            </Component>
+            <Component Id="Doc_html_library_audioop.html" Directory="Doc_html_library" Guid="*">
+                <File Id="Doc_html_library_audioop.html" Name="audioop.html" Source="!(bindpath.doc_html)library\audioop.html" />
+            </Component>
+            <Component Id="Doc_html_library_audit_events.html" Directory="Doc_html_library" Guid="*">
+                <File Id="Doc_html_library_audit_events.html" Name="audit_events.html" Source="!(bindpath.doc_html)library\audit_events.html" />
+            </Component>
+            <Component Id="Doc_html_library_base64.html" Directory="Doc_html_library" Guid="*">
+                <File Id="Doc_html_library_base64.html" Name="base64.html" Source="!(bindpath.doc_html)library\base64.html" />
+            </Component>
+            <Component Id="Doc_html_library_bdb.html" Directory="Doc_html_library" Guid="*">
+                <File Id="Doc_html_library_bdb.html" Name="bdb.html" Source="!(bindpath.doc_html)library\bdb.html" />
+            </Component>
+            <Component Id="Doc_html_library_binary.html" Directory="Doc_html_library" Guid="*">
+                <File Id="Doc_html_library_binary.html" Name="binary.html" Source="!(bindpath.doc_html)library\binary.html" />
+            </Component>
+            <Component Id="Doc_html_library_binascii.html" Directory="Doc_html_library" Guid="*">
+                <File Id="Doc_html_library_binascii.html" Name="binascii.html" Source="!(bindpath.doc_html)library\binascii.html" />
+            </Component>
+            <Component Id="Doc_html_library_bisect.html" Directory="Doc_html_library" Guid="*">
+                <File Id="Doc_html_library_bisect.html" Name="bisect.html" Source="!(bindpath.doc_html)library\bisect.html" />
+            </Component>
+            <Component Id="Doc_html_library_builtins.html" Directory="Doc_html_library" Guid="*">
+                <File Id="Doc_html_library_builtins.html" Name="builtins.html" Source="!(bindpath.doc_html)library\builtins.html" />
+            </Component>
+            <Component Id="Doc_html_library_bz2.html" Directory="Doc_html_library" Guid="*">
+                <File Id="Doc_html_library_bz2.html" Name="bz2.html" Source="!(bindpath.doc_html)library\bz2.html" />
+            </Component>
+            <Component Id="Doc_html_library_calendar.html" Directory="Doc_html_library" Guid="*">
+                <File Id="Doc_html_library_calendar.html" Name="calendar.html" Source="!(bindpath.doc_html)library\calendar.html" />
+            </Component>
+            <Component Id="Doc_html_library_cgi.html" Directory="Doc_html_library" Guid="*">
+                <File Id="Doc_html_library_cgi.html" Name="cgi.html" Source="!(bindpath.doc_html)library\cgi.html" />
+            </Component>
+            <Component Id="Doc_html_library_cgitb.html" Directory="Doc_html_library" Guid="*">
+                <File Id="Doc_html_library_cgitb.html" Name="cgitb.html" Source="!(bindpath.doc_html)library\cgitb.html" />
+            </Component>
+            <Component Id="Doc_html_library_chunk.html" Directory="Doc_html_library" Guid="*">
+                <File Id="Doc_html_library_chunk.html" Name="chunk.html" Source="!(bindpath.doc_html)library\chunk.html" />
+            </Component>
+            <Component Id="Doc_html_library_cmath.html" Directory="Doc_html_library" Guid="*">
+                <File Id="Doc_html_library_cmath.html" Name="cmath.html" Source="!(bindpath.doc_html)library\cmath.html" />
+            </Component>
+            <Component Id="Doc_html_library_cmd.html" Directory="Doc_html_library" Guid="*">
+                <File Id="Doc_html_library_cmd.html" Name="cmd.html" Source="!(bindpath.doc_html)library\cmd.html" />
+            </Component>
+            <Component Id="Doc_html_library_cmdline.html" Directory="Doc_html_library" Guid="*">
+                <File Id="Doc_html_library_cmdline.html" Name="cmdline.html" Source="!(bindpath.doc_html)library\cmdline.html" />
+            </Component>
+            <Component Id="Doc_html_library_cmdlinelibs.html" Directory="Doc_html_library" Guid="*">
+                <File Id="Doc_html_library_cmdlinelibs.html" Name="cmdlinelibs.html" Source="!(bindpath.doc_html)library\cmdlinelibs.html" />
+            </Component>
+            <Component Id="Doc_html_library_code.html" Directory="Doc_html_library" Guid="*">
+                <File Id="Doc_html_library_code.html" Name="code.html" Source="!(bindpath.doc_html)library\code.html" />
+            </Component>
+            <Component Id="Doc_html_library_codecs.html" Directory="Doc_html_library" Guid="*">
+                <File Id="Doc_html_library_codecs.html" Name="codecs.html" Source="!(bindpath.doc_html)library\codecs.html" />
+            </Component>
+            <Component Id="Doc_html_library_codeop.html" Directory="Doc_html_library" Guid="*">
+                <File Id="Doc_html_library_codeop.html" Name="codeop.html" Source="!(bindpath.doc_html)library\codeop.html" />
+            </Component>
+            <Component Id="Doc_html_library_collections.abc.html" Directory="Doc_html_library" Guid="*">
+                <File Id="Doc_html_library_collections.abc.html" Name="collections.abc.html" Source="!(bindpath.doc_html)library\collections.abc.html" />
+            </Component>
+            <Component Id="Doc_html_library_collections.html" Directory="Doc_html_library" Guid="*">
+                <File Id="Doc_html_library_collections.html" Name="collections.html" Source="!(bindpath.doc_html)library\collections.html" />
+            </Component>
+            <Component Id="Doc_html_library_colorsys.html" Directory="Doc_html_library" Guid="*">
+                <File Id="Doc_html_library_colorsys.html" Name="colorsys.html" Source="!(bindpath.doc_html)library\colorsys.html" />
+            </Component>
+            <Component Id="Doc_html_library_compileall.html" Directory="Doc_html_library" Guid="*">
+                <File Id="Doc_html_library_compileall.html" Name="compileall.html" Source="!(bindpath.doc_html)library\compileall.html" />
+            </Component>
+            <Component Id="Doc_html_library_compression.html" Directory="Doc_html_library" Guid="*">
+                <File Id="Doc_html_library_compression.html" Name="compression.html" Source="!(bindpath.doc_html)library\compression.html" />
+            </Component>
+            <Component Id="Doc_html_library_compression.zstd.html" Directory="Doc_html_library" Guid="*">
+                <File Id="Doc_html_library_compression.zstd.html" Name="compression.zstd.html" Source="!(bindpath.doc_html)library\compression.zstd.html" />
+            </Component>
+            <Component Id="Doc_html_library_concurrency.html" Directory="Doc_html_library" Guid="*">
+                <File Id="Doc_html_library_concurrency.html" Name="concurrency.html" Source="!(bindpath.doc_html)library\concurrency.html" />
+            </Component>
+            <Component Id="Doc_html_library_concurrent.futures.html" Directory="Doc_html_library" Guid="*">
+                <File Id="Doc_html_library_concurrent.futures.html" Name="concurrent.futures.html" Source="!(bindpath.doc_html)library\concurrent.futures.html" />
+            </Component>
+            <Component Id="Doc_html_library_concurrent.html" Directory="Doc_html_library" Guid="*">
+                <File Id="Doc_html_library_concurrent.html" Name="concurrent.html" Source="!(bindpath.doc_html)library\concurrent.html" />
+            </Component>
+            <Component Id="Doc_html_library_concurrent.interpreters.html" Directory="Doc_html_library" Guid="*">
+                <File Id="Doc_html_library_concurrent.interpreters.html" Name="concurrent.interpreters.html" Source="!(bindpath.doc_html)library\concurrent.interpreters.html" />
+            </Component>
+            <Component Id="Doc_html_library_configparser.html" Directory="Doc_html_library" Guid="*">
+                <File Id="Doc_html_library_configparser.html" Name="configparser.html" Source="!(bindpath.doc_html)library\configparser.html" />
+            </Component>
+            <Component Id="Doc_html_library_constants.html" Directory="Doc_html_library" Guid="*">
+                <File Id="Doc_html_library_constants.html" Name="constants.html" Source="!(bindpath.doc_html)library\constants.html" />
+            </Component>
+            <Component Id="Doc_html_library_contextlib.html" Directory="Doc_html_library" Guid="*">
+                <File Id="Doc_html_library_contextlib.html" Name="contextlib.html" Source="!(bindpath.doc_html)library\contextlib.html" />
+            </Component>
+            <Component Id="Doc_html_library_contextvars.html" Directory="Doc_html_library" Guid="*">
+                <File Id="Doc_html_library_contextvars.html" Name="contextvars.html" Source="!(bindpath.doc_html)library\contextvars.html" />
+            </Component>
+            <Component Id="Doc_html_library_copy.html" Directory="Doc_html_library" Guid="*">
+                <File Id="Doc_html_library_copy.html" Name="copy.html" Source="!(bindpath.doc_html)library\copy.html" />
+            </Component>
+            <Component Id="Doc_html_library_copyreg.html" Directory="Doc_html_library" Guid="*">
+                <File Id="Doc_html_library_copyreg.html" Name="copyreg.html" Source="!(bindpath.doc_html)library\copyreg.html" />
+            </Component>
+            <Component Id="Doc_html_library_crypt.html" Directory="Doc_html_library" Guid="*">
+                <File Id="Doc_html_library_crypt.html" Name="crypt.html" Source="!(bindpath.doc_html)library\crypt.html" />
+            </Component>
+            <Component Id="Doc_html_library_crypto.html" Directory="Doc_html_library" Guid="*">
+                <File Id="Doc_html_library_crypto.html" Name="crypto.html" Source="!(bindpath.doc_html)library\crypto.html" />
+            </Component>
+            <Component Id="Doc_html_library_csv.html" Directory="Doc_html_library" Guid="*">
+                <File Id="Doc_html_library_csv.html" Name="csv.html" Source="!(bindpath.doc_html)library\csv.html" />
+            </Component>
+            <Component Id="Doc_html_library_ctypes.html" Directory="Doc_html_library" Guid="*">
+                <File Id="Doc_html_library_ctypes.html" Name="ctypes.html" Source="!(bindpath.doc_html)library\ctypes.html" />
+            </Component>
+            <Component Id="Doc_html_library_curses.ascii.html" Directory="Doc_html_library" Guid="*">
+                <File Id="Doc_html_library_curses.ascii.html" Name="curses.ascii.html" Source="!(bindpath.doc_html)library\curses.ascii.html" />
+            </Component>
+            <Component Id="Doc_html_library_curses.html" Directory="Doc_html_library" Guid="*">
+                <File Id="Doc_html_library_curses.html" Name="curses.html" Source="!(bindpath.doc_html)library\curses.html" />
+            </Component>
+            <Component Id="Doc_html_library_curses.panel.html" Directory="Doc_html_library" Guid="*">
+                <File Id="Doc_html_library_curses.panel.html" Name="curses.panel.html" Source="!(bindpath.doc_html)library\curses.panel.html" />
+            </Component>
+            <Component Id="Doc_html_library_custominterp.html" Directory="Doc_html_library" Guid="*">
+                <File Id="Doc_html_library_custominterp.html" Name="custominterp.html" Source="!(bindpath.doc_html)library\custominterp.html" />
+            </Component>
+            <Component Id="Doc_html_library_dataclasses.html" Directory="Doc_html_library" Guid="*">
+                <File Id="Doc_html_library_dataclasses.html" Name="dataclasses.html" Source="!(bindpath.doc_html)library\dataclasses.html" />
+            </Component>
+            <Component Id="Doc_html_library_datatypes.html" Directory="Doc_html_library" Guid="*">
+                <File Id="Doc_html_library_datatypes.html" Name="datatypes.html" Source="!(bindpath.doc_html)library\datatypes.html" />
+            </Component>
+            <Component Id="Doc_html_library_datetime.html" Directory="Doc_html_library" Guid="*">
+                <File Id="Doc_html_library_datetime.html" Name="datetime.html" Source="!(bindpath.doc_html)library\datetime.html" />
+            </Component>
+            <Component Id="Doc_html_library_dbm.html" Directory="Doc_html_library" Guid="*">
+                <File Id="Doc_html_library_dbm.html" Name="dbm.html" Source="!(bindpath.doc_html)library\dbm.html" />
+            </Component>
+            <Component Id="Doc_html_library_debug.html" Directory="Doc_html_library" Guid="*">
+                <File Id="Doc_html_library_debug.html" Name="debug.html" Source="!(bindpath.doc_html)library\debug.html" />
+            </Component>
+            <Component Id="Doc_html_library_decimal.html" Directory="Doc_html_library" Guid="*">
+                <File Id="Doc_html_library_decimal.html" Name="decimal.html" Source="!(bindpath.doc_html)library\decimal.html" />
+            </Component>
+            <Component Id="Doc_html_library_development.html" Directory="Doc_html_library" Guid="*">
+                <File Id="Doc_html_library_development.html" Name="development.html" Source="!(bindpath.doc_html)library\development.html" />
+            </Component>
+            <Component Id="Doc_html_library_devmode.html" Directory="Doc_html_library" Guid="*">
+                <File Id="Doc_html_library_devmode.html" Name="devmode.html" Source="!(bindpath.doc_html)library\devmode.html" />
+            </Component>
+            <Component Id="Doc_html_library_dialog.html" Directory="Doc_html_library" Guid="*">
+                <File Id="Doc_html_library_dialog.html" Name="dialog.html" Source="!(bindpath.doc_html)library\dialog.html" />
+            </Component>
+            <Component Id="Doc_html_library_difflib.html" Directory="Doc_html_library" Guid="*">
+                <File Id="Doc_html_library_difflib.html" Name="difflib.html" Source="!(bindpath.doc_html)library\difflib.html" />
+            </Component>
+            <Component Id="Doc_html_library_dis.html" Directory="Doc_html_library" Guid="*">
+                <File Id="Doc_html_library_dis.html" Name="dis.html" Source="!(bindpath.doc_html)library\dis.html" />
+            </Component>
+            <Component Id="Doc_html_library_distribution.html" Directory="Doc_html_library" Guid="*">
+                <File Id="Doc_html_library_distribution.html" Name="distribution.html" Source="!(bindpath.doc_html)library\distribution.html" />
+            </Component>
+            <Component Id="Doc_html_library_distutils.html" Directory="Doc_html_library" Guid="*">
+                <File Id="Doc_html_library_distutils.html" Name="distutils.html" Source="!(bindpath.doc_html)library\distutils.html" />
+            </Component>
+            <Component Id="Doc_html_library_doctest.html" Directory="Doc_html_library" Guid="*">
+                <File Id="Doc_html_library_doctest.html" Name="doctest.html" Source="!(bindpath.doc_html)library\doctest.html" />
+            </Component>
+            <Component Id="Doc_html_library_email.charset.html" Directory="Doc_html_library" Guid="*">
+                <File Id="Doc_html_library_email.charset.html" Name="email.charset.html" Source="!(bindpath.doc_html)library\email.charset.html" />
+            </Component>
+            <Component Id="Doc_html_library_email.compat32_message.html" Directory="Doc_html_library" Guid="*">
+                <File Id="Doc_html_library_email.compat32_message.html" Name="email.compat32-message.html" Source="!(bindpath.doc_html)library\email.compat32-message.html" />
+            </Component>
+            <Component Id="Doc_html_library_email.contentmanager.html" Directory="Doc_html_library" Guid="*">
+                <File Id="Doc_html_library_email.contentmanager.html" Name="email.contentmanager.html" Source="!(bindpath.doc_html)library\email.contentmanager.html" />
+            </Component>
+            <Component Id="Doc_html_library_email.encoders.html" Directory="Doc_html_library" Guid="*">
+                <File Id="Doc_html_library_email.encoders.html" Name="email.encoders.html" Source="!(bindpath.doc_html)library\email.encoders.html" />
+            </Component>
+            <Component Id="Doc_html_library_email.errors.html" Directory="Doc_html_library" Guid="*">
+                <File Id="Doc_html_library_email.errors.html" Name="email.errors.html" Source="!(bindpath.doc_html)library\email.errors.html" />
+            </Component>
+            <Component Id="Doc_html_library_email.examples.html" Directory="Doc_html_library" Guid="*">
+                <File Id="Doc_html_library_email.examples.html" Name="email.examples.html" Source="!(bindpath.doc_html)library\email.examples.html" />
+            </Component>
+            <Component Id="Doc_html_library_email.generator.html" Directory="Doc_html_library" Guid="*">
+                <File Id="Doc_html_library_email.generator.html" Name="email.generator.html" Source="!(bindpath.doc_html)library\email.generator.html" />
+            </Component>
+            <Component Id="Doc_html_library_email.header.html" Directory="Doc_html_library" Guid="*">
+                <File Id="Doc_html_library_email.header.html" Name="email.header.html" Source="!(bindpath.doc_html)library\email.header.html" />
+            </Component>
+            <Component Id="Doc_html_library_email.headerregistry.html" Directory="Doc_html_library" Guid="*">
+                <File Id="Doc_html_library_email.headerregistry.html" Name="email.headerregistry.html" Source="!(bindpath.doc_html)library\email.headerregistry.html" />
+            </Component>
+            <Component Id="Doc_html_library_email.html" Directory="Doc_html_library" Guid="*">
+                <File Id="Doc_html_library_email.html" Name="email.html" Source="!(bindpath.doc_html)library\email.html" />
+            </Component>
+            <Component Id="Doc_html_library_email.iterators.html" Directory="Doc_html_library" Guid="*">
+                <File Id="Doc_html_library_email.iterators.html" Name="email.iterators.html" Source="!(bindpath.doc_html)library\email.iterators.html" />
+            </Component>
+            <Component Id="Doc_html_library_email.message.html" Directory="Doc_html_library" Guid="*">
+                <File Id="Doc_html_library_email.message.html" Name="email.message.html" Source="!(bindpath.doc_html)library\email.message.html" />
+            </Component>
+            <Component Id="Doc_html_library_email.mime.html" Directory="Doc_html_library" Guid="*">
+                <File Id="Doc_html_library_email.mime.html" Name="email.mime.html" Source="!(bindpath.doc_html)library\email.mime.html" />
+            </Component>
+            <Component Id="Doc_html_library_email.parser.html" Directory="Doc_html_library" Guid="*">
+                <File Id="Doc_html_library_email.parser.html" Name="email.parser.html" Source="!(bindpath.doc_html)library\email.parser.html" />
+            </Component>
+            <Component Id="Doc_html_library_email.policy.html" Directory="Doc_html_library" Guid="*">
+                <File Id="Doc_html_library_email.policy.html" Name="email.policy.html" Source="!(bindpath.doc_html)library\email.policy.html" />
+            </Component>
+            <Component Id="Doc_html_library_email.utils.html" Directory="Doc_html_library" Guid="*">
+                <File Id="Doc_html_library_email.utils.html" Name="email.utils.html" Source="!(bindpath.doc_html)library\email.utils.html" />
+            </Component>
+            <Component Id="Doc_html_library_ensurepip.html" Directory="Doc_html_library" Guid="*">
+                <File Id="Doc_html_library_ensurepip.html" Name="ensurepip.html" Source="!(bindpath.doc_html)library\ensurepip.html" />
+            </Component>
+            <Component Id="Doc_html_library_enum.html" Directory="Doc_html_library" Guid="*">
+                <File Id="Doc_html_library_enum.html" Name="enum.html" Source="!(bindpath.doc_html)library\enum.html" />
+            </Component>
+            <Component Id="Doc_html_library_errno.html" Directory="Doc_html_library" Guid="*">
+                <File Id="Doc_html_library_errno.html" Name="errno.html" Source="!(bindpath.doc_html)library\errno.html" />
+            </Component>
+            <Component Id="Doc_html_library_exceptions.html" Directory="Doc_html_library" Guid="*">
+                <File Id="Doc_html_library_exceptions.html" Name="exceptions.html" Source="!(bindpath.doc_html)library\exceptions.html" />
+            </Component>
+            <Component Id="Doc_html_library_faulthandler.html" Directory="Doc_html_library" Guid="*">
+                <File Id="Doc_html_library_faulthandler.html" Name="faulthandler.html" Source="!(bindpath.doc_html)library\faulthandler.html" />
+            </Component>
+            <Component Id="Doc_html_library_fcntl.html" Directory="Doc_html_library" Guid="*">
+                <File Id="Doc_html_library_fcntl.html" Name="fcntl.html" Source="!(bindpath.doc_html)library\fcntl.html" />
+            </Component>
+            <Component Id="Doc_html_library_filecmp.html" Directory="Doc_html_library" Guid="*">
+                <File Id="Doc_html_library_filecmp.html" Name="filecmp.html" Source="!(bindpath.doc_html)library\filecmp.html" />
+            </Component>
+            <Component Id="Doc_html_library_fileformats.html" Directory="Doc_html_library" Guid="*">
+                <File Id="Doc_html_library_fileformats.html" Name="fileformats.html" Source="!(bindpath.doc_html)library\fileformats.html" />
+            </Component>
+            <Component Id="Doc_html_library_fileinput.html" Directory="Doc_html_library" Guid="*">
+                <File Id="Doc_html_library_fileinput.html" Name="fileinput.html" Source="!(bindpath.doc_html)library\fileinput.html" />
+            </Component>
+            <Component Id="Doc_html_library_filesys.html" Directory="Doc_html_library" Guid="*">
+                <File Id="Doc_html_library_filesys.html" Name="filesys.html" Source="!(bindpath.doc_html)library\filesys.html" />
+            </Component>
+            <Component Id="Doc_html_library_fnmatch.html" Directory="Doc_html_library" Guid="*">
+                <File Id="Doc_html_library_fnmatch.html" Name="fnmatch.html" Source="!(bindpath.doc_html)library\fnmatch.html" />
+            </Component>
+            <Component Id="Doc_html_library_fractions.html" Directory="Doc_html_library" Guid="*">
+                <File Id="Doc_html_library_fractions.html" Name="fractions.html" Source="!(bindpath.doc_html)library\fractions.html" />
+            </Component>
+            <Component Id="Doc_html_library_frameworks.html" Directory="Doc_html_library" Guid="*">
+                <File Id="Doc_html_library_frameworks.html" Name="frameworks.html" Source="!(bindpath.doc_html)library\frameworks.html" />
+            </Component>
+            <Component Id="Doc_html_library_ftplib.html" Directory="Doc_html_library" Guid="*">
+                <File Id="Doc_html_library_ftplib.html" Name="ftplib.html" Source="!(bindpath.doc_html)library\ftplib.html" />
+            </Component>
+            <Component Id="Doc_html_library_functional.html" Directory="Doc_html_library" Guid="*">
+                <File Id="Doc_html_library_functional.html" Name="functional.html" Source="!(bindpath.doc_html)library\functional.html" />
+            </Component>
+            <Component Id="Doc_html_library_functions.html" Directory="Doc_html_library" Guid="*">
+                <File Id="Doc_html_library_functions.html" Name="functions.html" Source="!(bindpath.doc_html)library\functions.html" />
+            </Component>
+            <Component Id="Doc_html_library_functools.html" Directory="Doc_html_library" Guid="*">
+                <File Id="Doc_html_library_functools.html" Name="functools.html" Source="!(bindpath.doc_html)library\functools.html" />
+            </Component>
+            <Component Id="Doc_html_library_gc.html" Directory="Doc_html_library" Guid="*">
+                <File Id="Doc_html_library_gc.html" Name="gc.html" Source="!(bindpath.doc_html)library\gc.html" />
+            </Component>
+            <Component Id="Doc_html_library_getopt.html" Directory="Doc_html_library" Guid="*">
+                <File Id="Doc_html_library_getopt.html" Name="getopt.html" Source="!(bindpath.doc_html)library\getopt.html" />
+            </Component>
+            <Component Id="Doc_html_library_getpass.html" Directory="Doc_html_library" Guid="*">
+                <File Id="Doc_html_library_getpass.html" Name="getpass.html" Source="!(bindpath.doc_html)library\getpass.html" />
+            </Component>
+            <Component Id="Doc_html_library_gettext.html" Directory="Doc_html_library" Guid="*">
+                <File Id="Doc_html_library_gettext.html" Name="gettext.html" Source="!(bindpath.doc_html)library\gettext.html" />
+            </Component>
+            <Component Id="Doc_html_library_glob.html" Directory="Doc_html_library" Guid="*">
+                <File Id="Doc_html_library_glob.html" Name="glob.html" Source="!(bindpath.doc_html)library\glob.html" />
+            </Component>
+            <Component Id="Doc_html_library_graphlib.html" Directory="Doc_html_library" Guid="*">
+                <File Id="Doc_html_library_graphlib.html" Name="graphlib.html" Source="!(bindpath.doc_html)library\graphlib.html" />
+            </Component>
+            <Component Id="Doc_html_library_grp.html" Directory="Doc_html_library" Guid="*">
+                <File Id="Doc_html_library_grp.html" Name="grp.html" Source="!(bindpath.doc_html)library\grp.html" />
+            </Component>
+            <Component Id="Doc_html_library_gzip.html" Directory="Doc_html_library" Guid="*">
+                <File Id="Doc_html_library_gzip.html" Name="gzip.html" Source="!(bindpath.doc_html)library\gzip.html" />
+            </Component>
+            <Component Id="Doc_html_library_hashlib.html" Directory="Doc_html_library" Guid="*">
+                <File Id="Doc_html_library_hashlib.html" Name="hashlib.html" Source="!(bindpath.doc_html)library\hashlib.html" />
+            </Component>
+            <Component Id="Doc_html_library_heapq.html" Directory="Doc_html_library" Guid="*">
+                <File Id="Doc_html_library_heapq.html" Name="heapq.html" Source="!(bindpath.doc_html)library\heapq.html" />
+            </Component>
+            <Component Id="Doc_html_library_hmac.html" Directory="Doc_html_library" Guid="*">
+                <File Id="Doc_html_library_hmac.html" Name="hmac.html" Source="!(bindpath.doc_html)library\hmac.html" />
+            </Component>
+            <Component Id="Doc_html_library_html.entities.html" Directory="Doc_html_library" Guid="*">
+                <File Id="Doc_html_library_html.entities.html" Name="html.entities.html" Source="!(bindpath.doc_html)library\html.entities.html" />
+            </Component>
+            <Component Id="Doc_html_library_html.html" Directory="Doc_html_library" Guid="*">
+                <File Id="Doc_html_library_html.html" Name="html.html" Source="!(bindpath.doc_html)library\html.html" />
+            </Component>
+            <Component Id="Doc_html_library_html.parser.html" Directory="Doc_html_library" Guid="*">
+                <File Id="Doc_html_library_html.parser.html" Name="html.parser.html" Source="!(bindpath.doc_html)library\html.parser.html" />
+            </Component>
+            <Component Id="Doc_html_library_http.client.html" Directory="Doc_html_library" Guid="*">
+                <File Id="Doc_html_library_http.client.html" Name="http.client.html" Source="!(bindpath.doc_html)library\http.client.html" />
+            </Component>
+            <Component Id="Doc_html_library_http.cookiejar.html" Directory="Doc_html_library" Guid="*">
+                <File Id="Doc_html_library_http.cookiejar.html" Name="http.cookiejar.html" Source="!(bindpath.doc_html)library\http.cookiejar.html" />
+            </Component>
+            <Component Id="Doc_html_library_http.cookies.html" Directory="Doc_html_library" Guid="*">
+                <File Id="Doc_html_library_http.cookies.html" Name="http.cookies.html" Source="!(bindpath.doc_html)library\http.cookies.html" />
+            </Component>
+            <Component Id="Doc_html_library_http.html" Directory="Doc_html_library" Guid="*">
+                <File Id="Doc_html_library_http.html" Name="http.html" Source="!(bindpath.doc_html)library\http.html" />
+            </Component>
+            <Component Id="Doc_html_library_http.server.html" Directory="Doc_html_library" Guid="*">
+                <File Id="Doc_html_library_http.server.html" Name="http.server.html" Source="!(bindpath.doc_html)library\http.server.html" />
+            </Component>
+            <Component Id="Doc_html_library_i18n.html" Directory="Doc_html_library" Guid="*">
+                <File Id="Doc_html_library_i18n.html" Name="i18n.html" Source="!(bindpath.doc_html)library\i18n.html" />
+            </Component>
+            <Component Id="Doc_html_library_idle.html" Directory="Doc_html_library" Guid="*">
+                <File Id="Doc_html_library_idle.html" Name="idle.html" Source="!(bindpath.doc_html)library\idle.html" />
+            </Component>
+            <Component Id="Doc_html_library_imaplib.html" Directory="Doc_html_library" Guid="*">
+                <File Id="Doc_html_library_imaplib.html" Name="imaplib.html" Source="!(bindpath.doc_html)library\imaplib.html" />
+            </Component>
+            <Component Id="Doc_html_library_imghdr.html" Directory="Doc_html_library" Guid="*">
+                <File Id="Doc_html_library_imghdr.html" Name="imghdr.html" Source="!(bindpath.doc_html)library\imghdr.html" />
+            </Component>
+            <Component Id="Doc_html_library_imp.html" Directory="Doc_html_library" Guid="*">
+                <File Id="Doc_html_library_imp.html" Name="imp.html" Source="!(bindpath.doc_html)library\imp.html" />
+            </Component>
+            <Component Id="Doc_html_library_importlib.html" Directory="Doc_html_library" Guid="*">
+                <File Id="Doc_html_library_importlib.html" Name="importlib.html" Source="!(bindpath.doc_html)library\importlib.html" />
+            </Component>
+            <Component Id="Doc_html_library_importlib.metadata.html" Directory="Doc_html_library" Guid="*">
+                <File Id="Doc_html_library_importlib.metadata.html" Name="importlib.metadata.html" Source="!(bindpath.doc_html)library\importlib.metadata.html" />
+            </Component>
+            <Component Id="Doc_html_library_importlib.resources.abc.html" Directory="Doc_html_library" Guid="*">
+                <File Id="Doc_html_library_importlib.resources.abc.html" Name="importlib.resources.abc.html" Source="!(bindpath.doc_html)library\importlib.resources.abc.html" />
+            </Component>
+            <Component Id="Doc_html_library_importlib.resources.html" Directory="Doc_html_library" Guid="*">
+                <File Id="Doc_html_library_importlib.resources.html" Name="importlib.resources.html" Source="!(bindpath.doc_html)library\importlib.resources.html" />
+            </Component>
+            <Component Id="Doc_html_library_index.html" Directory="Doc_html_library" Guid="*">
+                <File Id="Doc_html_library_index.html" Name="index.html" Source="!(bindpath.doc_html)library\index.html" />
+            </Component>
+            <Component Id="Doc_html_library_inspect.html" Directory="Doc_html_library" Guid="*">
+                <File Id="Doc_html_library_inspect.html" Name="inspect.html" Source="!(bindpath.doc_html)library\inspect.html" />
+            </Component>
+            <Component Id="Doc_html_library_internet.html" Directory="Doc_html_library" Guid="*">
+                <File Id="Doc_html_library_internet.html" Name="internet.html" Source="!(bindpath.doc_html)library\internet.html" />
+            </Component>
+            <Component Id="Doc_html_library_intro.html" Directory="Doc_html_library" Guid="*">
+                <File Id="Doc_html_library_intro.html" Name="intro.html" Source="!(bindpath.doc_html)library\intro.html" />
+            </Component>
+            <Component Id="Doc_html_library_io.html" Directory="Doc_html_library" Guid="*">
+                <File Id="Doc_html_library_io.html" Name="io.html" Source="!(bindpath.doc_html)library\io.html" />
+            </Component>
+            <Component Id="Doc_html_library_ipaddress.html" Directory="Doc_html_library" Guid="*">
+                <File Id="Doc_html_library_ipaddress.html" Name="ipaddress.html" Source="!(bindpath.doc_html)library\ipaddress.html" />
+            </Component>
+            <Component Id="Doc_html_library_ipc.html" Directory="Doc_html_library" Guid="*">
+                <File Id="Doc_html_library_ipc.html" Name="ipc.html" Source="!(bindpath.doc_html)library\ipc.html" />
+            </Component>
+            <Component Id="Doc_html_library_itertools.html" Directory="Doc_html_library" Guid="*">
+                <File Id="Doc_html_library_itertools.html" Name="itertools.html" Source="!(bindpath.doc_html)library\itertools.html" />
+            </Component>
+            <Component Id="Doc_html_library_json.html" Directory="Doc_html_library" Guid="*">
+                <File Id="Doc_html_library_json.html" Name="json.html" Source="!(bindpath.doc_html)library\json.html" />
+            </Component>
+            <Component Id="Doc_html_library_keyword.html" Directory="Doc_html_library" Guid="*">
+                <File Id="Doc_html_library_keyword.html" Name="keyword.html" Source="!(bindpath.doc_html)library\keyword.html" />
+            </Component>
+            <Component Id="Doc_html_library_language.html" Directory="Doc_html_library" Guid="*">
+                <File Id="Doc_html_library_language.html" Name="language.html" Source="!(bindpath.doc_html)library\language.html" />
+            </Component>
+            <Component Id="Doc_html_library_linecache.html" Directory="Doc_html_library" Guid="*">
+                <File Id="Doc_html_library_linecache.html" Name="linecache.html" Source="!(bindpath.doc_html)library\linecache.html" />
+            </Component>
+            <Component Id="Doc_html_library_locale.html" Directory="Doc_html_library" Guid="*">
+                <File Id="Doc_html_library_locale.html" Name="locale.html" Source="!(bindpath.doc_html)library\locale.html" />
+            </Component>
+            <Component Id="Doc_html_library_logging.config.html" Directory="Doc_html_library" Guid="*">
+                <File Id="Doc_html_library_logging.config.html" Name="logging.config.html" Source="!(bindpath.doc_html)library\logging.config.html" />
+            </Component>
+            <Component Id="Doc_html_library_logging.handlers.html" Directory="Doc_html_library" Guid="*">
+                <File Id="Doc_html_library_logging.handlers.html" Name="logging.handlers.html" Source="!(bindpath.doc_html)library\logging.handlers.html" />
+            </Component>
+            <Component Id="Doc_html_library_logging.html" Directory="Doc_html_library" Guid="*">
+                <File Id="Doc_html_library_logging.html" Name="logging.html" Source="!(bindpath.doc_html)library\logging.html" />
+            </Component>
+            <Component Id="Doc_html_library_lzma.html" Directory="Doc_html_library" Guid="*">
+                <File Id="Doc_html_library_lzma.html" Name="lzma.html" Source="!(bindpath.doc_html)library\lzma.html" />
+            </Component>
+            <Component Id="Doc_html_library_mailbox.html" Directory="Doc_html_library" Guid="*">
+                <File Id="Doc_html_library_mailbox.html" Name="mailbox.html" Source="!(bindpath.doc_html)library\mailbox.html" />
+            </Component>
+            <Component Id="Doc_html_library_mailcap.html" Directory="Doc_html_library" Guid="*">
+                <File Id="Doc_html_library_mailcap.html" Name="mailcap.html" Source="!(bindpath.doc_html)library\mailcap.html" />
+            </Component>
+            <Component Id="Doc_html_library_markup.html" Directory="Doc_html_library" Guid="*">
+                <File Id="Doc_html_library_markup.html" Name="markup.html" Source="!(bindpath.doc_html)library\markup.html" />
+            </Component>
+            <Component Id="Doc_html_library_marshal.html" Directory="Doc_html_library" Guid="*">
+                <File Id="Doc_html_library_marshal.html" Name="marshal.html" Source="!(bindpath.doc_html)library\marshal.html" />
+            </Component>
+            <Component Id="Doc_html_library_math.html" Directory="Doc_html_library" Guid="*">
+                <File Id="Doc_html_library_math.html" Name="math.html" Source="!(bindpath.doc_html)library\math.html" />
+            </Component>
+            <Component Id="Doc_html_library_mimetypes.html" Directory="Doc_html_library" Guid="*">
+                <File Id="Doc_html_library_mimetypes.html" Name="mimetypes.html" Source="!(bindpath.doc_html)library\mimetypes.html" />
+            </Component>
+            <Component Id="Doc_html_library_mm.html" Directory="Doc_html_library" Guid="*">
+                <File Id="Doc_html_library_mm.html" Name="mm.html" Source="!(bindpath.doc_html)library\mm.html" />
+            </Component>
+            <Component Id="Doc_html_library_mmap.html" Directory="Doc_html_library" Guid="*">
+                <File Id="Doc_html_library_mmap.html" Name="mmap.html" Source="!(bindpath.doc_html)library\mmap.html" />
+            </Component>
+            <Component Id="Doc_html_library_modulefinder.html" Directory="Doc_html_library" Guid="*">
+                <File Id="Doc_html_library_modulefinder.html" Name="modulefinder.html" Source="!(bindpath.doc_html)library\modulefinder.html" />
+            </Component>
+            <Component Id="Doc_html_library_modules.html" Directory="Doc_html_library" Guid="*">
+                <File Id="Doc_html_library_modules.html" Name="modules.html" Source="!(bindpath.doc_html)library\modules.html" />
+            </Component>
+            <Component Id="Doc_html_library_msilib.html" Directory="Doc_html_library" Guid="*">
+                <File Id="Doc_html_library_msilib.html" Name="msilib.html" Source="!(bindpath.doc_html)library\msilib.html" />
+            </Component>
+            <Component Id="Doc_html_library_msvcrt.html" Directory="Doc_html_library" Guid="*">
+                <File Id="Doc_html_library_msvcrt.html" Name="msvcrt.html" Source="!(bindpath.doc_html)library\msvcrt.html" />
+            </Component>
+            <Component Id="Doc_html_library_multiprocessing.html" Directory="Doc_html_library" Guid="*">
+                <File Id="Doc_html_library_multiprocessing.html" Name="multiprocessing.html" Source="!(bindpath.doc_html)library\multiprocessing.html" />
+            </Component>
+            <Component Id="Doc_html_library_multiprocessing.shared_memory.html" Directory="Doc_html_library" Guid="*">
+                <File Id="Doc_html_library_multiprocessing.shared_memory.html" Name="multiprocessing.shared_memory.html" Source="!(bindpath.doc_html)library\multiprocessing.shared_memory.html" />
+            </Component>
+            <Component Id="Doc_html_library_netdata.html" Directory="Doc_html_library" Guid="*">
+                <File Id="Doc_html_library_netdata.html" Name="netdata.html" Source="!(bindpath.doc_html)library\netdata.html" />
+            </Component>
+            <Component Id="Doc_html_library_netrc.html" Directory="Doc_html_library" Guid="*">
+                <File Id="Doc_html_library_netrc.html" Name="netrc.html" Source="!(bindpath.doc_html)library\netrc.html" />
+            </Component>
+            <Component Id="Doc_html_library_nis.html" Directory="Doc_html_library" Guid="*">
+                <File Id="Doc_html_library_nis.html" Name="nis.html" Source="!(bindpath.doc_html)library\nis.html" />
+            </Component>
+            <Component Id="Doc_html_library_nntplib.html" Directory="Doc_html_library" Guid="*">
+                <File Id="Doc_html_library_nntplib.html" Name="nntplib.html" Source="!(bindpath.doc_html)library\nntplib.html" />
+            </Component>
+            <Component Id="Doc_html_library_numbers.html" Directory="Doc_html_library" Guid="*">
+                <File Id="Doc_html_library_numbers.html" Name="numbers.html" Source="!(bindpath.doc_html)library\numbers.html" />
+            </Component>
+            <Component Id="Doc_html_library_numeric.html" Directory="Doc_html_library" Guid="*">
+                <File Id="Doc_html_library_numeric.html" Name="numeric.html" Source="!(bindpath.doc_html)library\numeric.html" />
+            </Component>
+            <Component Id="Doc_html_library_operator.html" Directory="Doc_html_library" Guid="*">
+                <File Id="Doc_html_library_operator.html" Name="operator.html" Source="!(bindpath.doc_html)library\operator.html" />
+            </Component>
+            <Component Id="Doc_html_library_optparse.html" Directory="Doc_html_library" Guid="*">
+                <File Id="Doc_html_library_optparse.html" Name="optparse.html" Source="!(bindpath.doc_html)library\optparse.html" />
+            </Component>
+            <Component Id="Doc_html_library_os.html" Directory="Doc_html_library" Guid="*">
+                <File Id="Doc_html_library_os.html" Name="os.html" Source="!(bindpath.doc_html)library\os.html" />
+            </Component>
+            <Component Id="Doc_html_library_os.path.html" Directory="Doc_html_library" Guid="*">
+                <File Id="Doc_html_library_os.path.html" Name="os.path.html" Source="!(bindpath.doc_html)library\os.path.html" />
+            </Component>
+            <Component Id="Doc_html_library_ossaudiodev.html" Directory="Doc_html_library" Guid="*">
+                <File Id="Doc_html_library_ossaudiodev.html" Name="ossaudiodev.html" Source="!(bindpath.doc_html)library\ossaudiodev.html" />
+            </Component>
+            <Component Id="Doc_html_library_pathlib.html" Directory="Doc_html_library" Guid="*">
+                <File Id="Doc_html_library_pathlib.html" Name="pathlib.html" Source="!(bindpath.doc_html)library\pathlib.html" />
+            </Component>
+            <Component Id="Doc_html_library_pdb.html" Directory="Doc_html_library" Guid="*">
+                <File Id="Doc_html_library_pdb.html" Name="pdb.html" Source="!(bindpath.doc_html)library\pdb.html" />
+            </Component>
+            <Component Id="Doc_html_library_persistence.html" Directory="Doc_html_library" Guid="*">
+                <File Id="Doc_html_library_persistence.html" Name="persistence.html" Source="!(bindpath.doc_html)library\persistence.html" />
+            </Component>
+            <Component Id="Doc_html_library_pickle.html" Directory="Doc_html_library" Guid="*">
+                <File Id="Doc_html_library_pickle.html" Name="pickle.html" Source="!(bindpath.doc_html)library\pickle.html" />
+            </Component>
+            <Component Id="Doc_html_library_pickletools.html" Directory="Doc_html_library" Guid="*">
+                <File Id="Doc_html_library_pickletools.html" Name="pickletools.html" Source="!(bindpath.doc_html)library\pickletools.html" />
+            </Component>
+            <Component Id="Doc_html_library_pipes.html" Directory="Doc_html_library" Guid="*">
+                <File Id="Doc_html_library_pipes.html" Name="pipes.html" Source="!(bindpath.doc_html)library\pipes.html" />
+            </Component>
+            <Component Id="Doc_html_library_pkgutil.html" Directory="Doc_html_library" Guid="*">
+                <File Id="Doc_html_library_pkgutil.html" Name="pkgutil.html" Source="!(bindpath.doc_html)library\pkgutil.html" />
+            </Component>
+            <Component Id="Doc_html_library_platform.html" Directory="Doc_html_library" Guid="*">
+                <File Id="Doc_html_library_platform.html" Name="platform.html" Source="!(bindpath.doc_html)library\platform.html" />
+            </Component>
+            <Component Id="Doc_html_library_plistlib.html" Directory="Doc_html_library" Guid="*">
+                <File Id="Doc_html_library_plistlib.html" Name="plistlib.html" Source="!(bindpath.doc_html)library\plistlib.html" />
+            </Component>
+            <Component Id="Doc_html_library_poplib.html" Directory="Doc_html_library" Guid="*">
+                <File Id="Doc_html_library_poplib.html" Name="poplib.html" Source="!(bindpath.doc_html)library\poplib.html" />
+            </Component>
+            <Component Id="Doc_html_library_posix.html" Directory="Doc_html_library" Guid="*">
+                <File Id="Doc_html_library_posix.html" Name="posix.html" Source="!(bindpath.doc_html)library\posix.html" />
+            </Component>
+            <Component Id="Doc_html_library_pprint.html" Directory="Doc_html_library" Guid="*">
+                <File Id="Doc_html_library_pprint.html" Name="pprint.html" Source="!(bindpath.doc_html)library\pprint.html" />
+            </Component>
+            <Component Id="Doc_html_library_profile.html" Directory="Doc_html_library" Guid="*">
+                <File Id="Doc_html_library_profile.html" Name="profile.html" Source="!(bindpath.doc_html)library\profile.html" />
+            </Component>
+            <Component Id="Doc_html_library_pty.html" Directory="Doc_html_library" Guid="*">
+                <File Id="Doc_html_library_pty.html" Name="pty.html" Source="!(bindpath.doc_html)library\pty.html" />
+            </Component>
+            <Component Id="Doc_html_library_pwd.html" Directory="Doc_html_library" Guid="*">
+                <File Id="Doc_html_library_pwd.html" Name="pwd.html" Source="!(bindpath.doc_html)library\pwd.html" />
+            </Component>
+            <Component Id="Doc_html_library_pyclbr.html" Directory="Doc_html_library" Guid="*">
+                <File Id="Doc_html_library_pyclbr.html" Name="pyclbr.html" Source="!(bindpath.doc_html)library\pyclbr.html" />
+            </Component>
+            <Component Id="Doc_html_library_pydoc.html" Directory="Doc_html_library" Guid="*">
+                <File Id="Doc_html_library_pydoc.html" Name="pydoc.html" Source="!(bindpath.doc_html)library\pydoc.html" />
+            </Component>
+            <Component Id="Doc_html_library_pyexpat.html" Directory="Doc_html_library" Guid="*">
+                <File Id="Doc_html_library_pyexpat.html" Name="pyexpat.html" Source="!(bindpath.doc_html)library\pyexpat.html" />
+            </Component>
+            <Component Id="Doc_html_library_python.html" Directory="Doc_html_library" Guid="*">
+                <File Id="Doc_html_library_python.html" Name="python.html" Source="!(bindpath.doc_html)library\python.html" />
+            </Component>
+            <Component Id="Doc_html_library_py_compile.html" Directory="Doc_html_library" Guid="*">
+                <File Id="Doc_html_library_py_compile.html" Name="py_compile.html" Source="!(bindpath.doc_html)library\py_compile.html" />
+            </Component>
+            <Component Id="Doc_html_library_queue.html" Directory="Doc_html_library" Guid="*">
+                <File Id="Doc_html_library_queue.html" Name="queue.html" Source="!(bindpath.doc_html)library\queue.html" />
+            </Component>
+            <Component Id="Doc_html_library_quopri.html" Directory="Doc_html_library" Guid="*">
+                <File Id="Doc_html_library_quopri.html" Name="quopri.html" Source="!(bindpath.doc_html)library\quopri.html" />
+            </Component>
+            <Component Id="Doc_html_library_random.html" Directory="Doc_html_library" Guid="*">
+                <File Id="Doc_html_library_random.html" Name="random.html" Source="!(bindpath.doc_html)library\random.html" />
+            </Component>
+            <Component Id="Doc_html_library_re.html" Directory="Doc_html_library" Guid="*">
+                <File Id="Doc_html_library_re.html" Name="re.html" Source="!(bindpath.doc_html)library\re.html" />
+            </Component>
+            <Component Id="Doc_html_library_readline.html" Directory="Doc_html_library" Guid="*">
+                <File Id="Doc_html_library_readline.html" Name="readline.html" Source="!(bindpath.doc_html)library\readline.html" />
+            </Component>
+            <Component Id="Doc_html_library_removed.html" Directory="Doc_html_library" Guid="*">
+                <File Id="Doc_html_library_removed.html" Name="removed.html" Source="!(bindpath.doc_html)library\removed.html" />
+            </Component>
+            <Component Id="Doc_html_library_reprlib.html" Directory="Doc_html_library" Guid="*">
+                <File Id="Doc_html_library_reprlib.html" Name="reprlib.html" Source="!(bindpath.doc_html)library\reprlib.html" />
+            </Component>
+            <Component Id="Doc_html_library_resource.html" Directory="Doc_html_library" Guid="*">
+                <File Id="Doc_html_library_resource.html" Name="resource.html" Source="!(bindpath.doc_html)library\resource.html" />
+            </Component>
+            <Component Id="Doc_html_library_rlcompleter.html" Directory="Doc_html_library" Guid="*">
+                <File Id="Doc_html_library_rlcompleter.html" Name="rlcompleter.html" Source="!(bindpath.doc_html)library\rlcompleter.html" />
+            </Component>
+            <Component Id="Doc_html_library_runpy.html" Directory="Doc_html_library" Guid="*">
+                <File Id="Doc_html_library_runpy.html" Name="runpy.html" Source="!(bindpath.doc_html)library\runpy.html" />
+            </Component>
+            <Component Id="Doc_html_library_sched.html" Directory="Doc_html_library" Guid="*">
+                <File Id="Doc_html_library_sched.html" Name="sched.html" Source="!(bindpath.doc_html)library\sched.html" />
+            </Component>
+            <Component Id="Doc_html_library_secrets.html" Directory="Doc_html_library" Guid="*">
+                <File Id="Doc_html_library_secrets.html" Name="secrets.html" Source="!(bindpath.doc_html)library\secrets.html" />
+            </Component>
+            <Component Id="Doc_html_library_security_warnings.html" Directory="Doc_html_library" Guid="*">
+                <File Id="Doc_html_library_security_warnings.html" Name="security_warnings.html" Source="!(bindpath.doc_html)library\security_warnings.html" />
+            </Component>
+            <Component Id="Doc_html_library_select.html" Directory="Doc_html_library" Guid="*">
+                <File Id="Doc_html_library_select.html" Name="select.html" Source="!(bindpath.doc_html)library\select.html" />
+            </Component>
+            <Component Id="Doc_html_library_selectors.html" Directory="Doc_html_library" Guid="*">
+                <File Id="Doc_html_library_selectors.html" Name="selectors.html" Source="!(bindpath.doc_html)library\selectors.html" />
+            </Component>
+            <Component Id="Doc_html_library_shelve.html" Directory="Doc_html_library" Guid="*">
+                <File Id="Doc_html_library_shelve.html" Name="shelve.html" Source="!(bindpath.doc_html)library\shelve.html" />
+            </Component>
+            <Component Id="Doc_html_library_shlex.html" Directory="Doc_html_library" Guid="*">
+                <File Id="Doc_html_library_shlex.html" Name="shlex.html" Source="!(bindpath.doc_html)library\shlex.html" />
+            </Component>
+            <Component Id="Doc_html_library_shutil.html" Directory="Doc_html_library" Guid="*">
+                <File Id="Doc_html_library_shutil.html" Name="shutil.html" Source="!(bindpath.doc_html)library\shutil.html" />
+            </Component>
+            <Component Id="Doc_html_library_signal.html" Directory="Doc_html_library" Guid="*">
+                <File Id="Doc_html_library_signal.html" Name="signal.html" Source="!(bindpath.doc_html)library\signal.html" />
+            </Component>
+            <Component Id="Doc_html_library_site.html" Directory="Doc_html_library" Guid="*">
+                <File Id="Doc_html_library_site.html" Name="site.html" Source="!(bindpath.doc_html)library\site.html" />
+            </Component>
+            <Component Id="Doc_html_library_smtpd.html" Directory="Doc_html_library" Guid="*">
+                <File Id="Doc_html_library_smtpd.html" Name="smtpd.html" Source="!(bindpath.doc_html)library\smtpd.html" />
+            </Component>
+            <Component Id="Doc_html_library_smtplib.html" Directory="Doc_html_library" Guid="*">
+                <File Id="Doc_html_library_smtplib.html" Name="smtplib.html" Source="!(bindpath.doc_html)library\smtplib.html" />
+            </Component>
+            <Component Id="Doc_html_library_sndhdr.html" Directory="Doc_html_library" Guid="*">
+                <File Id="Doc_html_library_sndhdr.html" Name="sndhdr.html" Source="!(bindpath.doc_html)library\sndhdr.html" />
+            </Component>
+            <Component Id="Doc_html_library_socket.html" Directory="Doc_html_library" Guid="*">
+                <File Id="Doc_html_library_socket.html" Name="socket.html" Source="!(bindpath.doc_html)library\socket.html" />
+            </Component>
+            <Component Id="Doc_html_library_socketserver.html" Directory="Doc_html_library" Guid="*">
+                <File Id="Doc_html_library_socketserver.html" Name="socketserver.html" Source="!(bindpath.doc_html)library\socketserver.html" />
+            </Component>
+            <Component Id="Doc_html_library_spwd.html" Directory="Doc_html_library" Guid="*">
+                <File Id="Doc_html_library_spwd.html" Name="spwd.html" Source="!(bindpath.doc_html)library\spwd.html" />
+            </Component>
+            <Component Id="Doc_html_library_sqlite3.html" Directory="Doc_html_library" Guid="*">
+                <File Id="Doc_html_library_sqlite3.html" Name="sqlite3.html" Source="!(bindpath.doc_html)library\sqlite3.html" />
+            </Component>
+            <Component Id="Doc_html_library_ssl.html" Directory="Doc_html_library" Guid="*">
+                <File Id="Doc_html_library_ssl.html" Name="ssl.html" Source="!(bindpath.doc_html)library\ssl.html" />
+            </Component>
+            <Component Id="Doc_html_library_stat.html" Directory="Doc_html_library" Guid="*">
+                <File Id="Doc_html_library_stat.html" Name="stat.html" Source="!(bindpath.doc_html)library\stat.html" />
+            </Component>
+            <Component Id="Doc_html_library_statistics.html" Directory="Doc_html_library" Guid="*">
+                <File Id="Doc_html_library_statistics.html" Name="statistics.html" Source="!(bindpath.doc_html)library\statistics.html" />
+            </Component>
+            <Component Id="Doc_html_library_stdtypes.html" Directory="Doc_html_library" Guid="*">
+                <File Id="Doc_html_library_stdtypes.html" Name="stdtypes.html" Source="!(bindpath.doc_html)library\stdtypes.html" />
+            </Component>
+            <Component Id="Doc_html_library_string.html" Directory="Doc_html_library" Guid="*">
+                <File Id="Doc_html_library_string.html" Name="string.html" Source="!(bindpath.doc_html)library\string.html" />
+            </Component>
+            <Component Id="Doc_html_library_string.templatelib.html" Directory="Doc_html_library" Guid="*">
+                <File Id="Doc_html_library_string.templatelib.html" Name="string.templatelib.html" Source="!(bindpath.doc_html)library\string.templatelib.html" />
+            </Component>
+            <Component Id="Doc_html_library_stringprep.html" Directory="Doc_html_library" Guid="*">
+                <File Id="Doc_html_library_stringprep.html" Name="stringprep.html" Source="!(bindpath.doc_html)library\stringprep.html" />
+            </Component>
+            <Component Id="Doc_html_library_struct.html" Directory="Doc_html_library" Guid="*">
+                <File Id="Doc_html_library_struct.html" Name="struct.html" Source="!(bindpath.doc_html)library\struct.html" />
+            </Component>
+            <Component Id="Doc_html_library_subprocess.html" Directory="Doc_html_library" Guid="*">
+                <File Id="Doc_html_library_subprocess.html" Name="subprocess.html" Source="!(bindpath.doc_html)library\subprocess.html" />
+            </Component>
+            <Component Id="Doc_html_library_sunau.html" Directory="Doc_html_library" Guid="*">
+                <File Id="Doc_html_library_sunau.html" Name="sunau.html" Source="!(bindpath.doc_html)library\sunau.html" />
+            </Component>
+            <Component Id="Doc_html_library_superseded.html" Directory="Doc_html_library" Guid="*">
+                <File Id="Doc_html_library_superseded.html" Name="superseded.html" Source="!(bindpath.doc_html)library\superseded.html" />
+            </Component>
+            <Component Id="Doc_html_library_symtable.html" Directory="Doc_html_library" Guid="*">
+                <File Id="Doc_html_library_symtable.html" Name="symtable.html" Source="!(bindpath.doc_html)library\symtable.html" />
+            </Component>
+            <Component Id="Doc_html_library_sys.html" Directory="Doc_html_library" Guid="*">
+                <File Id="Doc_html_library_sys.html" Name="sys.html" Source="!(bindpath.doc_html)library\sys.html" />
+            </Component>
+            <Component Id="Doc_html_library_sys.monitoring.html" Directory="Doc_html_library" Guid="*">
+                <File Id="Doc_html_library_sys.monitoring.html" Name="sys.monitoring.html" Source="!(bindpath.doc_html)library\sys.monitoring.html" />
+            </Component>
+            <Component Id="Doc_html_library_sysconfig.html" Directory="Doc_html_library" Guid="*">
+                <File Id="Doc_html_library_sysconfig.html" Name="sysconfig.html" Source="!(bindpath.doc_html)library\sysconfig.html" />
+            </Component>
+            <Component Id="Doc_html_library_syslog.html" Directory="Doc_html_library" Guid="*">
+                <File Id="Doc_html_library_syslog.html" Name="syslog.html" Source="!(bindpath.doc_html)library\syslog.html" />
+            </Component>
+            <Component Id="Doc_html_library_sys_path_init.html" Directory="Doc_html_library" Guid="*">
+                <File Id="Doc_html_library_sys_path_init.html" Name="sys_path_init.html" Source="!(bindpath.doc_html)library\sys_path_init.html" />
+            </Component>
+            <Component Id="Doc_html_library_tabnanny.html" Directory="Doc_html_library" Guid="*">
+                <File Id="Doc_html_library_tabnanny.html" Name="tabnanny.html" Source="!(bindpath.doc_html)library\tabnanny.html" />
+            </Component>
+            <Component Id="Doc_html_library_tarfile.html" Directory="Doc_html_library" Guid="*">
+                <File Id="Doc_html_library_tarfile.html" Name="tarfile.html" Source="!(bindpath.doc_html)library\tarfile.html" />
+            </Component>
+            <Component Id="Doc_html_library_telnetlib.html" Directory="Doc_html_library" Guid="*">
+                <File Id="Doc_html_library_telnetlib.html" Name="telnetlib.html" Source="!(bindpath.doc_html)library\telnetlib.html" />
+            </Component>
+            <Component Id="Doc_html_library_tempfile.html" Directory="Doc_html_library" Guid="*">
+                <File Id="Doc_html_library_tempfile.html" Name="tempfile.html" Source="!(bindpath.doc_html)library\tempfile.html" />
+            </Component>
+            <Component Id="Doc_html_library_termios.html" Directory="Doc_html_library" Guid="*">
+                <File Id="Doc_html_library_termios.html" Name="termios.html" Source="!(bindpath.doc_html)library\termios.html" />
+            </Component>
+            <Component Id="Doc_html_library_test.html" Directory="Doc_html_library" Guid="*">
+                <File Id="Doc_html_library_test.html" Name="test.html" Source="!(bindpath.doc_html)library\test.html" />
+            </Component>
+            <Component Id="Doc_html_library_text.html" Directory="Doc_html_library" Guid="*">
+                <File Id="Doc_html_library_text.html" Name="text.html" Source="!(bindpath.doc_html)library\text.html" />
+            </Component>
+            <Component Id="Doc_html_library_textwrap.html" Directory="Doc_html_library" Guid="*">
+                <File Id="Doc_html_library_textwrap.html" Name="textwrap.html" Source="!(bindpath.doc_html)library\textwrap.html" />
+            </Component>
+            <Component Id="Doc_html_library_threading.html" Directory="Doc_html_library" Guid="*">
+                <File Id="Doc_html_library_threading.html" Name="threading.html" Source="!(bindpath.doc_html)library\threading.html" />
+            </Component>
+            <Component Id="Doc_html_library_time.html" Directory="Doc_html_library" Guid="*">
+                <File Id="Doc_html_library_time.html" Name="time.html" Source="!(bindpath.doc_html)library\time.html" />
+            </Component>
+            <Component Id="Doc_html_library_timeit.html" Directory="Doc_html_library" Guid="*">
+                <File Id="Doc_html_library_timeit.html" Name="timeit.html" Source="!(bindpath.doc_html)library\timeit.html" />
+            </Component>
+            <Component Id="Doc_html_library_tk.html" Directory="Doc_html_library" Guid="*">
+                <File Id="Doc_html_library_tk.html" Name="tk.html" Source="!(bindpath.doc_html)library\tk.html" />
+            </Component>
+            <Component Id="Doc_html_library_tkinter.colorchooser.html" Directory="Doc_html_library" Guid="*">
+                <File Id="Doc_html_library_tkinter.colorchooser.html" Name="tkinter.colorchooser.html" Source="!(bindpath.doc_html)library\tkinter.colorchooser.html" />
+            </Component>
+            <Component Id="Doc_html_library_tkinter.dnd.html" Directory="Doc_html_library" Guid="*">
+                <File Id="Doc_html_library_tkinter.dnd.html" Name="tkinter.dnd.html" Source="!(bindpath.doc_html)library\tkinter.dnd.html" />
+            </Component>
+            <Component Id="Doc_html_library_tkinter.font.html" Directory="Doc_html_library" Guid="*">
+                <File Id="Doc_html_library_tkinter.font.html" Name="tkinter.font.html" Source="!(bindpath.doc_html)library\tkinter.font.html" />
+            </Component>
+            <Component Id="Doc_html_library_tkinter.html" Directory="Doc_html_library" Guid="*">
+                <File Id="Doc_html_library_tkinter.html" Name="tkinter.html" Source="!(bindpath.doc_html)library\tkinter.html" />
+            </Component>
+            <Component Id="Doc_html_library_tkinter.messagebox.html" Directory="Doc_html_library" Guid="*">
+                <File Id="Doc_html_library_tkinter.messagebox.html" Name="tkinter.messagebox.html" Source="!(bindpath.doc_html)library\tkinter.messagebox.html" />
+            </Component>
+            <Component Id="Doc_html_library_tkinter.scrolledtext.html" Directory="Doc_html_library" Guid="*">
+                <File Id="Doc_html_library_tkinter.scrolledtext.html" Name="tkinter.scrolledtext.html" Source="!(bindpath.doc_html)library\tkinter.scrolledtext.html" />
+            </Component>
+            <Component Id="Doc_html_library_tkinter.ttk.html" Directory="Doc_html_library" Guid="*">
+                <File Id="Doc_html_library_tkinter.ttk.html" Name="tkinter.ttk.html" Source="!(bindpath.doc_html)library\tkinter.ttk.html" />
+            </Component>
+            <Component Id="Doc_html_library_token.html" Directory="Doc_html_library" Guid="*">
+                <File Id="Doc_html_library_token.html" Name="token.html" Source="!(bindpath.doc_html)library\token.html" />
+            </Component>
+            <Component Id="Doc_html_library_tokenize.html" Directory="Doc_html_library" Guid="*">
+                <File Id="Doc_html_library_tokenize.html" Name="tokenize.html" Source="!(bindpath.doc_html)library\tokenize.html" />
+            </Component>
+            <Component Id="Doc_html_library_tomllib.html" Directory="Doc_html_library" Guid="*">
+                <File Id="Doc_html_library_tomllib.html" Name="tomllib.html" Source="!(bindpath.doc_html)library\tomllib.html" />
+            </Component>
+            <Component Id="Doc_html_library_trace.html" Directory="Doc_html_library" Guid="*">
+                <File Id="Doc_html_library_trace.html" Name="trace.html" Source="!(bindpath.doc_html)library\trace.html" />
+            </Component>
+            <Component Id="Doc_html_library_traceback.html" Directory="Doc_html_library" Guid="*">
+                <File Id="Doc_html_library_traceback.html" Name="traceback.html" Source="!(bindpath.doc_html)library\traceback.html" />
+            </Component>
+            <Component Id="Doc_html_library_tracemalloc.html" Directory="Doc_html_library" Guid="*">
+                <File Id="Doc_html_library_tracemalloc.html" Name="tracemalloc.html" Source="!(bindpath.doc_html)library\tracemalloc.html" />
+            </Component>
+            <Component Id="Doc_html_library_tty.html" Directory="Doc_html_library" Guid="*">
+                <File Id="Doc_html_library_tty.html" Name="tty.html" Source="!(bindpath.doc_html)library\tty.html" />
+            </Component>
+            <Component Id="Doc_html_library_turtle.html" Directory="Doc_html_library" Guid="*">
+                <File Id="Doc_html_library_turtle.html" Name="turtle.html" Source="!(bindpath.doc_html)library\turtle.html" />
+            </Component>
+            <Component Id="Doc_html_library_types.html" Directory="Doc_html_library" Guid="*">
+                <File Id="Doc_html_library_types.html" Name="types.html" Source="!(bindpath.doc_html)library\types.html" />
+            </Component>
+            <Component Id="Doc_html_library_typing.html" Directory="Doc_html_library" Guid="*">
+                <File Id="Doc_html_library_typing.html" Name="typing.html" Source="!(bindpath.doc_html)library\typing.html" />
+            </Component>
+            <Component Id="Doc_html_library_unicodedata.html" Directory="Doc_html_library" Guid="*">
+                <File Id="Doc_html_library_unicodedata.html" Name="unicodedata.html" Source="!(bindpath.doc_html)library\unicodedata.html" />
+            </Component>
+            <Component Id="Doc_html_library_unittest.html" Directory="Doc_html_library" Guid="*">
+                <File Id="Doc_html_library_unittest.html" Name="unittest.html" Source="!(bindpath.doc_html)library\unittest.html" />
+            </Component>
+            <Component Id="Doc_html_library_unittest.mock_examples.html" Directory="Doc_html_library" Guid="*">
+                <File Id="Doc_html_library_unittest.mock_examples.html" Name="unittest.mock-examples.html" Source="!(bindpath.doc_html)library\unittest.mock-examples.html" />
+            </Component>
+            <Component Id="Doc_html_library_unittest.mock.html" Directory="Doc_html_library" Guid="*">
+                <File Id="Doc_html_library_unittest.mock.html" Name="unittest.mock.html" Source="!(bindpath.doc_html)library\unittest.mock.html" />
+            </Component>
+            <Component Id="Doc_html_library_unix.html" Directory="Doc_html_library" Guid="*">
+                <File Id="Doc_html_library_unix.html" Name="unix.html" Source="!(bindpath.doc_html)library\unix.html" />
+            </Component>
+            <Component Id="Doc_html_library_urllib.error.html" Directory="Doc_html_library" Guid="*">
+                <File Id="Doc_html_library_urllib.error.html" Name="urllib.error.html" Source="!(bindpath.doc_html)library\urllib.error.html" />
+            </Component>
+            <Component Id="Doc_html_library_urllib.html" Directory="Doc_html_library" Guid="*">
+                <File Id="Doc_html_library_urllib.html" Name="urllib.html" Source="!(bindpath.doc_html)library\urllib.html" />
+            </Component>
+            <Component Id="Doc_html_library_urllib.parse.html" Directory="Doc_html_library" Guid="*">
+                <File Id="Doc_html_library_urllib.parse.html" Name="urllib.parse.html" Source="!(bindpath.doc_html)library\urllib.parse.html" />
+            </Component>
+            <Component Id="Doc_html_library_urllib.request.html" Directory="Doc_html_library" Guid="*">
+                <File Id="Doc_html_library_urllib.request.html" Name="urllib.request.html" Source="!(bindpath.doc_html)library\urllib.request.html" />
+            </Component>
+            <Component Id="Doc_html_library_urllib.robotparser.html" Directory="Doc_html_library" Guid="*">
+                <File Id="Doc_html_library_urllib.robotparser.html" Name="urllib.robotparser.html" Source="!(bindpath.doc_html)library\urllib.robotparser.html" />
+            </Component>
+            <Component Id="Doc_html_library_uu.html" Directory="Doc_html_library" Guid="*">
+                <File Id="Doc_html_library_uu.html" Name="uu.html" Source="!(bindpath.doc_html)library\uu.html" />
+            </Component>
+            <Component Id="Doc_html_library_uuid.html" Directory="Doc_html_library" Guid="*">
+                <File Id="Doc_html_library_uuid.html" Name="uuid.html" Source="!(bindpath.doc_html)library\uuid.html" />
+            </Component>
+            <Component Id="Doc_html_library_venv.html" Directory="Doc_html_library" Guid="*">
+                <File Id="Doc_html_library_venv.html" Name="venv.html" Source="!(bindpath.doc_html)library\venv.html" />
+            </Component>
+            <Component Id="Doc_html_library_warnings.html" Directory="Doc_html_library" Guid="*">
+                <File Id="Doc_html_library_warnings.html" Name="warnings.html" Source="!(bindpath.doc_html)library\warnings.html" />
+            </Component>
+            <Component Id="Doc_html_library_wave.html" Directory="Doc_html_library" Guid="*">
+                <File Id="Doc_html_library_wave.html" Name="wave.html" Source="!(bindpath.doc_html)library\wave.html" />
+            </Component>
+            <Component Id="Doc_html_library_weakref.html" Directory="Doc_html_library" Guid="*">
+                <File Id="Doc_html_library_weakref.html" Name="weakref.html" Source="!(bindpath.doc_html)library\weakref.html" />
+            </Component>
+            <Component Id="Doc_html_library_webbrowser.html" Directory="Doc_html_library" Guid="*">
+                <File Id="Doc_html_library_webbrowser.html" Name="webbrowser.html" Source="!(bindpath.doc_html)library\webbrowser.html" />
+            </Component>
+            <Component Id="Doc_html_library_windows.html" Directory="Doc_html_library" Guid="*">
+                <File Id="Doc_html_library_windows.html" Name="windows.html" Source="!(bindpath.doc_html)library\windows.html" />
+            </Component>
+            <Component Id="Doc_html_library_winreg.html" Directory="Doc_html_library" Guid="*">
+                <File Id="Doc_html_library_winreg.html" Name="winreg.html" Source="!(bindpath.doc_html)library\winreg.html" />
+            </Component>
+            <Component Id="Doc_html_library_winsound.html" Directory="Doc_html_library" Guid="*">
+                <File Id="Doc_html_library_winsound.html" Name="winsound.html" Source="!(bindpath.doc_html)library\winsound.html" />
+            </Component>
+            <Component Id="Doc_html_library_wsgiref.html" Directory="Doc_html_library" Guid="*">
+                <File Id="Doc_html_library_wsgiref.html" Name="wsgiref.html" Source="!(bindpath.doc_html)library\wsgiref.html" />
+            </Component>
+            <Component Id="Doc_html_library_xdrlib.html" Directory="Doc_html_library" Guid="*">
+                <File Id="Doc_html_library_xdrlib.html" Name="xdrlib.html" Source="!(bindpath.doc_html)library\xdrlib.html" />
+            </Component>
+            <Component Id="Doc_html_library_xml.dom.html" Directory="Doc_html_library" Guid="*">
+                <File Id="Doc_html_library_xml.dom.html" Name="xml.dom.html" Source="!(bindpath.doc_html)library\xml.dom.html" />
+            </Component>
+            <Component Id="Doc_html_library_xml.dom.minidom.html" Directory="Doc_html_library" Guid="*">
+                <File Id="Doc_html_library_xml.dom.minidom.html" Name="xml.dom.minidom.html" Source="!(bindpath.doc_html)library\xml.dom.minidom.html" />
+            </Component>
+            <Component Id="Doc_html_library_xml.dom.pulldom.html" Directory="Doc_html_library" Guid="*">
+                <File Id="Doc_html_library_xml.dom.pulldom.html" Name="xml.dom.pulldom.html" Source="!(bindpath.doc_html)library\xml.dom.pulldom.html" />
+            </Component>
+            <Component Id="Doc_html_library_xml.etree.elementtree.html" Directory="Doc_html_library" Guid="*">
+                <File Id="Doc_html_library_xml.etree.elementtree.html" Name="xml.etree.elementtree.html" Source="!(bindpath.doc_html)library\xml.etree.elementtree.html" />
+            </Component>
+            <Component Id="Doc_html_library_xml.html" Directory="Doc_html_library" Guid="*">
+                <File Id="Doc_html_library_xml.html" Name="xml.html" Source="!(bindpath.doc_html)library\xml.html" />
+            </Component>
+            <Component Id="Doc_html_library_xml.sax.handler.html" Directory="Doc_html_library" Guid="*">
+                <File Id="Doc_html_library_xml.sax.handler.html" Name="xml.sax.handler.html" Source="!(bindpath.doc_html)library\xml.sax.handler.html" />
+            </Component>
+            <Component Id="Doc_html_library_xml.sax.html" Directory="Doc_html_library" Guid="*">
+                <File Id="Doc_html_library_xml.sax.html" Name="xml.sax.html" Source="!(bindpath.doc_html)library\xml.sax.html" />
+            </Component>
+            <Component Id="Doc_html_library_xml.sax.reader.html" Directory="Doc_html_library" Guid="*">
+                <File Id="Doc_html_library_xml.sax.reader.html" Name="xml.sax.reader.html" Source="!(bindpath.doc_html)library\xml.sax.reader.html" />
+            </Component>
+            <Component Id="Doc_html_library_xml.sax.utils.html" Directory="Doc_html_library" Guid="*">
+                <File Id="Doc_html_library_xml.sax.utils.html" Name="xml.sax.utils.html" Source="!(bindpath.doc_html)library\xml.sax.utils.html" />
+            </Component>
+            <Component Id="Doc_html_library_xmlrpc.client.html" Directory="Doc_html_library" Guid="*">
+                <File Id="Doc_html_library_xmlrpc.client.html" Name="xmlrpc.client.html" Source="!(bindpath.doc_html)library\xmlrpc.client.html" />
+            </Component>
+            <Component Id="Doc_html_library_xmlrpc.html" Directory="Doc_html_library" Guid="*">
+                <File Id="Doc_html_library_xmlrpc.html" Name="xmlrpc.html" Source="!(bindpath.doc_html)library\xmlrpc.html" />
+            </Component>
+            <Component Id="Doc_html_library_xmlrpc.server.html" Directory="Doc_html_library" Guid="*">
+                <File Id="Doc_html_library_xmlrpc.server.html" Name="xmlrpc.server.html" Source="!(bindpath.doc_html)library\xmlrpc.server.html" />
+            </Component>
+            <Component Id="Doc_html_library_zipapp.html" Directory="Doc_html_library" Guid="*">
+                <File Id="Doc_html_library_zipapp.html" Name="zipapp.html" Source="!(bindpath.doc_html)library\zipapp.html" />
+            </Component>
+            <Component Id="Doc_html_library_zipfile.html" Directory="Doc_html_library" Guid="*">
+                <File Id="Doc_html_library_zipfile.html" Name="zipfile.html" Source="!(bindpath.doc_html)library\zipfile.html" />
+            </Component>
+            <Component Id="Doc_html_library_zipimport.html" Directory="Doc_html_library" Guid="*">
+                <File Id="Doc_html_library_zipimport.html" Name="zipimport.html" Source="!(bindpath.doc_html)library\zipimport.html" />
+            </Component>
+            <Component Id="Doc_html_library_zlib.html" Directory="Doc_html_library" Guid="*">
+                <File Id="Doc_html_library_zlib.html" Name="zlib.html" Source="!(bindpath.doc_html)library\zlib.html" />
+            </Component>
+            <Component Id="Doc_html_library_zoneinfo.html" Directory="Doc_html_library" Guid="*">
+                <File Id="Doc_html_library_zoneinfo.html" Name="zoneinfo.html" Source="!(bindpath.doc_html)library\zoneinfo.html" />
+            </Component>
+            <Component Id="Doc_html_library__thread.html" Directory="Doc_html_library" Guid="*">
+                <File Id="Doc_html_library__thread.html" Name="_thread.html" Source="!(bindpath.doc_html)library\_thread.html" />
+            </Component>
+            <Component Id="Doc_html_library___future__.html" Directory="Doc_html_library" Guid="*">
+                <File Id="Doc_html_library___future__.html" Name="__future__.html" Source="!(bindpath.doc_html)library\__future__.html" />
+            </Component>
+            <Component Id="Doc_html_library___main__.html" Directory="Doc_html_library" Guid="*">
+                <File Id="Doc_html_library___main__.html" Name="__main__.html" Source="!(bindpath.doc_html)library\__main__.html" />
+            </Component>
+            <Component Id="Doc_html_license.html" Directory="Doc_html" Guid="*">
+                <File Id="Doc_html_license.html" Name="license.html" Source="!(bindpath.doc_html)license.html" />
+            </Component>
+            <Component Id="Doc_html_objects.inv" Directory="Doc_html" Guid="*">
+                <File Id="Doc_html_objects.inv" Name="objects.inv" Source="!(bindpath.doc_html)objects.inv" />
+            </Component>
+            <Component Id="Doc_html_py_modindex.html" Directory="Doc_html" Guid="*">
+                <File Id="Doc_html_py_modindex.html" Name="py-modindex.html" Source="!(bindpath.doc_html)py-modindex.html" />
+            </Component>
+            <Component Id="Doc_html_reference_compound_stmts.html" Directory="Doc_html_reference" Guid="*">
+                <File Id="Doc_html_reference_compound_stmts.html" Name="compound_stmts.html" Source="!(bindpath.doc_html)reference\compound_stmts.html" />
+            </Component>
+            <Component Id="Doc_html_reference_datamodel.html" Directory="Doc_html_reference" Guid="*">
+                <File Id="Doc_html_reference_datamodel.html" Name="datamodel.html" Source="!(bindpath.doc_html)reference\datamodel.html" />
+            </Component>
+            <Component Id="Doc_html_reference_executionmodel.html" Directory="Doc_html_reference" Guid="*">
+                <File Id="Doc_html_reference_executionmodel.html" Name="executionmodel.html" Source="!(bindpath.doc_html)reference\executionmodel.html" />
+            </Component>
+            <Component Id="Doc_html_reference_expressions.html" Directory="Doc_html_reference" Guid="*">
+                <File Id="Doc_html_reference_expressions.html" Name="expressions.html" Source="!(bindpath.doc_html)reference\expressions.html" />
+            </Component>
+            <Component Id="Doc_html_reference_grammar.html" Directory="Doc_html_reference" Guid="*">
+                <File Id="Doc_html_reference_grammar.html" Name="grammar.html" Source="!(bindpath.doc_html)reference\grammar.html" />
+            </Component>
+            <Component Id="Doc_html_reference_import.html" Directory="Doc_html_reference" Guid="*">
+                <File Id="Doc_html_reference_import.html" Name="import.html" Source="!(bindpath.doc_html)reference\import.html" />
+            </Component>
+            <Component Id="Doc_html_reference_index.html" Directory="Doc_html_reference" Guid="*">
+                <File Id="Doc_html_reference_index.html" Name="index.html" Source="!(bindpath.doc_html)reference\index.html" />
+            </Component>
+            <Component Id="Doc_html_reference_introduction.html" Directory="Doc_html_reference" Guid="*">
+                <File Id="Doc_html_reference_introduction.html" Name="introduction.html" Source="!(bindpath.doc_html)reference\introduction.html" />
+            </Component>
+            <Component Id="Doc_html_reference_lexical_analysis.html" Directory="Doc_html_reference" Guid="*">
+                <File Id="Doc_html_reference_lexical_analysis.html" Name="lexical_analysis.html" Source="!(bindpath.doc_html)reference\lexical_analysis.html" />
+            </Component>
+            <Component Id="Doc_html_reference_simple_stmts.html" Directory="Doc_html_reference" Guid="*">
+                <File Id="Doc_html_reference_simple_stmts.html" Name="simple_stmts.html" Source="!(bindpath.doc_html)reference\simple_stmts.html" />
+            </Component>
+            <Component Id="Doc_html_reference_toplevel_components.html" Directory="Doc_html_reference" Guid="*">
+                <File Id="Doc_html_reference_toplevel_components.html" Name="toplevel_components.html" Source="!(bindpath.doc_html)reference\toplevel_components.html" />
+            </Component>
+            <Component Id="Doc_html_search.html" Directory="Doc_html" Guid="*">
+                <File Id="Doc_html_search.html" Name="search.html" Source="!(bindpath.doc_html)search.html" />
+            </Component>
+            <Component Id="Doc_html_searchindex.js" Directory="Doc_html" Guid="*">
+                <File Id="Doc_html_searchindex.js" Name="searchindex.js" Source="!(bindpath.doc_html)searchindex.js" />
+            </Component>
+            <Component Id="Doc_html_tutorial_appendix.html" Directory="Doc_html_tutorial" Guid="*">
+                <File Id="Doc_html_tutorial_appendix.html" Name="appendix.html" Source="!(bindpath.doc_html)tutorial\appendix.html" />
+            </Component>
+            <Component Id="Doc_html_tutorial_appetite.html" Directory="Doc_html_tutorial" Guid="*">
+                <File Id="Doc_html_tutorial_appetite.html" Name="appetite.html" Source="!(bindpath.doc_html)tutorial\appetite.html" />
+            </Component>
+            <Component Id="Doc_html_tutorial_classes.html" Directory="Doc_html_tutorial" Guid="*">
+                <File Id="Doc_html_tutorial_classes.html" Name="classes.html" Source="!(bindpath.doc_html)tutorial\classes.html" />
+            </Component>
+            <Component Id="Doc_html_tutorial_controlflow.html" Directory="Doc_html_tutorial" Guid="*">
+                <File Id="Doc_html_tutorial_controlflow.html" Name="controlflow.html" Source="!(bindpath.doc_html)tutorial\controlflow.html" />
+            </Component>
+            <Component Id="Doc_html_tutorial_datastructures.html" Directory="Doc_html_tutorial" Guid="*">
+                <File Id="Doc_html_tutorial_datastructures.html" Name="datastructures.html" Source="!(bindpath.doc_html)tutorial\datastructures.html" />
+            </Component>
+            <Component Id="Doc_html_tutorial_errors.html" Directory="Doc_html_tutorial" Guid="*">
+                <File Id="Doc_html_tutorial_errors.html" Name="errors.html" Source="!(bindpath.doc_html)tutorial\errors.html" />
+            </Component>
+            <Component Id="Doc_html_tutorial_floatingpoint.html" Directory="Doc_html_tutorial" Guid="*">
+                <File Id="Doc_html_tutorial_floatingpoint.html" Name="floatingpoint.html" Source="!(bindpath.doc_html)tutorial\floatingpoint.html" />
+            </Component>
+            <Component Id="Doc_html_tutorial_index.html" Directory="Doc_html_tutorial" Guid="*">
+                <File Id="Doc_html_tutorial_index.html" Name="index.html" Source="!(bindpath.doc_html)tutorial\index.html" />
+            </Component>
+            <Component Id="Doc_html_tutorial_inputoutput.html" Directory="Doc_html_tutorial" Guid="*">
+                <File Id="Doc_html_tutorial_inputoutput.html" Name="inputoutput.html" Source="!(bindpath.doc_html)tutorial\inputoutput.html" />
+            </Component>
+            <Component Id="Doc_html_tutorial_interactive.html" Directory="Doc_html_tutorial" Guid="*">
+                <File Id="Doc_html_tutorial_interactive.html" Name="interactive.html" Source="!(bindpath.doc_html)tutorial\interactive.html" />
+            </Component>
+            <Component Id="Doc_html_tutorial_interpreter.html" Directory="Doc_html_tutorial" Guid="*">
+                <File Id="Doc_html_tutorial_interpreter.html" Name="interpreter.html" Source="!(bindpath.doc_html)tutorial\interpreter.html" />
+            </Component>
+            <Component Id="Doc_html_tutorial_introduction.html" Directory="Doc_html_tutorial" Guid="*">
+                <File Id="Doc_html_tutorial_introduction.html" Name="introduction.html" Source="!(bindpath.doc_html)tutorial\introduction.html" />
+            </Component>
+            <Component Id="Doc_html_tutorial_modules.html" Directory="Doc_html_tutorial" Guid="*">
+                <File Id="Doc_html_tutorial_modules.html" Name="modules.html" Source="!(bindpath.doc_html)tutorial\modules.html" />
+            </Component>
+            <Component Id="Doc_html_tutorial_stdlib.html" Directory="Doc_html_tutorial" Guid="*">
+                <File Id="Doc_html_tutorial_stdlib.html" Name="stdlib.html" Source="!(bindpath.doc_html)tutorial\stdlib.html" />
+            </Component>
+            <Component Id="Doc_html_tutorial_stdlib2.html" Directory="Doc_html_tutorial" Guid="*">
+                <File Id="Doc_html_tutorial_stdlib2.html" Name="stdlib2.html" Source="!(bindpath.doc_html)tutorial\stdlib2.html" />
+            </Component>
+            <Component Id="Doc_html_tutorial_venv.html" Directory="Doc_html_tutorial" Guid="*">
+                <File Id="Doc_html_tutorial_venv.html" Name="venv.html" Source="!(bindpath.doc_html)tutorial\venv.html" />
+            </Component>
+            <Component Id="Doc_html_tutorial_whatnow.html" Directory="Doc_html_tutorial" Guid="*">
+                <File Id="Doc_html_tutorial_whatnow.html" Name="whatnow.html" Source="!(bindpath.doc_html)tutorial\whatnow.html" />
+            </Component>
+            <Component Id="Doc_html_using_android.html" Directory="Doc_html_using" Guid="*">
+                <File Id="Doc_html_using_android.html" Name="android.html" Source="!(bindpath.doc_html)using\android.html" />
+            </Component>
+            <Component Id="Doc_html_using_cmdline.html" Directory="Doc_html_using" Guid="*">
+                <File Id="Doc_html_using_cmdline.html" Name="cmdline.html" Source="!(bindpath.doc_html)using\cmdline.html" />
+            </Component>
+            <Component Id="Doc_html_using_configure.html" Directory="Doc_html_using" Guid="*">
+                <File Id="Doc_html_using_configure.html" Name="configure.html" Source="!(bindpath.doc_html)using\configure.html" />
+            </Component>
+            <Component Id="Doc_html_using_editors.html" Directory="Doc_html_using" Guid="*">
+                <File Id="Doc_html_using_editors.html" Name="editors.html" Source="!(bindpath.doc_html)using\editors.html" />
+            </Component>
+            <Component Id="Doc_html_using_index.html" Directory="Doc_html_using" Guid="*">
+                <File Id="Doc_html_using_index.html" Name="index.html" Source="!(bindpath.doc_html)using\index.html" />
+            </Component>
+            <Component Id="Doc_html_using_ios.html" Directory="Doc_html_using" Guid="*">
+                <File Id="Doc_html_using_ios.html" Name="ios.html" Source="!(bindpath.doc_html)using\ios.html" />
+            </Component>
+            <Component Id="Doc_html_using_mac.html" Directory="Doc_html_using" Guid="*">
+                <File Id="Doc_html_using_mac.html" Name="mac.html" Source="!(bindpath.doc_html)using\mac.html" />
+            </Component>
+            <Component Id="Doc_html_using_unix.html" Directory="Doc_html_using" Guid="*">
+                <File Id="Doc_html_using_unix.html" Name="unix.html" Source="!(bindpath.doc_html)using\unix.html" />
+            </Component>
+            <Component Id="Doc_html_using_windows.html" Directory="Doc_html_using" Guid="*">
+                <File Id="Doc_html_using_windows.html" Name="windows.html" Source="!(bindpath.doc_html)using\windows.html" />
+            </Component>
+            <Component Id="Doc_html_whatsnew_2.0.html" Directory="Doc_html_whatsnew" Guid="*">
+                <File Id="Doc_html_whatsnew_2.0.html" Name="2.0.html" Source="!(bindpath.doc_html)whatsnew\2.0.html" />
+            </Component>
+            <Component Id="Doc_html_whatsnew_2.1.html" Directory="Doc_html_whatsnew" Guid="*">
+                <File Id="Doc_html_whatsnew_2.1.html" Name="2.1.html" Source="!(bindpath.doc_html)whatsnew\2.1.html" />
+            </Component>
+            <Component Id="Doc_html_whatsnew_2.2.html" Directory="Doc_html_whatsnew" Guid="*">
+                <File Id="Doc_html_whatsnew_2.2.html" Name="2.2.html" Source="!(bindpath.doc_html)whatsnew\2.2.html" />
+            </Component>
+            <Component Id="Doc_html_whatsnew_2.3.html" Directory="Doc_html_whatsnew" Guid="*">
+                <File Id="Doc_html_whatsnew_2.3.html" Name="2.3.html" Source="!(bindpath.doc_html)whatsnew\2.3.html" />
+            </Component>
+            <Component Id="Doc_html_whatsnew_2.4.html" Directory="Doc_html_whatsnew" Guid="*">
+                <File Id="Doc_html_whatsnew_2.4.html" Name="2.4.html" Source="!(bindpath.doc_html)whatsnew\2.4.html" />
+            </Component>
+            <Component Id="Doc_html_whatsnew_2.5.html" Directory="Doc_html_whatsnew" Guid="*">
+                <File Id="Doc_html_whatsnew_2.5.html" Name="2.5.html" Source="!(bindpath.doc_html)whatsnew\2.5.html" />
+            </Component>
+            <Component Id="Doc_html_whatsnew_2.6.html" Directory="Doc_html_whatsnew" Guid="*">
+                <File Id="Doc_html_whatsnew_2.6.html" Name="2.6.html" Source="!(bindpath.doc_html)whatsnew\2.6.html" />
+            </Component>
+            <Component Id="Doc_html_whatsnew_2.7.html" Directory="Doc_html_whatsnew" Guid="*">
+                <File Id="Doc_html_whatsnew_2.7.html" Name="2.7.html" Source="!(bindpath.doc_html)whatsnew\2.7.html" />
+            </Component>
+            <Component Id="Doc_html_whatsnew_3.0.html" Directory="Doc_html_whatsnew" Guid="*">
+                <File Id="Doc_html_whatsnew_3.0.html" Name="3.0.html" Source="!(bindpath.doc_html)whatsnew\3.0.html" />
+            </Component>
+            <Component Id="Doc_html_whatsnew_3.1.html" Directory="Doc_html_whatsnew" Guid="*">
+                <File Id="Doc_html_whatsnew_3.1.html" Name="3.1.html" Source="!(bindpath.doc_html)whatsnew\3.1.html" />
+            </Component>
+            <Component Id="Doc_html_whatsnew_3.10.html" Directory="Doc_html_whatsnew" Guid="*">
+                <File Id="Doc_html_whatsnew_3.10.html" Name="3.10.html" Source="!(bindpath.doc_html)whatsnew\3.10.html" />
+            </Component>
+            <Component Id="Doc_html_whatsnew_3.11.html" Directory="Doc_html_whatsnew" Guid="*">
+                <File Id="Doc_html_whatsnew_3.11.html" Name="3.11.html" Source="!(bindpath.doc_html)whatsnew\3.11.html" />
+            </Component>
+            <Component Id="Doc_html_whatsnew_3.12.html" Directory="Doc_html_whatsnew" Guid="*">
+                <File Id="Doc_html_whatsnew_3.12.html" Name="3.12.html" Source="!(bindpath.doc_html)whatsnew\3.12.html" />
+            </Component>
+            <Component Id="Doc_html_whatsnew_3.13.html" Directory="Doc_html_whatsnew" Guid="*">
+                <File Id="Doc_html_whatsnew_3.13.html" Name="3.13.html" Source="!(bindpath.doc_html)whatsnew\3.13.html" />
+            </Component>
+            <Component Id="Doc_html_whatsnew_3.14.html" Directory="Doc_html_whatsnew" Guid="*">
+                <File Id="Doc_html_whatsnew_3.14.html" Name="3.14.html" Source="!(bindpath.doc_html)whatsnew\3.14.html" />
+            </Component>
+            <Component Id="Doc_html_whatsnew_3.2.html" Directory="Doc_html_whatsnew" Guid="*">
+                <File Id="Doc_html_whatsnew_3.2.html" Name="3.2.html" Source="!(bindpath.doc_html)whatsnew\3.2.html" />
+            </Component>
+            <Component Id="Doc_html_whatsnew_3.3.html" Directory="Doc_html_whatsnew" Guid="*">
+                <File Id="Doc_html_whatsnew_3.3.html" Name="3.3.html" Source="!(bindpath.doc_html)whatsnew\3.3.html" />
+            </Component>
+            <Component Id="Doc_html_whatsnew_3.4.html" Directory="Doc_html_whatsnew" Guid="*">
+                <File Id="Doc_html_whatsnew_3.4.html" Name="3.4.html" Source="!(bindpath.doc_html)whatsnew\3.4.html" />
+            </Component>
+            <Component Id="Doc_html_whatsnew_3.5.html" Directory="Doc_html_whatsnew" Guid="*">
+                <File Id="Doc_html_whatsnew_3.5.html" Name="3.5.html" Source="!(bindpath.doc_html)whatsnew\3.5.html" />
+            </Component>
+            <Component Id="Doc_html_whatsnew_3.6.html" Directory="Doc_html_whatsnew" Guid="*">
+                <File Id="Doc_html_whatsnew_3.6.html" Name="3.6.html" Source="!(bindpath.doc_html)whatsnew\3.6.html" />
+            </Component>
+            <Component Id="Doc_html_whatsnew_3.7.html" Directory="Doc_html_whatsnew" Guid="*">
+                <File Id="Doc_html_whatsnew_3.7.html" Name="3.7.html" Source="!(bindpath.doc_html)whatsnew\3.7.html" />
+            </Component>
+            <Component Id="Doc_html_whatsnew_3.8.html" Directory="Doc_html_whatsnew" Guid="*">
+                <File Id="Doc_html_whatsnew_3.8.html" Name="3.8.html" Source="!(bindpath.doc_html)whatsnew\3.8.html" />
+            </Component>
+            <Component Id="Doc_html_whatsnew_3.9.html" Directory="Doc_html_whatsnew" Guid="*">
+                <File Id="Doc_html_whatsnew_3.9.html" Name="3.9.html" Source="!(bindpath.doc_html)whatsnew\3.9.html" />
+            </Component>
+            <Component Id="Doc_html_whatsnew_changelog.html" Directory="Doc_html_whatsnew" Guid="*">
+                <File Id="Doc_html_whatsnew_changelog.html" Name="changelog.html" Source="!(bindpath.doc_html)whatsnew\changelog.html" />
+            </Component>
+            <Component Id="Doc_html_whatsnew_index.html" Directory="Doc_html_whatsnew" Guid="*">
+                <File Id="Doc_html_whatsnew_index.html" Name="index.html" Source="!(bindpath.doc_html)whatsnew\index.html" />
+            </Component>
+            <Component Id="Doc_html__downloads_6dc1f3f4f0e6ca13cb42ddf4d6cbc8af_tzinfo_examples.py" Directory="Doc_html__downloads_6dc1f3f4f0e6ca13cb42ddf4d6cbc8af" Guid="*">
+                <File Id="Doc_html__downloads_6dc1f3f4f0e6ca13cb42ddf4d6cbc8af_tzinfo_examples.py" Name="tzinfo_examples.py" Source="!(bindpath.doc_html)_downloads\6dc1f3f4f0e6ca13cb42ddf4d6cbc8af\tzinfo_examples.py" />
+            </Component>
+            <Component Id="Doc_html__images_hashlib_blake2_tree.png" Directory="Doc_html__images" Guid="*">
+                <File Id="Doc_html__images_hashlib_blake2_tree.png" Name="hashlib-blake2-tree.png" Source="!(bindpath.doc_html)_images\hashlib-blake2-tree.png" />
+            </Component>
+            <Component Id="Doc_html__images_kde_example.png" Directory="Doc_html__images" Guid="*">
+                <File Id="Doc_html__images_kde_example.png" Name="kde_example.png" Source="!(bindpath.doc_html)_images\kde_example.png" />
+            </Component>
+            <Component Id="Doc_html__images_mac_installer_01_introduction.png" Directory="Doc_html__images" Guid="*">
+                <File Id="Doc_html__images_mac_installer_01_introduction.png" Name="mac_installer_01_introduction.png" Source="!(bindpath.doc_html)_images\mac_installer_01_introduction.png" />
+            </Component>
+            <Component Id="Doc_html__images_mac_installer_02_readme.png" Directory="Doc_html__images" Guid="*">
+                <File Id="Doc_html__images_mac_installer_02_readme.png" Name="mac_installer_02_readme.png" Source="!(bindpath.doc_html)_images\mac_installer_02_readme.png" />
+            </Component>
+            <Component Id="Doc_html__images_mac_installer_03_license.png" Directory="Doc_html__images" Guid="*">
+                <File Id="Doc_html__images_mac_installer_03_license.png" Name="mac_installer_03_license.png" Source="!(bindpath.doc_html)_images\mac_installer_03_license.png" />
+            </Component>
+            <Component Id="Doc_html__images_mac_installer_04_installation_type.png" Directory="Doc_html__images" Guid="*">
+                <File Id="Doc_html__images_mac_installer_04_installation_type.png" Name="mac_installer_04_installation_type.png" Source="!(bindpath.doc_html)_images\mac_installer_04_installation_type.png" />
+            </Component>
+            <Component Id="Doc_html__images_mac_installer_05_custom_install.png" Directory="Doc_html__images" Guid="*">
+                <File Id="Doc_html__images_mac_installer_05_custom_install.png" Name="mac_installer_05_custom_install.png" Source="!(bindpath.doc_html)_images\mac_installer_05_custom_install.png" />
+            </Component>
+            <Component Id="Doc_html__images_mac_installer_06_summary.png" Directory="Doc_html__images" Guid="*">
+                <File Id="Doc_html__images_mac_installer_06_summary.png" Name="mac_installer_06_summary.png" Source="!(bindpath.doc_html)_images\mac_installer_06_summary.png" />
+            </Component>
+            <Component Id="Doc_html__images_mac_installer_07_applications.png" Directory="Doc_html__images" Guid="*">
+                <File Id="Doc_html__images_mac_installer_07_applications.png" Name="mac_installer_07_applications.png" Source="!(bindpath.doc_html)_images\mac_installer_07_applications.png" />
+            </Component>
+            <Component Id="Doc_html__images_mac_installer_08_install_certificates.png" Directory="Doc_html__images" Guid="*">
+                <File Id="Doc_html__images_mac_installer_08_install_certificates.png" Name="mac_installer_08_install_certificates.png" Source="!(bindpath.doc_html)_images\mac_installer_08_install_certificates.png" />
+            </Component>
+            <Component Id="Doc_html__images_mac_installer_09_custom_install_free_threaded.png" Directory="Doc_html__images" Guid="*">
+                <File Id="Doc_html__images_mac_installer_09_custom_install_free_threaded.png" Name="mac_installer_09_custom_install_free_threaded.png" Source="!(bindpath.doc_html)_images\mac_installer_09_custom_install_free_threaded.png" />
+            </Component>
+            <Component Id="Doc_html__images_pathlib_inheritance.png" Directory="Doc_html__images" Guid="*">
+                <File Id="Doc_html__images_pathlib_inheritance.png" Name="pathlib-inheritance.png" Source="!(bindpath.doc_html)_images\pathlib-inheritance.png" />
+            </Component>
+            <Component Id="Doc_html__images_tk_msg.png" Directory="Doc_html__images" Guid="*">
+                <File Id="Doc_html__images_tk_msg.png" Name="tk_msg.png" Source="!(bindpath.doc_html)_images\tk_msg.png" />
+            </Component>
+            <Component Id="Doc_html__images_turtle_star.png" Directory="Doc_html__images" Guid="*">
+                <File Id="Doc_html__images_turtle_star.png" Name="turtle-star.png" Source="!(bindpath.doc_html)_images\turtle-star.png" />
+            </Component>
+            <Component Id="Doc_html__images_win_installer.png" Directory="Doc_html__images" Guid="*">
+                <File Id="Doc_html__images_win_installer.png" Name="win_installer.png" Source="!(bindpath.doc_html)_images\win_installer.png" />
+            </Component>
+            <Component Id="Doc_html__images_win_install_freethreaded.png" Directory="Doc_html__images" Guid="*">
+                <File Id="Doc_html__images_win_install_freethreaded.png" Name="win_install_freethreaded.png" Source="!(bindpath.doc_html)_images\win_install_freethreaded.png" />
+            </Component>
+            <Component Id="Doc_html__static_basic.css" Directory="Doc_html__static" Guid="*">
+                <File Id="Doc_html__static_basic.css" Name="basic.css" Source="!(bindpath.doc_html)_static\basic.css" />
+            </Component>
+            <Component Id="Doc_html__static_changelog_search.js" Directory="Doc_html__static" Guid="*">
+                <File Id="Doc_html__static_changelog_search.js" Name="changelog_search.js" Source="!(bindpath.doc_html)_static\changelog_search.js" />
+            </Component>
+            <Component Id="Doc_html__static_classic.css" Directory="Doc_html__static" Guid="*">
+                <File Id="Doc_html__static_classic.css" Name="classic.css" Source="!(bindpath.doc_html)_static\classic.css" />
+            </Component>
+            <Component Id="Doc_html__static_copybutton.js" Directory="Doc_html__static" Guid="*">
+                <File Id="Doc_html__static_copybutton.js" Name="copybutton.js" Source="!(bindpath.doc_html)_static\copybutton.js" />
+            </Component>
+            <Component Id="Doc_html__static_default.css" Directory="Doc_html__static" Guid="*">
+                <File Id="Doc_html__static_default.css" Name="default.css" Source="!(bindpath.doc_html)_static\default.css" />
+            </Component>
+            <Component Id="Doc_html__static_doctools.js" Directory="Doc_html__static" Guid="*">
+                <File Id="Doc_html__static_doctools.js" Name="doctools.js" Source="!(bindpath.doc_html)_static\doctools.js" />
+            </Component>
+            <Component Id="Doc_html__static_documentation_options.js" Directory="Doc_html__static" Guid="*">
+                <File Id="Doc_html__static_documentation_options.js" Name="documentation_options.js" Source="!(bindpath.doc_html)_static\documentation_options.js" />
+            </Component>
+            <Component Id="Doc_html__static_file.png" Directory="Doc_html__static" Guid="*">
+                <File Id="Doc_html__static_file.png" Name="file.png" Source="!(bindpath.doc_html)_static\file.png" />
+            </Component>
+            <Component Id="Doc_html__static_glossary.json" Directory="Doc_html__static" Guid="*">
+                <File Id="Doc_html__static_glossary.json" Name="glossary.json" Source="!(bindpath.doc_html)_static\glossary.json" />
+            </Component>
+            <Component Id="Doc_html__static_glossary_search.js" Directory="Doc_html__static" Guid="*">
+                <File Id="Doc_html__static_glossary_search.js" Name="glossary_search.js" Source="!(bindpath.doc_html)_static\glossary_search.js" />
+            </Component>
+            <Component Id="Doc_html__static_language_data.js" Directory="Doc_html__static" Guid="*">
+                <File Id="Doc_html__static_language_data.js" Name="language_data.js" Source="!(bindpath.doc_html)_static\language_data.js" />
+            </Component>
+            <Component Id="Doc_html__static_menu.js" Directory="Doc_html__static" Guid="*">
+                <File Id="Doc_html__static_menu.js" Name="menu.js" Source="!(bindpath.doc_html)_static\menu.js" />
+            </Component>
+            <Component Id="Doc_html__static_minus.png" Directory="Doc_html__static" Guid="*">
+                <File Id="Doc_html__static_minus.png" Name="minus.png" Source="!(bindpath.doc_html)_static\minus.png" />
+            </Component>
+            <Component Id="Doc_html__static_og_image.png" Directory="Doc_html__static" Guid="*">
+                <File Id="Doc_html__static_og_image.png" Name="og-image.png" Source="!(bindpath.doc_html)_static\og-image.png" />
+            </Component>
+            <Component Id="Doc_html__static_opensearch.xml" Directory="Doc_html__static" Guid="*">
+                <File Id="Doc_html__static_opensearch.xml" Name="opensearch.xml" Source="!(bindpath.doc_html)_static\opensearch.xml" />
+            </Component>
+            <Component Id="Doc_html__static_plus.png" Directory="Doc_html__static" Guid="*">
+                <File Id="Doc_html__static_plus.png" Name="plus.png" Source="!(bindpath.doc_html)_static\plus.png" />
+            </Component>
+            <Component Id="Doc_html__static_py.png" Directory="Doc_html__static" Guid="*">
+                <File Id="Doc_html__static_py.png" Name="py.png" Source="!(bindpath.doc_html)_static\py.png" />
+            </Component>
+            <Component Id="Doc_html__static_py.svg" Directory="Doc_html__static" Guid="*">
+                <File Id="Doc_html__static_py.svg" Name="py.svg" Source="!(bindpath.doc_html)_static\py.svg" />
+            </Component>
+            <Component Id="Doc_html__static_pydoctheme.css" Directory="Doc_html__static" Guid="*">
+                <File Id="Doc_html__static_pydoctheme.css" Name="pydoctheme.css" Source="!(bindpath.doc_html)_static\pydoctheme.css" />
+            </Component>
+            <Component Id="Doc_html__static_pydoctheme_dark.css" Directory="Doc_html__static" Guid="*">
+                <File Id="Doc_html__static_pydoctheme_dark.css" Name="pydoctheme_dark.css" Source="!(bindpath.doc_html)_static\pydoctheme_dark.css" />
+            </Component>
+            <Component Id="Doc_html__static_pygments.css" Directory="Doc_html__static" Guid="*">
+                <File Id="Doc_html__static_pygments.css" Name="pygments.css" Source="!(bindpath.doc_html)_static\pygments.css" />
+            </Component>
+            <Component Id="Doc_html__static_pygments_dark.css" Directory="Doc_html__static" Guid="*">
+                <File Id="Doc_html__static_pygments_dark.css" Name="pygments_dark.css" Source="!(bindpath.doc_html)_static\pygments_dark.css" />
+            </Component>
+            <Component Id="Doc_html__static_rtd_switcher.js" Directory="Doc_html__static" Guid="*">
+                <File Id="Doc_html__static_rtd_switcher.js" Name="rtd_switcher.js" Source="!(bindpath.doc_html)_static\rtd_switcher.js" />
+            </Component>
+            <Component Id="Doc_html__static_search_focus.js" Directory="Doc_html__static" Guid="*">
+                <File Id="Doc_html__static_search_focus.js" Name="search-focus.js" Source="!(bindpath.doc_html)_static\search-focus.js" />
+            </Component>
+            <Component Id="Doc_html__static_searchtools.js" Directory="Doc_html__static" Guid="*">
+                <File Id="Doc_html__static_searchtools.js" Name="searchtools.js" Source="!(bindpath.doc_html)_static\searchtools.js" />
+            </Component>
+            <Component Id="Doc_html__static_sidebar.js" Directory="Doc_html__static" Guid="*">
+                <File Id="Doc_html__static_sidebar.js" Name="sidebar.js" Source="!(bindpath.doc_html)_static\sidebar.js" />
+            </Component>
+            <Component Id="Doc_html__static_sphinx_highlight.js" Directory="Doc_html__static" Guid="*">
+                <File Id="Doc_html__static_sphinx_highlight.js" Name="sphinx_highlight.js" Source="!(bindpath.doc_html)_static\sphinx_highlight.js" />
+            </Component>
+            <Component Id="Doc_html__static_themetoggle.js" Directory="Doc_html__static" Guid="*">
+                <File Id="Doc_html__static_themetoggle.js" Name="themetoggle.js" Source="!(bindpath.doc_html)_static\themetoggle.js" />
+            </Component>
+            <Component Id="doc_html__pycache__folders" Directory="TARGETDIR" Guid="397a85f2-6fc3-11f0-9eda-c89402a9a670">
+                <CreateFolder Directory="Doc_html__downloads_6dc1f3f4f0e6ca13cb42ddf4d6cbc8af___pycache__" />
+                <RemoveFile Id="Remove_Doc_html__downloads_6dc1f3f4f0e6ca13cb42ddf4d6cbc8af___pycache___files" Name="*" On="uninstall" Directory="Doc_html__downloads_6dc1f3f4f0e6ca13cb42ddf4d6cbc8af___pycache__" />
+                <RemoveFolder Id="Remove_Doc_html__downloads_6dc1f3f4f0e6ca13cb42ddf4d6cbc8af_folder" On="uninstall" Directory="Doc_html__downloads_6dc1f3f4f0e6ca13cb42ddf4d6cbc8af" />
+                <RemoveFolder Id="Remove_Doc_html__downloads_folder" On="uninstall" Directory="Doc_html__downloads" />
+                <RemoveFolder Id="Remove_Doc_html_folder" On="uninstall" Directory="Doc_html" />
+                <RemoveFolder Id="Remove_Doc_html__downloads_6dc1f3f4f0e6ca13cb42ddf4d6cbc8af___pycache___folder" On="uninstall" Directory="Doc_html__downloads_6dc1f3f4f0e6ca13cb42ddf4d6cbc8af___pycache__" />
+            </Component>
+        </ComponentGroup>
+    </Fragment>
+</Wix>

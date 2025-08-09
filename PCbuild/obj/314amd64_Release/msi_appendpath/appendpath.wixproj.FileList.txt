@@ -1,0 +1,8 @@
+C:\Users\osten\Downloads\Python-3.14.0rc1\PCbuild\amd64\en-us\appendpath.msi
+C:\Users\osten\Downloads\Python-3.14.0rc1\PCbuild\amd64\en-us\appendpath.wixpdb
+C:\Users\osten\Downloads\Python-3.14.0rc1\PCbuild\obj\\314amd64_Release\msi_appendpath\common_en-US.wxl
+C:\Users\osten\Downloads\Python-3.14.0rc1\PCbuild\obj\\314amd64_Release\msi_appendpath\pth8A29B79887F502AF9E753D233032C752\common.wixobj
+C:\Users\osten\Downloads\Python-3.14.0rc1\PCbuild\obj\\314amd64_Release\msi_appendpath\appendpath.wixobj
+C:\Users\osten\Downloads\Python-3.14.0rc1\PCbuild\obj\\314amd64_Release\msi_appendpath\appendpath.wixproj.BindContentsFileListen-us.txt
+C:\Users\osten\Downloads\Python-3.14.0rc1\PCbuild\obj\\314amd64_Release\msi_appendpath\appendpath.wixproj.BindOutputsFileListen-us.txt
+C:\Users\osten\Downloads\Python-3.14.0rc1\PCbuild\obj\\314amd64_Release\msi_appendpath\appendpath.wixproj.BindBuiltOutputsFileListen-us.txt

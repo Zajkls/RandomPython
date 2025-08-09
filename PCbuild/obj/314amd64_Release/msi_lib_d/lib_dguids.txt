@@ -1,0 +1,7 @@
+CoreUpgradeCode=af37adbf-a448-569b-983a-ee8e6dec0484
+UpgradeCode=964f7e94-fdb9-548c-80b1-e0d42ddc4a43
+InstallDirectoryGuidSeed=a5026e2d-9b2f-5a1c-94d0-4bd2dbe95c1f
+PythonExeComponentGuid=daf260c7-d870-58dd-b407-544898b1dd61
+PythonwExeComponentGuid=c6ca06fe-f3df-512f-90bf-5e444b22e2cc
+CommonPythonRegComponentGuid=2b2d4b77-a170-5686-bc22-6cb6b9828176
+PythonRegComponentGuid=919b7d8b-617b-5d62-837f-14ae4b33d3f9

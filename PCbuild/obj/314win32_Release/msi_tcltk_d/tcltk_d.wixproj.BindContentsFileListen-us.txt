@@ -1,0 +1,3 @@
+C:\Users\osten\Downloads\Python-3.14.0rc1\PCbuild\win32\_tkinter_d.lib
+C:\Users\osten\Downloads\Python-3.14.0rc1\PCbuild\win32\_tkinter_d.pdb
+C:\Users\osten\Downloads\Python-3.14.0rc1\PCbuild\win32\_tkinter_d.pyd

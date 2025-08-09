@@ -1,0 +1,864 @@
+<Wix xmlns="http://schemas.microsoft.com/wix/2006/wi">
+    <Fragment>
+        <DirectoryRef Id="include">
+            <Directory Id="include_cpython" Name="cpython" />
+            <Directory Id="include_internal" Name="internal" />
+        </DirectoryRef>
+        <DirectoryRef Id="include_internal">
+            <Directory Id="include_internal_mimalloc" Name="mimalloc" />
+        </DirectoryRef>
+        <DirectoryRef Id="include_internal_mimalloc">
+            <Directory Id="include_internal_mimalloc_mimalloc" Name="mimalloc" />
+        </DirectoryRef>
+    </Fragment>
+    <Fragment>
+        <ComponentGroup Id="dev_include">
+            <Component Id="include_abstract.h" Directory="include" Guid="*">
+                <File Id="include_abstract.h" Name="abstract.h" Source="!(bindpath.src)include\abstract.h" />
+            </Component>
+            <Component Id="include_audit.h" Directory="include" Guid="*">
+                <File Id="include_audit.h" Name="audit.h" Source="!(bindpath.src)include\audit.h" />
+            </Component>
+            <Component Id="include_bltinmodule.h" Directory="include" Guid="*">
+                <File Id="include_bltinmodule.h" Name="bltinmodule.h" Source="!(bindpath.src)include\bltinmodule.h" />
+            </Component>
+            <Component Id="include_boolobject.h" Directory="include" Guid="*">
+                <File Id="include_boolobject.h" Name="boolobject.h" Source="!(bindpath.src)include\boolobject.h" />
+            </Component>
+            <Component Id="include_bytearrayobject.h" Directory="include" Guid="*">
+                <File Id="include_bytearrayobject.h" Name="bytearrayobject.h" Source="!(bindpath.src)include\bytearrayobject.h" />
+            </Component>
+            <Component Id="include_bytesobject.h" Directory="include" Guid="*">
+                <File Id="include_bytesobject.h" Name="bytesobject.h" Source="!(bindpath.src)include\bytesobject.h" />
+            </Component>
+            <Component Id="include_ceval.h" Directory="include" Guid="*">
+                <File Id="include_ceval.h" Name="ceval.h" Source="!(bindpath.src)include\ceval.h" />
+            </Component>
+            <Component Id="include_codecs.h" Directory="include" Guid="*">
+                <File Id="include_codecs.h" Name="codecs.h" Source="!(bindpath.src)include\codecs.h" />
+            </Component>
+            <Component Id="include_compile.h" Directory="include" Guid="*">
+                <File Id="include_compile.h" Name="compile.h" Source="!(bindpath.src)include\compile.h" />
+            </Component>
+            <Component Id="include_complexobject.h" Directory="include" Guid="*">
+                <File Id="include_complexobject.h" Name="complexobject.h" Source="!(bindpath.src)include\complexobject.h" />
+            </Component>
+            <Component Id="include_cpython_abstract.h" Directory="include_cpython" Guid="*">
+                <File Id="include_cpython_abstract.h" Name="abstract.h" Source="!(bindpath.src)include\cpython\abstract.h" />
+            </Component>
+            <Component Id="include_cpython_audit.h" Directory="include_cpython" Guid="*">
+                <File Id="include_cpython_audit.h" Name="audit.h" Source="!(bindpath.src)include\cpython\audit.h" />
+            </Component>
+            <Component Id="include_cpython_bytearrayobject.h" Directory="include_cpython" Guid="*">
+                <File Id="include_cpython_bytearrayobject.h" Name="bytearrayobject.h" Source="!(bindpath.src)include\cpython\bytearrayobject.h" />
+            </Component>
+            <Component Id="include_cpython_bytesobject.h" Directory="include_cpython" Guid="*">
+                <File Id="include_cpython_bytesobject.h" Name="bytesobject.h" Source="!(bindpath.src)include\cpython\bytesobject.h" />
+            </Component>
+            <Component Id="include_cpython_cellobject.h" Directory="include_cpython" Guid="*">
+                <File Id="include_cpython_cellobject.h" Name="cellobject.h" Source="!(bindpath.src)include\cpython\cellobject.h" />
+            </Component>
+            <Component Id="include_cpython_ceval.h" Directory="include_cpython" Guid="*">
+                <File Id="include_cpython_ceval.h" Name="ceval.h" Source="!(bindpath.src)include\cpython\ceval.h" />
+            </Component>
+            <Component Id="include_cpython_classobject.h" Directory="include_cpython" Guid="*">
+                <File Id="include_cpython_classobject.h" Name="classobject.h" Source="!(bindpath.src)include\cpython\classobject.h" />
+            </Component>
+            <Component Id="include_cpython_code.h" Directory="include_cpython" Guid="*">
+                <File Id="include_cpython_code.h" Name="code.h" Source="!(bindpath.src)include\cpython\code.h" />
+            </Component>
+            <Component Id="include_cpython_compile.h" Directory="include_cpython" Guid="*">
+                <File Id="include_cpython_compile.h" Name="compile.h" Source="!(bindpath.src)include\cpython\compile.h" />
+            </Component>
+            <Component Id="include_cpython_complexobject.h" Directory="include_cpython" Guid="*">
+                <File Id="include_cpython_complexobject.h" Name="complexobject.h" Source="!(bindpath.src)include\cpython\complexobject.h" />
+            </Component>
+            <Component Id="include_cpython_context.h" Directory="include_cpython" Guid="*">
+                <File Id="include_cpython_context.h" Name="context.h" Source="!(bindpath.src)include\cpython\context.h" />
+            </Component>
+            <Component Id="include_cpython_critical_section.h" Directory="include_cpython" Guid="*">
+                <File Id="include_cpython_critical_section.h" Name="critical_section.h" Source="!(bindpath.src)include\cpython\critical_section.h" />
+            </Component>
+            <Component Id="include_cpython_descrobject.h" Directory="include_cpython" Guid="*">
+                <File Id="include_cpython_descrobject.h" Name="descrobject.h" Source="!(bindpath.src)include\cpython\descrobject.h" />
+            </Component>
+            <Component Id="include_cpython_dictobject.h" Directory="include_cpython" Guid="*">
+                <File Id="include_cpython_dictobject.h" Name="dictobject.h" Source="!(bindpath.src)include\cpython\dictobject.h" />
+            </Component>
+            <Component Id="include_cpython_fileobject.h" Directory="include_cpython" Guid="*">
+                <File Id="include_cpython_fileobject.h" Name="fileobject.h" Source="!(bindpath.src)include\cpython\fileobject.h" />
+            </Component>
+            <Component Id="include_cpython_fileutils.h" Directory="include_cpython" Guid="*">
+                <File Id="include_cpython_fileutils.h" Name="fileutils.h" Source="!(bindpath.src)include\cpython\fileutils.h" />
+            </Component>
+            <Component Id="include_cpython_floatobject.h" Directory="include_cpython" Guid="*">
+                <File Id="include_cpython_floatobject.h" Name="floatobject.h" Source="!(bindpath.src)include\cpython\floatobject.h" />
+            </Component>
+            <Component Id="include_cpython_frameobject.h" Directory="include_cpython" Guid="*">
+                <File Id="include_cpython_frameobject.h" Name="frameobject.h" Source="!(bindpath.src)include\cpython\frameobject.h" />
+            </Component>
+            <Component Id="include_cpython_funcobject.h" Directory="include_cpython" Guid="*">
+                <File Id="include_cpython_funcobject.h" Name="funcobject.h" Source="!(bindpath.src)include\cpython\funcobject.h" />
+            </Component>
+            <Component Id="include_cpython_genobject.h" Directory="include_cpython" Guid="*">
+                <File Id="include_cpython_genobject.h" Name="genobject.h" Source="!(bindpath.src)include\cpython\genobject.h" />
+            </Component>
+            <Component Id="include_cpython_import.h" Directory="include_cpython" Guid="*">
+                <File Id="include_cpython_import.h" Name="import.h" Source="!(bindpath.src)include\cpython\import.h" />
+            </Component>
+            <Component Id="include_cpython_initconfig.h" Directory="include_cpython" Guid="*">
+                <File Id="include_cpython_initconfig.h" Name="initconfig.h" Source="!(bindpath.src)include\cpython\initconfig.h" />
+            </Component>
+            <Component Id="include_cpython_listobject.h" Directory="include_cpython" Guid="*">
+                <File Id="include_cpython_listobject.h" Name="listobject.h" Source="!(bindpath.src)include\cpython\listobject.h" />
+            </Component>
+            <Component Id="include_cpython_lock.h" Directory="include_cpython" Guid="*">
+                <File Id="include_cpython_lock.h" Name="lock.h" Source="!(bindpath.src)include\cpython\lock.h" />
+            </Component>
+            <Component Id="include_cpython_longintrepr.h" Directory="include_cpython" Guid="*">
+                <File Id="include_cpython_longintrepr.h" Name="longintrepr.h" Source="!(bindpath.src)include\cpython\longintrepr.h" />
+            </Component>
+            <Component Id="include_cpython_longobject.h" Directory="include_cpython" Guid="*">
+                <File Id="include_cpython_longobject.h" Name="longobject.h" Source="!(bindpath.src)include\cpython\longobject.h" />
+            </Component>
+            <Component Id="include_cpython_memoryobject.h" Directory="include_cpython" Guid="*">
+                <File Id="include_cpython_memoryobject.h" Name="memoryobject.h" Source="!(bindpath.src)include\cpython\memoryobject.h" />
+            </Component>
+            <Component Id="include_cpython_methodobject.h" Directory="include_cpython" Guid="*">
+                <File Id="include_cpython_methodobject.h" Name="methodobject.h" Source="!(bindpath.src)include\cpython\methodobject.h" />
+            </Component>
+            <Component Id="include_cpython_modsupport.h" Directory="include_cpython" Guid="*">
+                <File Id="include_cpython_modsupport.h" Name="modsupport.h" Source="!(bindpath.src)include\cpython\modsupport.h" />
+            </Component>
+            <Component Id="include_cpython_monitoring.h" Directory="include_cpython" Guid="*">
+                <File Id="include_cpython_monitoring.h" Name="monitoring.h" Source="!(bindpath.src)include\cpython\monitoring.h" />
+            </Component>
+            <Component Id="include_cpython_object.h" Directory="include_cpython" Guid="*">
+                <File Id="include_cpython_object.h" Name="object.h" Source="!(bindpath.src)include\cpython\object.h" />
+            </Component>
+            <Component Id="include_cpython_objimpl.h" Directory="include_cpython" Guid="*">
+                <File Id="include_cpython_objimpl.h" Name="objimpl.h" Source="!(bindpath.src)include\cpython\objimpl.h" />
+            </Component>
+            <Component Id="include_cpython_odictobject.h" Directory="include_cpython" Guid="*">
+                <File Id="include_cpython_odictobject.h" Name="odictobject.h" Source="!(bindpath.src)include\cpython\odictobject.h" />
+            </Component>
+            <Component Id="include_cpython_picklebufobject.h" Directory="include_cpython" Guid="*">
+                <File Id="include_cpython_picklebufobject.h" Name="picklebufobject.h" Source="!(bindpath.src)include\cpython\picklebufobject.h" />
+            </Component>
+            <Component Id="include_cpython_pthread_stubs.h" Directory="include_cpython" Guid="*">
+                <File Id="include_cpython_pthread_stubs.h" Name="pthread_stubs.h" Source="!(bindpath.src)include\cpython\pthread_stubs.h" />
+            </Component>
+            <Component Id="include_cpython_pyatomic.h" Directory="include_cpython" Guid="*">
+                <File Id="include_cpython_pyatomic.h" Name="pyatomic.h" Source="!(bindpath.src)include\cpython\pyatomic.h" />
+            </Component>
+            <Component Id="include_cpython_pyatomic_gcc.h" Directory="include_cpython" Guid="*">
+                <File Id="include_cpython_pyatomic_gcc.h" Name="pyatomic_gcc.h" Source="!(bindpath.src)include\cpython\pyatomic_gcc.h" />
+            </Component>
+            <Component Id="include_cpython_pyatomic_msc.h" Directory="include_cpython" Guid="*">
+                <File Id="include_cpython_pyatomic_msc.h" Name="pyatomic_msc.h" Source="!(bindpath.src)include\cpython\pyatomic_msc.h" />
+            </Component>
+            <Component Id="include_cpython_pyatomic_std.h" Directory="include_cpython" Guid="*">
+                <File Id="include_cpython_pyatomic_std.h" Name="pyatomic_std.h" Source="!(bindpath.src)include\cpython\pyatomic_std.h" />
+            </Component>
+            <Component Id="include_cpython_pyctype.h" Directory="include_cpython" Guid="*">
+                <File Id="include_cpython_pyctype.h" Name="pyctype.h" Source="!(bindpath.src)include\cpython\pyctype.h" />
+            </Component>
+            <Component Id="include_cpython_pydebug.h" Directory="include_cpython" Guid="*">
+                <File Id="include_cpython_pydebug.h" Name="pydebug.h" Source="!(bindpath.src)include\cpython\pydebug.h" />
+            </Component>
+            <Component Id="include_cpython_pyerrors.h" Directory="include_cpython" Guid="*">
+                <File Id="include_cpython_pyerrors.h" Name="pyerrors.h" Source="!(bindpath.src)include\cpython\pyerrors.h" />
+            </Component>
+            <Component Id="include_cpython_pyfpe.h" Directory="include_cpython" Guid="*">
+                <File Id="include_cpython_pyfpe.h" Name="pyfpe.h" Source="!(bindpath.src)include\cpython\pyfpe.h" />
+            </Component>
+            <Component Id="include_cpython_pyframe.h" Directory="include_cpython" Guid="*">
+                <File Id="include_cpython_pyframe.h" Name="pyframe.h" Source="!(bindpath.src)include\cpython\pyframe.h" />
+            </Component>
+            <Component Id="include_cpython_pyhash.h" Directory="include_cpython" Guid="*">
+                <File Id="include_cpython_pyhash.h" Name="pyhash.h" Source="!(bindpath.src)include\cpython\pyhash.h" />
+            </Component>
+            <Component Id="include_cpython_pylifecycle.h" Directory="include_cpython" Guid="*">
+                <File Id="include_cpython_pylifecycle.h" Name="pylifecycle.h" Source="!(bindpath.src)include\cpython\pylifecycle.h" />
+            </Component>
+            <Component Id="include_cpython_pymem.h" Directory="include_cpython" Guid="*">
+                <File Id="include_cpython_pymem.h" Name="pymem.h" Source="!(bindpath.src)include\cpython\pymem.h" />
+            </Component>
+            <Component Id="include_cpython_pystate.h" Directory="include_cpython" Guid="*">
+                <File Id="include_cpython_pystate.h" Name="pystate.h" Source="!(bindpath.src)include\cpython\pystate.h" />
+            </Component>
+            <Component Id="include_cpython_pystats.h" Directory="include_cpython" Guid="*">
+                <File Id="include_cpython_pystats.h" Name="pystats.h" Source="!(bindpath.src)include\cpython\pystats.h" />
+            </Component>
+            <Component Id="include_cpython_pythonrun.h" Directory="include_cpython" Guid="*">
+                <File Id="include_cpython_pythonrun.h" Name="pythonrun.h" Source="!(bindpath.src)include\cpython\pythonrun.h" />
+            </Component>
+            <Component Id="include_cpython_pythread.h" Directory="include_cpython" Guid="*">
+                <File Id="include_cpython_pythread.h" Name="pythread.h" Source="!(bindpath.src)include\cpython\pythread.h" />
+            </Component>
+            <Component Id="include_cpython_pytime.h" Directory="include_cpython" Guid="*">
+                <File Id="include_cpython_pytime.h" Name="pytime.h" Source="!(bindpath.src)include\cpython\pytime.h" />
+            </Component>
+            <Component Id="include_cpython_setobject.h" Directory="include_cpython" Guid="*">
+                <File Id="include_cpython_setobject.h" Name="setobject.h" Source="!(bindpath.src)include\cpython\setobject.h" />
+            </Component>
+            <Component Id="include_cpython_traceback.h" Directory="include_cpython" Guid="*">
+                <File Id="include_cpython_traceback.h" Name="traceback.h" Source="!(bindpath.src)include\cpython\traceback.h" />
+            </Component>
+            <Component Id="include_cpython_tracemalloc.h" Directory="include_cpython" Guid="*">
+                <File Id="include_cpython_tracemalloc.h" Name="tracemalloc.h" Source="!(bindpath.src)include\cpython\tracemalloc.h" />
+            </Component>
+            <Component Id="include_cpython_tupleobject.h" Directory="include_cpython" Guid="*">
+                <File Id="include_cpython_tupleobject.h" Name="tupleobject.h" Source="!(bindpath.src)include\cpython\tupleobject.h" />
+            </Component>
+            <Component Id="include_cpython_unicodeobject.h" Directory="include_cpython" Guid="*">
+                <File Id="include_cpython_unicodeobject.h" Name="unicodeobject.h" Source="!(bindpath.src)include\cpython\unicodeobject.h" />
+            </Component>
+            <Component Id="include_cpython_warnings.h" Directory="include_cpython" Guid="*">
+                <File Id="include_cpython_warnings.h" Name="warnings.h" Source="!(bindpath.src)include\cpython\warnings.h" />
+            </Component>
+            <Component Id="include_cpython_weakrefobject.h" Directory="include_cpython" Guid="*">
+                <File Id="include_cpython_weakrefobject.h" Name="weakrefobject.h" Source="!(bindpath.src)include\cpython\weakrefobject.h" />
+            </Component>
+            <Component Id="include_critical_section.h" Directory="include" Guid="*">
+                <File Id="include_critical_section.h" Name="critical_section.h" Source="!(bindpath.src)include\critical_section.h" />
+            </Component>
+            <Component Id="include_datetime.h" Directory="include" Guid="*">
+                <File Id="include_datetime.h" Name="datetime.h" Source="!(bindpath.src)include\datetime.h" />
+            </Component>
+            <Component Id="include_descrobject.h" Directory="include" Guid="*">
+                <File Id="include_descrobject.h" Name="descrobject.h" Source="!(bindpath.src)include\descrobject.h" />
+            </Component>
+            <Component Id="include_dictobject.h" Directory="include" Guid="*">
+                <File Id="include_dictobject.h" Name="dictobject.h" Source="!(bindpath.src)include\dictobject.h" />
+            </Component>
+            <Component Id="include_dynamic_annotations.h" Directory="include" Guid="*">
+                <File Id="include_dynamic_annotations.h" Name="dynamic_annotations.h" Source="!(bindpath.src)include\dynamic_annotations.h" />
+            </Component>
+            <Component Id="include_enumobject.h" Directory="include" Guid="*">
+                <File Id="include_enumobject.h" Name="enumobject.h" Source="!(bindpath.src)include\enumobject.h" />
+            </Component>
+            <Component Id="include_errcode.h" Directory="include" Guid="*">
+                <File Id="include_errcode.h" Name="errcode.h" Source="!(bindpath.src)include\errcode.h" />
+            </Component>
+            <Component Id="include_exports.h" Directory="include" Guid="*">
+                <File Id="include_exports.h" Name="exports.h" Source="!(bindpath.src)include\exports.h" />
+            </Component>
+            <Component Id="include_fileobject.h" Directory="include" Guid="*">
+                <File Id="include_fileobject.h" Name="fileobject.h" Source="!(bindpath.src)include\fileobject.h" />
+            </Component>
+            <Component Id="include_fileutils.h" Directory="include" Guid="*">
+                <File Id="include_fileutils.h" Name="fileutils.h" Source="!(bindpath.src)include\fileutils.h" />
+            </Component>
+            <Component Id="include_floatobject.h" Directory="include" Guid="*">
+                <File Id="include_floatobject.h" Name="floatobject.h" Source="!(bindpath.src)include\floatobject.h" />
+            </Component>
+            <Component Id="include_frameobject.h" Directory="include" Guid="*">
+                <File Id="include_frameobject.h" Name="frameobject.h" Source="!(bindpath.src)include\frameobject.h" />
+            </Component>
+            <Component Id="include_genericaliasobject.h" Directory="include" Guid="*">
+                <File Id="include_genericaliasobject.h" Name="genericaliasobject.h" Source="!(bindpath.src)include\genericaliasobject.h" />
+            </Component>
+            <Component Id="include_import.h" Directory="include" Guid="*">
+                <File Id="include_import.h" Name="import.h" Source="!(bindpath.src)include\import.h" />
+            </Component>
+            <Component Id="include_internal_mimalloc_mimalloc.h" Directory="include_internal_mimalloc" Guid="*">
+                <File Id="include_internal_mimalloc_mimalloc.h" Name="mimalloc.h" Source="!(bindpath.src)include\internal\mimalloc\mimalloc.h" />
+            </Component>
+            <Component Id="include_internal_mimalloc_mimalloc_atomic.h" Directory="include_internal_mimalloc_mimalloc" Guid="*">
+                <File Id="include_internal_mimalloc_mimalloc_atomic.h" Name="atomic.h" Source="!(bindpath.src)include\internal\mimalloc\mimalloc\atomic.h" />
+            </Component>
+            <Component Id="include_internal_mimalloc_mimalloc_internal.h" Directory="include_internal_mimalloc_mimalloc" Guid="*">
+                <File Id="include_internal_mimalloc_mimalloc_internal.h" Name="internal.h" Source="!(bindpath.src)include\internal\mimalloc\mimalloc\internal.h" />
+            </Component>
+            <Component Id="include_internal_mimalloc_mimalloc_prim.h" Directory="include_internal_mimalloc_mimalloc" Guid="*">
+                <File Id="include_internal_mimalloc_mimalloc_prim.h" Name="prim.h" Source="!(bindpath.src)include\internal\mimalloc\mimalloc\prim.h" />
+            </Component>
+            <Component Id="include_internal_mimalloc_mimalloc_track.h" Directory="include_internal_mimalloc_mimalloc" Guid="*">
+                <File Id="include_internal_mimalloc_mimalloc_track.h" Name="track.h" Source="!(bindpath.src)include\internal\mimalloc\mimalloc\track.h" />
+            </Component>
+            <Component Id="include_internal_mimalloc_mimalloc_types.h" Directory="include_internal_mimalloc_mimalloc" Guid="*">
+                <File Id="include_internal_mimalloc_mimalloc_types.h" Name="types.h" Source="!(bindpath.src)include\internal\mimalloc\mimalloc\types.h" />
+            </Component>
+            <Component Id="include_internal_pycore_abstract.h" Directory="include_internal" Guid="*">
+                <File Id="include_internal_pycore_abstract.h" Name="pycore_abstract.h" Source="!(bindpath.src)include\internal\pycore_abstract.h" />
+            </Component>
+            <Component Id="include_internal_pycore_asdl.h" Directory="include_internal" Guid="*">
+                <File Id="include_internal_pycore_asdl.h" Name="pycore_asdl.h" Source="!(bindpath.src)include\internal\pycore_asdl.h" />
+            </Component>
+            <Component Id="include_internal_pycore_ast.h" Directory="include_internal" Guid="*">
+                <File Id="include_internal_pycore_ast.h" Name="pycore_ast.h" Source="!(bindpath.src)include\internal\pycore_ast.h" />
+            </Component>
+            <Component Id="include_internal_pycore_ast_state.h" Directory="include_internal" Guid="*">
+                <File Id="include_internal_pycore_ast_state.h" Name="pycore_ast_state.h" Source="!(bindpath.src)include\internal\pycore_ast_state.h" />
+            </Component>
+            <Component Id="include_internal_pycore_atexit.h" Directory="include_internal" Guid="*">
+                <File Id="include_internal_pycore_atexit.h" Name="pycore_atexit.h" Source="!(bindpath.src)include\internal\pycore_atexit.h" />
+            </Component>
+            <Component Id="include_internal_pycore_audit.h" Directory="include_internal" Guid="*">
+                <File Id="include_internal_pycore_audit.h" Name="pycore_audit.h" Source="!(bindpath.src)include\internal\pycore_audit.h" />
+            </Component>
+            <Component Id="include_internal_pycore_backoff.h" Directory="include_internal" Guid="*">
+                <File Id="include_internal_pycore_backoff.h" Name="pycore_backoff.h" Source="!(bindpath.src)include\internal\pycore_backoff.h" />
+            </Component>
+            <Component Id="include_internal_pycore_bitutils.h" Directory="include_internal" Guid="*">
+                <File Id="include_internal_pycore_bitutils.h" Name="pycore_bitutils.h" Source="!(bindpath.src)include\internal\pycore_bitutils.h" />
+            </Component>
+            <Component Id="include_internal_pycore_blocks_output_buffer.h" Directory="include_internal" Guid="*">
+                <File Id="include_internal_pycore_blocks_output_buffer.h" Name="pycore_blocks_output_buffer.h" Source="!(bindpath.src)include\internal\pycore_blocks_output_buffer.h" />
+            </Component>
+            <Component Id="include_internal_pycore_brc.h" Directory="include_internal" Guid="*">
+                <File Id="include_internal_pycore_brc.h" Name="pycore_brc.h" Source="!(bindpath.src)include\internal\pycore_brc.h" />
+            </Component>
+            <Component Id="include_internal_pycore_bytesobject.h" Directory="include_internal" Guid="*">
+                <File Id="include_internal_pycore_bytesobject.h" Name="pycore_bytesobject.h" Source="!(bindpath.src)include\internal\pycore_bytesobject.h" />
+            </Component>
+            <Component Id="include_internal_pycore_bytes_methods.h" Directory="include_internal" Guid="*">
+                <File Id="include_internal_pycore_bytes_methods.h" Name="pycore_bytes_methods.h" Source="!(bindpath.src)include\internal\pycore_bytes_methods.h" />
+            </Component>
+            <Component Id="include_internal_pycore_call.h" Directory="include_internal" Guid="*">
+                <File Id="include_internal_pycore_call.h" Name="pycore_call.h" Source="!(bindpath.src)include\internal\pycore_call.h" />
+            </Component>
+            <Component Id="include_internal_pycore_capsule.h" Directory="include_internal" Guid="*">
+                <File Id="include_internal_pycore_capsule.h" Name="pycore_capsule.h" Source="!(bindpath.src)include\internal\pycore_capsule.h" />
+            </Component>
+            <Component Id="include_internal_pycore_cell.h" Directory="include_internal" Guid="*">
+                <File Id="include_internal_pycore_cell.h" Name="pycore_cell.h" Source="!(bindpath.src)include\internal\pycore_cell.h" />
+            </Component>
+            <Component Id="include_internal_pycore_ceval.h" Directory="include_internal" Guid="*">
+                <File Id="include_internal_pycore_ceval.h" Name="pycore_ceval.h" Source="!(bindpath.src)include\internal\pycore_ceval.h" />
+            </Component>
+            <Component Id="include_internal_pycore_ceval_state.h" Directory="include_internal" Guid="*">
+                <File Id="include_internal_pycore_ceval_state.h" Name="pycore_ceval_state.h" Source="!(bindpath.src)include\internal\pycore_ceval_state.h" />
+            </Component>
+            <Component Id="include_internal_pycore_code.h" Directory="include_internal" Guid="*">
+                <File Id="include_internal_pycore_code.h" Name="pycore_code.h" Source="!(bindpath.src)include\internal\pycore_code.h" />
+            </Component>
+            <Component Id="include_internal_pycore_codecs.h" Directory="include_internal" Guid="*">
+                <File Id="include_internal_pycore_codecs.h" Name="pycore_codecs.h" Source="!(bindpath.src)include\internal\pycore_codecs.h" />
+            </Component>
+            <Component Id="include_internal_pycore_compile.h" Directory="include_internal" Guid="*">
+                <File Id="include_internal_pycore_compile.h" Name="pycore_compile.h" Source="!(bindpath.src)include\internal\pycore_compile.h" />
+            </Component>
+            <Component Id="include_internal_pycore_complexobject.h" Directory="include_internal" Guid="*">
+                <File Id="include_internal_pycore_complexobject.h" Name="pycore_complexobject.h" Source="!(bindpath.src)include\internal\pycore_complexobject.h" />
+            </Component>
+            <Component Id="include_internal_pycore_condvar.h" Directory="include_internal" Guid="*">
+                <File Id="include_internal_pycore_condvar.h" Name="pycore_condvar.h" Source="!(bindpath.src)include\internal\pycore_condvar.h" />
+            </Component>
+            <Component Id="include_internal_pycore_context.h" Directory="include_internal" Guid="*">
+                <File Id="include_internal_pycore_context.h" Name="pycore_context.h" Source="!(bindpath.src)include\internal\pycore_context.h" />
+            </Component>
+            <Component Id="include_internal_pycore_critical_section.h" Directory="include_internal" Guid="*">
+                <File Id="include_internal_pycore_critical_section.h" Name="pycore_critical_section.h" Source="!(bindpath.src)include\internal\pycore_critical_section.h" />
+            </Component>
+            <Component Id="include_internal_pycore_crossinterp.h" Directory="include_internal" Guid="*">
+                <File Id="include_internal_pycore_crossinterp.h" Name="pycore_crossinterp.h" Source="!(bindpath.src)include\internal\pycore_crossinterp.h" />
+            </Component>
+            <Component Id="include_internal_pycore_crossinterp_data_registry.h" Directory="include_internal" Guid="*">
+                <File Id="include_internal_pycore_crossinterp_data_registry.h" Name="pycore_crossinterp_data_registry.h" Source="!(bindpath.src)include\internal\pycore_crossinterp_data_registry.h" />
+            </Component>
+            <Component Id="include_internal_pycore_c_array.h" Directory="include_internal" Guid="*">
+                <File Id="include_internal_pycore_c_array.h" Name="pycore_c_array.h" Source="!(bindpath.src)include\internal\pycore_c_array.h" />
+            </Component>
+            <Component Id="include_internal_pycore_debug_offsets.h" Directory="include_internal" Guid="*">
+                <File Id="include_internal_pycore_debug_offsets.h" Name="pycore_debug_offsets.h" Source="!(bindpath.src)include\internal\pycore_debug_offsets.h" />
+            </Component>
+            <Component Id="include_internal_pycore_descrobject.h" Directory="include_internal" Guid="*">
+                <File Id="include_internal_pycore_descrobject.h" Name="pycore_descrobject.h" Source="!(bindpath.src)include\internal\pycore_descrobject.h" />
+            </Component>
+            <Component Id="include_internal_pycore_dict.h" Directory="include_internal" Guid="*">
+                <File Id="include_internal_pycore_dict.h" Name="pycore_dict.h" Source="!(bindpath.src)include\internal\pycore_dict.h" />
+            </Component>
+            <Component Id="include_internal_pycore_dict_state.h" Directory="include_internal" Guid="*">
+                <File Id="include_internal_pycore_dict_state.h" Name="pycore_dict_state.h" Source="!(bindpath.src)include\internal\pycore_dict_state.h" />
+            </Component>
+            <Component Id="include_internal_pycore_dtoa.h" Directory="include_internal" Guid="*">
+                <File Id="include_internal_pycore_dtoa.h" Name="pycore_dtoa.h" Source="!(bindpath.src)include\internal\pycore_dtoa.h" />
+            </Component>
+            <Component Id="include_internal_pycore_emscripten_signal.h" Directory="include_internal" Guid="*">
+                <File Id="include_internal_pycore_emscripten_signal.h" Name="pycore_emscripten_signal.h" Source="!(bindpath.src)include\internal\pycore_emscripten_signal.h" />
+            </Component>
+            <Component Id="include_internal_pycore_emscripten_trampoline.h" Directory="include_internal" Guid="*">
+                <File Id="include_internal_pycore_emscripten_trampoline.h" Name="pycore_emscripten_trampoline.h" Source="!(bindpath.src)include\internal\pycore_emscripten_trampoline.h" />
+            </Component>
+            <Component Id="include_internal_pycore_exceptions.h" Directory="include_internal" Guid="*">
+                <File Id="include_internal_pycore_exceptions.h" Name="pycore_exceptions.h" Source="!(bindpath.src)include\internal\pycore_exceptions.h" />
+            </Component>
+            <Component Id="include_internal_pycore_faulthandler.h" Directory="include_internal" Guid="*">
+                <File Id="include_internal_pycore_faulthandler.h" Name="pycore_faulthandler.h" Source="!(bindpath.src)include\internal\pycore_faulthandler.h" />
+            </Component>
+            <Component Id="include_internal_pycore_fileutils.h" Directory="include_internal" Guid="*">
+                <File Id="include_internal_pycore_fileutils.h" Name="pycore_fileutils.h" Source="!(bindpath.src)include\internal\pycore_fileutils.h" />
+            </Component>
+            <Component Id="include_internal_pycore_fileutils_windows.h" Directory="include_internal" Guid="*">
+                <File Id="include_internal_pycore_fileutils_windows.h" Name="pycore_fileutils_windows.h" Source="!(bindpath.src)include\internal\pycore_fileutils_windows.h" />
+            </Component>
+            <Component Id="include_internal_pycore_floatobject.h" Directory="include_internal" Guid="*">
+                <File Id="include_internal_pycore_floatobject.h" Name="pycore_floatobject.h" Source="!(bindpath.src)include\internal\pycore_floatobject.h" />
+            </Component>
+            <Component Id="include_internal_pycore_flowgraph.h" Directory="include_internal" Guid="*">
+                <File Id="include_internal_pycore_flowgraph.h" Name="pycore_flowgraph.h" Source="!(bindpath.src)include\internal\pycore_flowgraph.h" />
+            </Component>
+            <Component Id="include_internal_pycore_format.h" Directory="include_internal" Guid="*">
+                <File Id="include_internal_pycore_format.h" Name="pycore_format.h" Source="!(bindpath.src)include\internal\pycore_format.h" />
+            </Component>
+            <Component Id="include_internal_pycore_frame.h" Directory="include_internal" Guid="*">
+                <File Id="include_internal_pycore_frame.h" Name="pycore_frame.h" Source="!(bindpath.src)include\internal\pycore_frame.h" />
+            </Component>
+            <Component Id="include_internal_pycore_freelist.h" Directory="include_internal" Guid="*">
+                <File Id="include_internal_pycore_freelist.h" Name="pycore_freelist.h" Source="!(bindpath.src)include\internal\pycore_freelist.h" />
+            </Component>
+            <Component Id="include_internal_pycore_freelist_state.h" Directory="include_internal" Guid="*">
+                <File Id="include_internal_pycore_freelist_state.h" Name="pycore_freelist_state.h" Source="!(bindpath.src)include\internal\pycore_freelist_state.h" />
+            </Component>
+            <Component Id="include_internal_pycore_function.h" Directory="include_internal" Guid="*">
+                <File Id="include_internal_pycore_function.h" Name="pycore_function.h" Source="!(bindpath.src)include\internal\pycore_function.h" />
+            </Component>
+            <Component Id="include_internal_pycore_gc.h" Directory="include_internal" Guid="*">
+                <File Id="include_internal_pycore_gc.h" Name="pycore_gc.h" Source="!(bindpath.src)include\internal\pycore_gc.h" />
+            </Component>
+            <Component Id="include_internal_pycore_genobject.h" Directory="include_internal" Guid="*">
+                <File Id="include_internal_pycore_genobject.h" Name="pycore_genobject.h" Source="!(bindpath.src)include\internal\pycore_genobject.h" />
+            </Component>
+            <Component Id="include_internal_pycore_getopt.h" Directory="include_internal" Guid="*">
+                <File Id="include_internal_pycore_getopt.h" Name="pycore_getopt.h" Source="!(bindpath.src)include\internal\pycore_getopt.h" />
+            </Component>
+            <Component Id="include_internal_pycore_gil.h" Directory="include_internal" Guid="*">
+                <File Id="include_internal_pycore_gil.h" Name="pycore_gil.h" Source="!(bindpath.src)include\internal\pycore_gil.h" />
+            </Component>
+            <Component Id="include_internal_pycore_global_objects.h" Directory="include_internal" Guid="*">
+                <File Id="include_internal_pycore_global_objects.h" Name="pycore_global_objects.h" Source="!(bindpath.src)include\internal\pycore_global_objects.h" />
+            </Component>
+            <Component Id="include_internal_pycore_global_objects_fini_generated.h" Directory="include_internal" Guid="*">
+                <File Id="include_internal_pycore_global_objects_fini_generated.h" Name="pycore_global_objects_fini_generated.h" Source="!(bindpath.src)include\internal\pycore_global_objects_fini_generated.h" />
+            </Component>
+            <Component Id="include_internal_pycore_global_strings.h" Directory="include_internal" Guid="*">
+                <File Id="include_internal_pycore_global_strings.h" Name="pycore_global_strings.h" Source="!(bindpath.src)include\internal\pycore_global_strings.h" />
+            </Component>
+            <Component Id="include_internal_pycore_hamt.h" Directory="include_internal" Guid="*">
+                <File Id="include_internal_pycore_hamt.h" Name="pycore_hamt.h" Source="!(bindpath.src)include\internal\pycore_hamt.h" />
+            </Component>
+            <Component Id="include_internal_pycore_hashtable.h" Directory="include_internal" Guid="*">
+                <File Id="include_internal_pycore_hashtable.h" Name="pycore_hashtable.h" Source="!(bindpath.src)include\internal\pycore_hashtable.h" />
+            </Component>
+            <Component Id="include_internal_pycore_import.h" Directory="include_internal" Guid="*">
+                <File Id="include_internal_pycore_import.h" Name="pycore_import.h" Source="!(bindpath.src)include\internal\pycore_import.h" />
+            </Component>
+            <Component Id="include_internal_pycore_importdl.h" Directory="include_internal" Guid="*">
+                <File Id="include_internal_pycore_importdl.h" Name="pycore_importdl.h" Source="!(bindpath.src)include\internal\pycore_importdl.h" />
+            </Component>
+            <Component Id="include_internal_pycore_index_pool.h" Directory="include_internal" Guid="*">
+                <File Id="include_internal_pycore_index_pool.h" Name="pycore_index_pool.h" Source="!(bindpath.src)include\internal\pycore_index_pool.h" />
+            </Component>
+            <Component Id="include_internal_pycore_initconfig.h" Directory="include_internal" Guid="*">
+                <File Id="include_internal_pycore_initconfig.h" Name="pycore_initconfig.h" Source="!(bindpath.src)include\internal\pycore_initconfig.h" />
+            </Component>
+            <Component Id="include_internal_pycore_instruction_sequence.h" Directory="include_internal" Guid="*">
+                <File Id="include_internal_pycore_instruction_sequence.h" Name="pycore_instruction_sequence.h" Source="!(bindpath.src)include\internal\pycore_instruction_sequence.h" />
+            </Component>
+            <Component Id="include_internal_pycore_instruments.h" Directory="include_internal" Guid="*">
+                <File Id="include_internal_pycore_instruments.h" Name="pycore_instruments.h" Source="!(bindpath.src)include\internal\pycore_instruments.h" />
+            </Component>
+            <Component Id="include_internal_pycore_interp.h" Directory="include_internal" Guid="*">
+                <File Id="include_internal_pycore_interp.h" Name="pycore_interp.h" Source="!(bindpath.src)include\internal\pycore_interp.h" />
+            </Component>
+            <Component Id="include_internal_pycore_interpframe.h" Directory="include_internal" Guid="*">
+                <File Id="include_internal_pycore_interpframe.h" Name="pycore_interpframe.h" Source="!(bindpath.src)include\internal\pycore_interpframe.h" />
+            </Component>
+            <Component Id="include_internal_pycore_interpframe_structs.h" Directory="include_internal" Guid="*">
+                <File Id="include_internal_pycore_interpframe_structs.h" Name="pycore_interpframe_structs.h" Source="!(bindpath.src)include\internal\pycore_interpframe_structs.h" />
+            </Component>
+            <Component Id="include_internal_pycore_interpolation.h" Directory="include_internal" Guid="*">
+                <File Id="include_internal_pycore_interpolation.h" Name="pycore_interpolation.h" Source="!(bindpath.src)include\internal\pycore_interpolation.h" />
+            </Component>
+            <Component Id="include_internal_pycore_interp_structs.h" Directory="include_internal" Guid="*">
+                <File Id="include_internal_pycore_interp_structs.h" Name="pycore_interp_structs.h" Source="!(bindpath.src)include\internal\pycore_interp_structs.h" />
+            </Component>
+            <Component Id="include_internal_pycore_intrinsics.h" Directory="include_internal" Guid="*">
+                <File Id="include_internal_pycore_intrinsics.h" Name="pycore_intrinsics.h" Source="!(bindpath.src)include\internal\pycore_intrinsics.h" />
+            </Component>
+            <Component Id="include_internal_pycore_jit.h" Directory="include_internal" Guid="*">
+                <File Id="include_internal_pycore_jit.h" Name="pycore_jit.h" Source="!(bindpath.src)include\internal\pycore_jit.h" />
+            </Component>
+            <Component Id="include_internal_pycore_list.h" Directory="include_internal" Guid="*">
+                <File Id="include_internal_pycore_list.h" Name="pycore_list.h" Source="!(bindpath.src)include\internal\pycore_list.h" />
+            </Component>
+            <Component Id="include_internal_pycore_llist.h" Directory="include_internal" Guid="*">
+                <File Id="include_internal_pycore_llist.h" Name="pycore_llist.h" Source="!(bindpath.src)include\internal\pycore_llist.h" />
+            </Component>
+            <Component Id="include_internal_pycore_lock.h" Directory="include_internal" Guid="*">
+                <File Id="include_internal_pycore_lock.h" Name="pycore_lock.h" Source="!(bindpath.src)include\internal\pycore_lock.h" />
+            </Component>
+            <Component Id="include_internal_pycore_long.h" Directory="include_internal" Guid="*">
+                <File Id="include_internal_pycore_long.h" Name="pycore_long.h" Source="!(bindpath.src)include\internal\pycore_long.h" />
+            </Component>
+            <Component Id="include_internal_pycore_magic_number.h" Directory="include_internal" Guid="*">
+                <File Id="include_internal_pycore_magic_number.h" Name="pycore_magic_number.h" Source="!(bindpath.src)include\internal\pycore_magic_number.h" />
+            </Component>
+            <Component Id="include_internal_pycore_memoryobject.h" Directory="include_internal" Guid="*">
+                <File Id="include_internal_pycore_memoryobject.h" Name="pycore_memoryobject.h" Source="!(bindpath.src)include\internal\pycore_memoryobject.h" />
+            </Component>
+            <Component Id="include_internal_pycore_mimalloc.h" Directory="include_internal" Guid="*">
+                <File Id="include_internal_pycore_mimalloc.h" Name="pycore_mimalloc.h" Source="!(bindpath.src)include\internal\pycore_mimalloc.h" />
+            </Component>
+            <Component Id="include_internal_pycore_modsupport.h" Directory="include_internal" Guid="*">
+                <File Id="include_internal_pycore_modsupport.h" Name="pycore_modsupport.h" Source="!(bindpath.src)include\internal\pycore_modsupport.h" />
+            </Component>
+            <Component Id="include_internal_pycore_moduleobject.h" Directory="include_internal" Guid="*">
+                <File Id="include_internal_pycore_moduleobject.h" Name="pycore_moduleobject.h" Source="!(bindpath.src)include\internal\pycore_moduleobject.h" />
+            </Component>
+            <Component Id="include_internal_pycore_namespace.h" Directory="include_internal" Guid="*">
+                <File Id="include_internal_pycore_namespace.h" Name="pycore_namespace.h" Source="!(bindpath.src)include\internal\pycore_namespace.h" />
+            </Component>
+            <Component Id="include_internal_pycore_object.h" Directory="include_internal" Guid="*">
+                <File Id="include_internal_pycore_object.h" Name="pycore_object.h" Source="!(bindpath.src)include\internal\pycore_object.h" />
+            </Component>
+            <Component Id="include_internal_pycore_object_alloc.h" Directory="include_internal" Guid="*">
+                <File Id="include_internal_pycore_object_alloc.h" Name="pycore_object_alloc.h" Source="!(bindpath.src)include\internal\pycore_object_alloc.h" />
+            </Component>
+            <Component Id="include_internal_pycore_object_deferred.h" Directory="include_internal" Guid="*">
+                <File Id="include_internal_pycore_object_deferred.h" Name="pycore_object_deferred.h" Source="!(bindpath.src)include\internal\pycore_object_deferred.h" />
+            </Component>
+            <Component Id="include_internal_pycore_object_stack.h" Directory="include_internal" Guid="*">
+                <File Id="include_internal_pycore_object_stack.h" Name="pycore_object_stack.h" Source="!(bindpath.src)include\internal\pycore_object_stack.h" />
+            </Component>
+            <Component Id="include_internal_pycore_object_state.h" Directory="include_internal" Guid="*">
+                <File Id="include_internal_pycore_object_state.h" Name="pycore_object_state.h" Source="!(bindpath.src)include\internal\pycore_object_state.h" />
+            </Component>
+            <Component Id="include_internal_pycore_obmalloc.h" Directory="include_internal" Guid="*">
+                <File Id="include_internal_pycore_obmalloc.h" Name="pycore_obmalloc.h" Source="!(bindpath.src)include\internal\pycore_obmalloc.h" />
+            </Component>
+            <Component Id="include_internal_pycore_obmalloc_init.h" Directory="include_internal" Guid="*">
+                <File Id="include_internal_pycore_obmalloc_init.h" Name="pycore_obmalloc_init.h" Source="!(bindpath.src)include\internal\pycore_obmalloc_init.h" />
+            </Component>
+            <Component Id="include_internal_pycore_opcode_metadata.h" Directory="include_internal" Guid="*">
+                <File Id="include_internal_pycore_opcode_metadata.h" Name="pycore_opcode_metadata.h" Source="!(bindpath.src)include\internal\pycore_opcode_metadata.h" />
+            </Component>
+            <Component Id="include_internal_pycore_opcode_utils.h" Directory="include_internal" Guid="*">
+                <File Id="include_internal_pycore_opcode_utils.h" Name="pycore_opcode_utils.h" Source="!(bindpath.src)include\internal\pycore_opcode_utils.h" />
+            </Component>
+            <Component Id="include_internal_pycore_optimizer.h" Directory="include_internal" Guid="*">
+                <File Id="include_internal_pycore_optimizer.h" Name="pycore_optimizer.h" Source="!(bindpath.src)include\internal\pycore_optimizer.h" />
+            </Component>
+            <Component Id="include_internal_pycore_parking_lot.h" Directory="include_internal" Guid="*">
+                <File Id="include_internal_pycore_parking_lot.h" Name="pycore_parking_lot.h" Source="!(bindpath.src)include\internal\pycore_parking_lot.h" />
+            </Component>
+            <Component Id="include_internal_pycore_parser.h" Directory="include_internal" Guid="*">
+                <File Id="include_internal_pycore_parser.h" Name="pycore_parser.h" Source="!(bindpath.src)include\internal\pycore_parser.h" />
+            </Component>
+            <Component Id="include_internal_pycore_pathconfig.h" Directory="include_internal" Guid="*">
+                <File Id="include_internal_pycore_pathconfig.h" Name="pycore_pathconfig.h" Source="!(bindpath.src)include\internal\pycore_pathconfig.h" />
+            </Component>
+            <Component Id="include_internal_pycore_pyarena.h" Directory="include_internal" Guid="*">
+                <File Id="include_internal_pycore_pyarena.h" Name="pycore_pyarena.h" Source="!(bindpath.src)include\internal\pycore_pyarena.h" />
+            </Component>
+            <Component Id="include_internal_pycore_pyatomic_ft_wrappers.h" Directory="include_internal" Guid="*">
+                <File Id="include_internal_pycore_pyatomic_ft_wrappers.h" Name="pycore_pyatomic_ft_wrappers.h" Source="!(bindpath.src)include\internal\pycore_pyatomic_ft_wrappers.h" />
+            </Component>
+            <Component Id="include_internal_pycore_pybuffer.h" Directory="include_internal" Guid="*">
+                <File Id="include_internal_pycore_pybuffer.h" Name="pycore_pybuffer.h" Source="!(bindpath.src)include\internal\pycore_pybuffer.h" />
+            </Component>
+            <Component Id="include_internal_pycore_pyerrors.h" Directory="include_internal" Guid="*">
+                <File Id="include_internal_pycore_pyerrors.h" Name="pycore_pyerrors.h" Source="!(bindpath.src)include\internal\pycore_pyerrors.h" />
+            </Component>
+            <Component Id="include_internal_pycore_pyhash.h" Directory="include_internal" Guid="*">
+                <File Id="include_internal_pycore_pyhash.h" Name="pycore_pyhash.h" Source="!(bindpath.src)include\internal\pycore_pyhash.h" />
+            </Component>
+            <Component Id="include_internal_pycore_pylifecycle.h" Directory="include_internal" Guid="*">
+                <File Id="include_internal_pycore_pylifecycle.h" Name="pycore_pylifecycle.h" Source="!(bindpath.src)include\internal\pycore_pylifecycle.h" />
+            </Component>
+            <Component Id="include_internal_pycore_pymath.h" Directory="include_internal" Guid="*">
+                <File Id="include_internal_pycore_pymath.h" Name="pycore_pymath.h" Source="!(bindpath.src)include\internal\pycore_pymath.h" />
+            </Component>
+            <Component Id="include_internal_pycore_pymem.h" Directory="include_internal" Guid="*">
+                <File Id="include_internal_pycore_pymem.h" Name="pycore_pymem.h" Source="!(bindpath.src)include\internal\pycore_pymem.h" />
+            </Component>
+            <Component Id="include_internal_pycore_pymem_init.h" Directory="include_internal" Guid="*">
+                <File Id="include_internal_pycore_pymem_init.h" Name="pycore_pymem_init.h" Source="!(bindpath.src)include\internal\pycore_pymem_init.h" />
+            </Component>
+            <Component Id="include_internal_pycore_pystate.h" Directory="include_internal" Guid="*">
+                <File Id="include_internal_pycore_pystate.h" Name="pycore_pystate.h" Source="!(bindpath.src)include\internal\pycore_pystate.h" />
+            </Component>
+            <Component Id="include_internal_pycore_pystats.h" Directory="include_internal" Guid="*">
+                <File Id="include_internal_pycore_pystats.h" Name="pycore_pystats.h" Source="!(bindpath.src)include\internal\pycore_pystats.h" />
+            </Component>
+            <Component Id="include_internal_pycore_pythonrun.h" Directory="include_internal" Guid="*">
+                <File Id="include_internal_pycore_pythonrun.h" Name="pycore_pythonrun.h" Source="!(bindpath.src)include\internal\pycore_pythonrun.h" />
+            </Component>
+            <Component Id="include_internal_pycore_pythread.h" Directory="include_internal" Guid="*">
+                <File Id="include_internal_pycore_pythread.h" Name="pycore_pythread.h" Source="!(bindpath.src)include\internal\pycore_pythread.h" />
+            </Component>
+            <Component Id="include_internal_pycore_qsbr.h" Directory="include_internal" Guid="*">
+                <File Id="include_internal_pycore_qsbr.h" Name="pycore_qsbr.h" Source="!(bindpath.src)include\internal\pycore_qsbr.h" />
+            </Component>
+            <Component Id="include_internal_pycore_range.h" Directory="include_internal" Guid="*">
+                <File Id="include_internal_pycore_range.h" Name="pycore_range.h" Source="!(bindpath.src)include\internal\pycore_range.h" />
+            </Component>
+            <Component Id="include_internal_pycore_runtime.h" Directory="include_internal" Guid="*">
+                <File Id="include_internal_pycore_runtime.h" Name="pycore_runtime.h" Source="!(bindpath.src)include\internal\pycore_runtime.h" />
+            </Component>
+            <Component Id="include_internal_pycore_runtime_init.h" Directory="include_internal" Guid="*">
+                <File Id="include_internal_pycore_runtime_init.h" Name="pycore_runtime_init.h" Source="!(bindpath.src)include\internal\pycore_runtime_init.h" />
+            </Component>
+            <Component Id="include_internal_pycore_runtime_init_generated.h" Directory="include_internal" Guid="*">
+                <File Id="include_internal_pycore_runtime_init_generated.h" Name="pycore_runtime_init_generated.h" Source="!(bindpath.src)include\internal\pycore_runtime_init_generated.h" />
+            </Component>
+            <Component Id="include_internal_pycore_runtime_structs.h" Directory="include_internal" Guid="*">
+                <File Id="include_internal_pycore_runtime_structs.h" Name="pycore_runtime_structs.h" Source="!(bindpath.src)include\internal\pycore_runtime_structs.h" />
+            </Component>
+            <Component Id="include_internal_pycore_semaphore.h" Directory="include_internal" Guid="*">
+                <File Id="include_internal_pycore_semaphore.h" Name="pycore_semaphore.h" Source="!(bindpath.src)include\internal\pycore_semaphore.h" />
+            </Component>
+            <Component Id="include_internal_pycore_setobject.h" Directory="include_internal" Guid="*">
+                <File Id="include_internal_pycore_setobject.h" Name="pycore_setobject.h" Source="!(bindpath.src)include\internal\pycore_setobject.h" />
+            </Component>
+            <Component Id="include_internal_pycore_signal.h" Directory="include_internal" Guid="*">
+                <File Id="include_internal_pycore_signal.h" Name="pycore_signal.h" Source="!(bindpath.src)include\internal\pycore_signal.h" />
+            </Component>
+            <Component Id="include_internal_pycore_sliceobject.h" Directory="include_internal" Guid="*">
+                <File Id="include_internal_pycore_sliceobject.h" Name="pycore_sliceobject.h" Source="!(bindpath.src)include\internal\pycore_sliceobject.h" />
+            </Component>
+            <Component Id="include_internal_pycore_stackref.h" Directory="include_internal" Guid="*">
+                <File Id="include_internal_pycore_stackref.h" Name="pycore_stackref.h" Source="!(bindpath.src)include\internal\pycore_stackref.h" />
+            </Component>
+            <Component Id="include_internal_pycore_stats.h" Directory="include_internal" Guid="*">
+                <File Id="include_internal_pycore_stats.h" Name="pycore_stats.h" Source="!(bindpath.src)include\internal\pycore_stats.h" />
+            </Component>
+            <Component Id="include_internal_pycore_strhex.h" Directory="include_internal" Guid="*">
+                <File Id="include_internal_pycore_strhex.h" Name="pycore_strhex.h" Source="!(bindpath.src)include\internal\pycore_strhex.h" />
+            </Component>
+            <Component Id="include_internal_pycore_structs.h" Directory="include_internal" Guid="*">
+                <File Id="include_internal_pycore_structs.h" Name="pycore_structs.h" Source="!(bindpath.src)include\internal\pycore_structs.h" />
+            </Component>
+            <Component Id="include_internal_pycore_structseq.h" Directory="include_internal" Guid="*">
+                <File Id="include_internal_pycore_structseq.h" Name="pycore_structseq.h" Source="!(bindpath.src)include\internal\pycore_structseq.h" />
+            </Component>
+            <Component Id="include_internal_pycore_symtable.h" Directory="include_internal" Guid="*">
+                <File Id="include_internal_pycore_symtable.h" Name="pycore_symtable.h" Source="!(bindpath.src)include\internal\pycore_symtable.h" />
+            </Component>
+            <Component Id="include_internal_pycore_sysmodule.h" Directory="include_internal" Guid="*">
+                <File Id="include_internal_pycore_sysmodule.h" Name="pycore_sysmodule.h" Source="!(bindpath.src)include\internal\pycore_sysmodule.h" />
+            </Component>
+            <Component Id="include_internal_pycore_template.h" Directory="include_internal" Guid="*">
+                <File Id="include_internal_pycore_template.h" Name="pycore_template.h" Source="!(bindpath.src)include\internal\pycore_template.h" />
+            </Component>
+            <Component Id="include_internal_pycore_time.h" Directory="include_internal" Guid="*">
+                <File Id="include_internal_pycore_time.h" Name="pycore_time.h" Source="!(bindpath.src)include\internal\pycore_time.h" />
+            </Component>
+            <Component Id="include_internal_pycore_token.h" Directory="include_internal" Guid="*">
+                <File Id="include_internal_pycore_token.h" Name="pycore_token.h" Source="!(bindpath.src)include\internal\pycore_token.h" />
+            </Component>
+            <Component Id="include_internal_pycore_traceback.h" Directory="include_internal" Guid="*">
+                <File Id="include_internal_pycore_traceback.h" Name="pycore_traceback.h" Source="!(bindpath.src)include\internal\pycore_traceback.h" />
+            </Component>
+            <Component Id="include_internal_pycore_tracemalloc.h" Directory="include_internal" Guid="*">
+                <File Id="include_internal_pycore_tracemalloc.h" Name="pycore_tracemalloc.h" Source="!(bindpath.src)include\internal\pycore_tracemalloc.h" />
+            </Component>
+            <Component Id="include_internal_pycore_tstate.h" Directory="include_internal" Guid="*">
+                <File Id="include_internal_pycore_tstate.h" Name="pycore_tstate.h" Source="!(bindpath.src)include\internal\pycore_tstate.h" />
+            </Component>
+            <Component Id="include_internal_pycore_tuple.h" Directory="include_internal" Guid="*">
+                <File Id="include_internal_pycore_tuple.h" Name="pycore_tuple.h" Source="!(bindpath.src)include\internal\pycore_tuple.h" />
+            </Component>
+            <Component Id="include_internal_pycore_typedefs.h" Directory="include_internal" Guid="*">
+                <File Id="include_internal_pycore_typedefs.h" Name="pycore_typedefs.h" Source="!(bindpath.src)include\internal\pycore_typedefs.h" />
+            </Component>
+            <Component Id="include_internal_pycore_typeobject.h" Directory="include_internal" Guid="*">
+                <File Id="include_internal_pycore_typeobject.h" Name="pycore_typeobject.h" Source="!(bindpath.src)include\internal\pycore_typeobject.h" />
+            </Component>
+            <Component Id="include_internal_pycore_typevarobject.h" Directory="include_internal" Guid="*">
+                <File Id="include_internal_pycore_typevarobject.h" Name="pycore_typevarobject.h" Source="!(bindpath.src)include\internal\pycore_typevarobject.h" />
+            </Component>
+            <Component Id="include_internal_pycore_ucnhash.h" Directory="include_internal" Guid="*">
+                <File Id="include_internal_pycore_ucnhash.h" Name="pycore_ucnhash.h" Source="!(bindpath.src)include\internal\pycore_ucnhash.h" />
+            </Component>
+            <Component Id="include_internal_pycore_unicodeobject.h" Directory="include_internal" Guid="*">
+                <File Id="include_internal_pycore_unicodeobject.h" Name="pycore_unicodeobject.h" Source="!(bindpath.src)include\internal\pycore_unicodeobject.h" />
+            </Component>
+            <Component Id="include_internal_pycore_unicodeobject_generated.h" Directory="include_internal" Guid="*">
+                <File Id="include_internal_pycore_unicodeobject_generated.h" Name="pycore_unicodeobject_generated.h" Source="!(bindpath.src)include\internal\pycore_unicodeobject_generated.h" />
+            </Component>
+            <Component Id="include_internal_pycore_unionobject.h" Directory="include_internal" Guid="*">
+                <File Id="include_internal_pycore_unionobject.h" Name="pycore_unionobject.h" Source="!(bindpath.src)include\internal\pycore_unionobject.h" />
+            </Component>
+            <Component Id="include_internal_pycore_uniqueid.h" Directory="include_internal" Guid="*">
+                <File Id="include_internal_pycore_uniqueid.h" Name="pycore_uniqueid.h" Source="!(bindpath.src)include\internal\pycore_uniqueid.h" />
+            </Component>
+            <Component Id="include_internal_pycore_uop_ids.h" Directory="include_internal" Guid="*">
+                <File Id="include_internal_pycore_uop_ids.h" Name="pycore_uop_ids.h" Source="!(bindpath.src)include\internal\pycore_uop_ids.h" />
+            </Component>
+            <Component Id="include_internal_pycore_uop_metadata.h" Directory="include_internal" Guid="*">
+                <File Id="include_internal_pycore_uop_metadata.h" Name="pycore_uop_metadata.h" Source="!(bindpath.src)include\internal\pycore_uop_metadata.h" />
+            </Component>
+            <Component Id="include_internal_pycore_warnings.h" Directory="include_internal" Guid="*">
+                <File Id="include_internal_pycore_warnings.h" Name="pycore_warnings.h" Source="!(bindpath.src)include\internal\pycore_warnings.h" />
+            </Component>
+            <Component Id="include_internal_pycore_weakref.h" Directory="include_internal" Guid="*">
+                <File Id="include_internal_pycore_weakref.h" Name="pycore_weakref.h" Source="!(bindpath.src)include\internal\pycore_weakref.h" />
+            </Component>
+            <Component Id="include_intrcheck.h" Directory="include" Guid="*">
+                <File Id="include_intrcheck.h" Name="intrcheck.h" Source="!(bindpath.src)include\intrcheck.h" />
+            </Component>
+            <Component Id="include_iterobject.h" Directory="include" Guid="*">
+                <File Id="include_iterobject.h" Name="iterobject.h" Source="!(bindpath.src)include\iterobject.h" />
+            </Component>
+            <Component Id="include_listobject.h" Directory="include" Guid="*">
+                <File Id="include_listobject.h" Name="listobject.h" Source="!(bindpath.src)include\listobject.h" />
+            </Component>
+            <Component Id="include_lock.h" Directory="include" Guid="*">
+                <File Id="include_lock.h" Name="lock.h" Source="!(bindpath.src)include\lock.h" />
+            </Component>
+            <Component Id="include_longobject.h" Directory="include" Guid="*">
+                <File Id="include_longobject.h" Name="longobject.h" Source="!(bindpath.src)include\longobject.h" />
+            </Component>
+            <Component Id="include_marshal.h" Directory="include" Guid="*">
+                <File Id="include_marshal.h" Name="marshal.h" Source="!(bindpath.src)include\marshal.h" />
+            </Component>
+            <Component Id="include_memoryobject.h" Directory="include" Guid="*">
+                <File Id="include_memoryobject.h" Name="memoryobject.h" Source="!(bindpath.src)include\memoryobject.h" />
+            </Component>
+            <Component Id="include_methodobject.h" Directory="include" Guid="*">
+                <File Id="include_methodobject.h" Name="methodobject.h" Source="!(bindpath.src)include\methodobject.h" />
+            </Component>
+            <Component Id="include_modsupport.h" Directory="include" Guid="*">
+                <File Id="include_modsupport.h" Name="modsupport.h" Source="!(bindpath.src)include\modsupport.h" />
+            </Component>
+            <Component Id="include_moduleobject.h" Directory="include" Guid="*">
+                <File Id="include_moduleobject.h" Name="moduleobject.h" Source="!(bindpath.src)include\moduleobject.h" />
+            </Component>
+            <Component Id="include_monitoring.h" Directory="include" Guid="*">
+                <File Id="include_monitoring.h" Name="monitoring.h" Source="!(bindpath.src)include\monitoring.h" />
+            </Component>
+            <Component Id="include_object.h" Directory="include" Guid="*">
+                <File Id="include_object.h" Name="object.h" Source="!(bindpath.src)include\object.h" />
+            </Component>
+            <Component Id="include_objimpl.h" Directory="include" Guid="*">
+                <File Id="include_objimpl.h" Name="objimpl.h" Source="!(bindpath.src)include\objimpl.h" />
+            </Component>
+            <Component Id="include_opcode.h" Directory="include" Guid="*">
+                <File Id="include_opcode.h" Name="opcode.h" Source="!(bindpath.src)include\opcode.h" />
+            </Component>
+            <Component Id="include_opcode_ids.h" Directory="include" Guid="*">
+                <File Id="include_opcode_ids.h" Name="opcode_ids.h" Source="!(bindpath.src)include\opcode_ids.h" />
+            </Component>
+            <Component Id="include_osdefs.h" Directory="include" Guid="*">
+                <File Id="include_osdefs.h" Name="osdefs.h" Source="!(bindpath.src)include\osdefs.h" />
+            </Component>
+            <Component Id="include_osmodule.h" Directory="include" Guid="*">
+                <File Id="include_osmodule.h" Name="osmodule.h" Source="!(bindpath.src)include\osmodule.h" />
+            </Component>
+            <Component Id="include_patchlevel.h" Directory="include" Guid="*">
+                <File Id="include_patchlevel.h" Name="patchlevel.h" Source="!(bindpath.src)include\patchlevel.h" />
+            </Component>
+            <Component Id="include_pyatomic.h" Directory="include" Guid="*">
+                <File Id="include_pyatomic.h" Name="pyatomic.h" Source="!(bindpath.src)include\pyatomic.h" />
+            </Component>
+            <Component Id="include_pybuffer.h" Directory="include" Guid="*">
+                <File Id="include_pybuffer.h" Name="pybuffer.h" Source="!(bindpath.src)include\pybuffer.h" />
+            </Component>
+            <Component Id="include_pycapsule.h" Directory="include" Guid="*">
+                <File Id="include_pycapsule.h" Name="pycapsule.h" Source="!(bindpath.src)include\pycapsule.h" />
+            </Component>
+            <Component Id="include_pydtrace.h" Directory="include" Guid="*">
+                <File Id="include_pydtrace.h" Name="pydtrace.h" Source="!(bindpath.src)include\pydtrace.h" />
+            </Component>
+            <Component Id="include_pyerrors.h" Directory="include" Guid="*">
+                <File Id="include_pyerrors.h" Name="pyerrors.h" Source="!(bindpath.src)include\pyerrors.h" />
+            </Component>
+            <Component Id="include_pyexpat.h" Directory="include" Guid="*">
+                <File Id="include_pyexpat.h" Name="pyexpat.h" Source="!(bindpath.src)include\pyexpat.h" />
+            </Component>
+            <Component Id="include_pyframe.h" Directory="include" Guid="*">
+                <File Id="include_pyframe.h" Name="pyframe.h" Source="!(bindpath.src)include\pyframe.h" />
+            </Component>
+            <Component Id="include_pyhash.h" Directory="include" Guid="*">
+                <File Id="include_pyhash.h" Name="pyhash.h" Source="!(bindpath.src)include\pyhash.h" />
+            </Component>
+            <Component Id="include_pylifecycle.h" Directory="include" Guid="*">
+                <File Id="include_pylifecycle.h" Name="pylifecycle.h" Source="!(bindpath.src)include\pylifecycle.h" />
+            </Component>
+            <Component Id="include_pymacconfig.h" Directory="include" Guid="*">
+                <File Id="include_pymacconfig.h" Name="pymacconfig.h" Source="!(bindpath.src)include\pymacconfig.h" />
+            </Component>
+            <Component Id="include_pymacro.h" Directory="include" Guid="*">
+                <File Id="include_pymacro.h" Name="pymacro.h" Source="!(bindpath.src)include\pymacro.h" />
+            </Component>
+            <Component Id="include_pymath.h" Directory="include" Guid="*">
+                <File Id="include_pymath.h" Name="pymath.h" Source="!(bindpath.src)include\pymath.h" />
+            </Component>
+            <Component Id="include_pymem.h" Directory="include" Guid="*">
+                <File Id="include_pymem.h" Name="pymem.h" Source="!(bindpath.src)include\pymem.h" />
+            </Component>
+            <Component Id="include_pyport.h" Directory="include" Guid="*">
+                <File Id="include_pyport.h" Name="pyport.h" Source="!(bindpath.src)include\pyport.h" />
+            </Component>
+            <Component Id="include_pystate.h" Directory="include" Guid="*">
+                <File Id="include_pystate.h" Name="pystate.h" Source="!(bindpath.src)include\pystate.h" />
+            </Component>
+            <Component Id="include_pystats.h" Directory="include" Guid="*">
+                <File Id="include_pystats.h" Name="pystats.h" Source="!(bindpath.src)include\pystats.h" />
+            </Component>
+            <Component Id="include_pystrcmp.h" Directory="include" Guid="*">
+                <File Id="include_pystrcmp.h" Name="pystrcmp.h" Source="!(bindpath.src)include\pystrcmp.h" />
+            </Component>
+            <Component Id="include_pystrtod.h" Directory="include" Guid="*">
+                <File Id="include_pystrtod.h" Name="pystrtod.h" Source="!(bindpath.src)include\pystrtod.h" />
+            </Component>
+            <Component Id="include_Python.h" Directory="include" Guid="*">
+                <File Id="include_Python.h" Name="Python.h" Source="!(bindpath.src)include\Python.h" />
+            </Component>
+            <Component Id="include_pythonrun.h" Directory="include" Guid="*">
+                <File Id="include_pythonrun.h" Name="pythonrun.h" Source="!(bindpath.src)include\pythonrun.h" />
+            </Component>
+            <Component Id="include_pythread.h" Directory="include" Guid="*">
+                <File Id="include_pythread.h" Name="pythread.h" Source="!(bindpath.src)include\pythread.h" />
+            </Component>
+            <Component Id="include_pytypedefs.h" Directory="include" Guid="*">
+                <File Id="include_pytypedefs.h" Name="pytypedefs.h" Source="!(bindpath.src)include\pytypedefs.h" />
+            </Component>
+            <Component Id="include_py_curses.h" Directory="include" Guid="*">
+                <File Id="include_py_curses.h" Name="py_curses.h" Source="!(bindpath.src)include\py_curses.h" />
+            </Component>
+            <Component Id="include_rangeobject.h" Directory="include" Guid="*">
+                <File Id="include_rangeobject.h" Name="rangeobject.h" Source="!(bindpath.src)include\rangeobject.h" />
+            </Component>
+            <Component Id="include_refcount.h" Directory="include" Guid="*">
+                <File Id="include_refcount.h" Name="refcount.h" Source="!(bindpath.src)include\refcount.h" />
+            </Component>
+            <Component Id="include_setobject.h" Directory="include" Guid="*">
+                <File Id="include_setobject.h" Name="setobject.h" Source="!(bindpath.src)include\setobject.h" />
+            </Component>
+            <Component Id="include_sliceobject.h" Directory="include" Guid="*">
+                <File Id="include_sliceobject.h" Name="sliceobject.h" Source="!(bindpath.src)include\sliceobject.h" />
+            </Component>
+            <Component Id="include_structmember.h" Directory="include" Guid="*">
+                <File Id="include_structmember.h" Name="structmember.h" Source="!(bindpath.src)include\structmember.h" />
+            </Component>
+            <Component Id="include_structseq.h" Directory="include" Guid="*">
+                <File Id="include_structseq.h" Name="structseq.h" Source="!(bindpath.src)include\structseq.h" />
+            </Component>
+            <Component Id="include_sysmodule.h" Directory="include" Guid="*">
+                <File Id="include_sysmodule.h" Name="sysmodule.h" Source="!(bindpath.src)include\sysmodule.h" />
+            </Component>
+            <Component Id="include_traceback.h" Directory="include" Guid="*">
+                <File Id="include_traceback.h" Name="traceback.h" Source="!(bindpath.src)include\traceback.h" />
+            </Component>
+            <Component Id="include_tupleobject.h" Directory="include" Guid="*">
+                <File Id="include_tupleobject.h" Name="tupleobject.h" Source="!(bindpath.src)include\tupleobject.h" />
+            </Component>
+            <Component Id="include_typeslots.h" Directory="include" Guid="*">
+                <File Id="include_typeslots.h" Name="typeslots.h" Source="!(bindpath.src)include\typeslots.h" />
+            </Component>
+            <Component Id="include_unicodeobject.h" Directory="include" Guid="*">
+                <File Id="include_unicodeobject.h" Name="unicodeobject.h" Source="!(bindpath.src)include\unicodeobject.h" />
+            </Component>
+            <Component Id="include_warnings.h" Directory="include" Guid="*">
+                <File Id="include_warnings.h" Name="warnings.h" Source="!(bindpath.src)include\warnings.h" />
+            </Component>
+            <Component Id="include_weakrefobject.h" Directory="include" Guid="*">
+                <File Id="include_weakrefobject.h" Name="weakrefobject.h" Source="!(bindpath.src)include\weakrefobject.h" />
+            </Component>
+        </ComponentGroup>
+    </Fragment>
+</Wix>

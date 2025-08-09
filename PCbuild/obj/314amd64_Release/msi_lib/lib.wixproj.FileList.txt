@@ -1,0 +1,14 @@
+C:\Users\osten\Downloads\Python-3.14.0rc1\PCbuild\amd64\en-us\lib.msi
+C:\Users\osten\Downloads\Python-3.14.0rc1\PCbuild\amd64\en-us\lib.wixpdb
+C:\Users\osten\Downloads\Python-3.14.0rc1\PCbuild\obj\\314amd64_Release\msi_lib\lib.g.csv
+C:\Users\osten\Downloads\Python-3.14.0rc1\PCbuild\obj\\314amd64_Release\msi_lib\lib.g.wxs
+C:\Users\osten\Downloads\Python-3.14.0rc1\PCbuild\obj\\314amd64_Release\msi_lib\lib.cdf
+C:\Users\osten\Downloads\Python-3.14.0rc1\PCbuild\obj\\314amd64_Release\msi_lib\python_lib.cat
+C:\Users\osten\Downloads\Python-3.14.0rc1\PCbuild\obj\\314amd64_Release\msi_lib\common_en-US.wxl
+C:\Users\osten\Downloads\Python-3.14.0rc1\PCbuild\obj\\314amd64_Release\msi_lib\pth8A29B79887F502AF9E753D233032C752\common.wixobj
+C:\Users\osten\Downloads\Python-3.14.0rc1\PCbuild\obj\\314amd64_Release\msi_lib\lib.wixobj
+C:\Users\osten\Downloads\Python-3.14.0rc1\PCbuild\obj\\314amd64_Release\msi_lib\lib_files.wixobj
+C:\Users\osten\Downloads\Python-3.14.0rc1\PCbuild\obj\\314amd64_Release\msi_lib\pth5DECFE7E8618C907DA3CAC62E1651784\lib.g.wixobj
+C:\Users\osten\Downloads\Python-3.14.0rc1\PCbuild\obj\\314amd64_Release\msi_lib\lib.wixproj.BindContentsFileListen-us.txt
+C:\Users\osten\Downloads\Python-3.14.0rc1\PCbuild\obj\\314amd64_Release\msi_lib\lib.wixproj.BindOutputsFileListen-us.txt
+C:\Users\osten\Downloads\Python-3.14.0rc1\PCbuild\obj\\314amd64_Release\msi_lib\lib.wixproj.BindBuiltOutputsFileListen-us.txt

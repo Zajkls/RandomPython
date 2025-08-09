@@ -1,0 +1,9 @@
+C:\Users\osten\Downloads\Python-3.14.0rc1\PCbuild\amd64\LICENSE.txt
+C:\Users\osten\Downloads\Python-3.14.0rc1\PCbuild\amd64\NEWS.txt
+C:\Users\osten\Downloads\Python-3.14.0rc1\PC\icons\py.ico
+C:\Users\osten\Downloads\Python-3.14.0rc1\PC\icons\pyc.ico
+C:\Users\osten\Downloads\Python-3.14.0rc1\PC\icons\pyd.ico
+C:\Users\osten\Downloads\Python-3.14.0rc1\PCbuild\amd64\python.exe
+C:\Users\osten\Downloads\Python-3.14.0rc1\PCbuild\amd64\pythonw.exe
+C:\Users\osten\Downloads\Python-3.14.0rc1\PCbuild\amd64\vcruntime140.dll
+C:\Users\osten\Downloads\Python-3.14.0rc1\PCbuild\amd64\vcruntime140_1.dll

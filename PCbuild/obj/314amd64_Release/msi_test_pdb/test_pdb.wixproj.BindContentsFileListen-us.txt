@@ -1,0 +1,11 @@
+C:\Users\osten\Downloads\Python-3.14.0rc1\PCbuild\amd64\_ctypes_test.pdb
+C:\Users\osten\Downloads\Python-3.14.0rc1\PCbuild\amd64\_testbuffer.pdb
+C:\Users\osten\Downloads\Python-3.14.0rc1\PCbuild\amd64\_testcapi.pdb
+C:\Users\osten\Downloads\Python-3.14.0rc1\PCbuild\amd64\_testclinic.pdb
+C:\Users\osten\Downloads\Python-3.14.0rc1\PCbuild\amd64\_testclinic_limited.pdb
+C:\Users\osten\Downloads\Python-3.14.0rc1\PCbuild\amd64\_testconsole.pdb
+C:\Users\osten\Downloads\Python-3.14.0rc1\PCbuild\amd64\_testimportmultiple.pdb
+C:\Users\osten\Downloads\Python-3.14.0rc1\PCbuild\amd64\_testinternalcapi.pdb
+C:\Users\osten\Downloads\Python-3.14.0rc1\PCbuild\amd64\_testlimitedcapi.pdb
+C:\Users\osten\Downloads\Python-3.14.0rc1\PCbuild\amd64\_testmultiphase.pdb
+C:\Users\osten\Downloads\Python-3.14.0rc1\PCbuild\amd64\_testsinglephase.pdb

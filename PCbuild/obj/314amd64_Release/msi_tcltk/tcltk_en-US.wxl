@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WixLocalization Culture="en-us" xmlns="http://schemas.microsoft.com/wix/2006/localization">
+    <String Id="Descriptor">Tcl/Tk Support</String>
+    <String Id="ShortDescriptor">tcltk</String>
+    <String Id="NoPython">No !(loc.ProductName) installation was detected.</String>
+    <String Id="ShortcutName">IDLE (Python 3.14 64-bit)</String>
+    <String Id="ShortcutDescription">Launches IDLE, the interactive environment for !(loc.ProductName).</String>
+    <String Id="PyDocShortcutName">Python 3.14 Module Docs (64-bit)</String>
+    <String Id="PyDocShortcutDescription">Start the !(loc.ProductName) documentation server.</String>
+    <String Id="EditMenu">&amp;Edit with IDLE</String>
+    <String Id="EditSubMenu">Edit with IDLE 3.14 (64-bit)</String>
+</WixLocalization>
